@@ -1,5 +1,8 @@
 # Neomad's Styleguide
 
+TODO: 
+
+- Installation instructions
 
 ## Source tree
 
