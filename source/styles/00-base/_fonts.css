@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #FONTS
+\*------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+html {
+    font-size: 62.5%; /* 10px */
+    font-size: calc(1em * 0.625); /* fix */
+}
