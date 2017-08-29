@@ -19,7 +19,8 @@ gulp.task('default', function() {
 
 gulp.task('css', function () {
   return (
-    gulp.src('./source/styles/00-base/base.css')
+    gulp.src('./source/styles/00-base/base.css'),
+    gulp.src('./source/styles/04-templates/home.css')
       .pipe(postcss([
         require("postcss-import")(),
         require("postcss-url")(),
@@ -33,12 +34,15 @@ gulp.task('css', function () {
 
 // Static Server + watching scss/html files
 gulp.task('serve', function() {
-  
+
       browserSync.init({
           server: "./source"
       });
-  
+
       gulp.watch('./source/styles/00-base/base.css', ['css']);
+      gulp.watch('./source/styles/**/*.css', ['css']);
+      gulp.src('./source/styles/04-templates/home.css')
+      gulp.watch("./source/styles/**/*.css").on('change', browserSync.reload);
       gulp.watch("./source/*.html").on('change', browserSync.reload);
   });
 

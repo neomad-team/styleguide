@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a {
+    color: #279e6a;
+    -webkit-transition: color .3s;
+    transition: color .3s
+}
+
+a:hover {
+    color: #00bf6b;
+}

@@ -1,8 +1,10 @@
 /*------------------------------------*\
-    #USEFUL CLASSES
+    #HEADINGS
 \*------------------------------------*/
 
-.wrapper {
-    max-width: 70rem;
-    margin: 0 auto;
+h1,
+h2,
+h3 {
+  font-family: 'Poppins';
+  font-weight: 700;
 }

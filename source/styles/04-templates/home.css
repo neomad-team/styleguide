@@ -1,8 +1,5 @@
 /*------------------------------------*\
-    #HEADER
+    #HOME
 \*------------------------------------*/
 
-
-header {
-    background-color: var(--mainColor);
-}
+@import "../03-components/_header.css";

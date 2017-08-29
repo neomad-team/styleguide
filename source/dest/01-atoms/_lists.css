@@ -1,8 +1,8 @@
 /*------------------------------------*\
-    #USEFUL CLASSES
+    #LISTS
 \*------------------------------------*/
 
-.wrapper {
-    max-width: 70rem;
-    margin: 0 auto;
+ul {
+  padding: 0;
+  list-style: none;
 }

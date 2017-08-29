@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<title>Styleguide - Neomad</title>
+<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="dest/base.css">
+<link rel="stylesheet" href="dest/home.css">
+<link rel="stylesheet" href="dest/styleguide.css">
+
+<h1 class=st-title>Header</h1>
+
+<h2 class=st-title>Not logged</h2>
+<header class=st-header>
+    <h1><a href="/">Neomad</a></h1>
+
+    <nav>
+        <a href={{ url_for('article_list') }} title="Read nomad's adventures">Read</a>
+
+        <a href={{ url_for('login') }} class=login>Log in</a>
+    </nav>
+</header>
+
+<h2 class=st-title>Logged</h2>
+<header class=st-header>
+    <h1><a href="/">Neomad</a></h1>
+
+    <nav>
+        <a href= title="Read nomad's adventures">Read</a>
+
+        <a href={{ url_for('around') }}>Around you</a>
+
+        <div id=avatar-menu class=avatar>
+            <img src={{ current_user.avatar }} class=avatar-img width=35 height=35>
+        </div>
+
+        <nav id=menu class=nav-account>
+            <li><a href={{ url_for_user(current_user) }}>Profile</a></li>
+            <li><a href={{ url_for('privacy') }}>Privacy settings</a></li>
+            <li><a href={{ url_for('logout') }}>Logout</a></li>
+        </nav>
+    </nav>
+</header>
+
+
+<script src=js/utils.js></script>
