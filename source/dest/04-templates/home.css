@@ -83,6 +83,7 @@ a:hover {
     #HEADER
 \*------------------------------------*/
 
+<<<<<<< Updated upstream
 body > header {
   position: fixed;
   top: 0;
@@ -110,6 +111,56 @@ body > header h1 {
   font-weight: 300;
   font-size: 48px;
   font-size: 3rem;
+=======
+.main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
+            box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
+
+    z-index: 9
+}
+
+.main-header h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 48px;
+    font-size: 3rem
+}
+
+.main-header h1 a {
+    padding: 16px;
+    padding: 1rem;
+    color: #333;
+    text-decoration: inherit;
+}
+
+.main-header nav {
+    position: relative;
+    margin: 0 32px 0 0;
+    margin: 0 2rem 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center
+>>>>>>> Stashed changes
 }
 
 body > header h1 a {

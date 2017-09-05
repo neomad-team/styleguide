@@ -3,60 +3,67 @@
 @import "../02-molecules/_nav-account.css";
 
 /*------------------------------------*\
-    #HEADER
+#HEADER
 \*------------------------------------*/
-body > header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1rem;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 9;
-}
-body > header h1 {
-  margin: 0;
-  font-weight: 300;
-  font-size: 3rem;
-}
-body > header h1 a {
-  padding: 1rem;
-  text-decoration: inherit;
-  color: #333;
-  text-decoration: inherit;
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
+
+    z-index: 9;
+
+    & h1 {
+        margin: 0;
+        font-weight: 300;
+        font-size: 3rem;
+
+        & a {
+            padding: 1rem;
+            color: #333;
+            text-decoration: inherit;
+        }
+    }
 }
 
-body > header nav {
-  float: right;
-  position: relative;
-  margin: 0 2rem 0 0;
-  display: flex;
-  align-items: center;
+.main-header nav {
+    position: relative;
+    margin: 0 2rem 0 0;
+    display: flex;
+    align-items: center;
+
+    & a {
+        padding: 3px 15px;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    & .button {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        &:hover {
+            color: #000;
+            background-color: #eee;
+        }
+    }
 }
-body > header nav a {
-  padding: 3px 15px;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
+
 .avatar {
-  cursor: pointer;
-}
-.avatar img {
-  display: inline-block;
-  vertical-align: middle;
-  border: 1px solid #666;
-  border-radius: 50%;
-}
-body > header nav .button {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-body > header nav .button:hover {
-  color: #000;
-  background-color: #eee;
+    cursor: pointer;
+    & img {
+        display: inline-block;
+        vertical-align: middle;
+        border: 1px solid #666;
+        border-radius: 50%;
+    }
 }

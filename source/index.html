@@ -29,9 +29,33 @@
         </ul>
 
         <h3>Sizes</h3>
-        Every size must be in `rem`, body size is 10px so it's quite easy to calculate font size. <br>For example a 26px will be written 2.6rem 
+        Every size must be in `rem`, body size is 10px so it's quite easy to calculate font size. <br>For example a 26px will be written 2.6rem
 
         <hr />
+
+        <h2>Organizing CSS properties</h2>
+
+        To keep every CSS declaration readable, let's follow some rules <i>(TODO: find a linter)</i>
+
+        <ul>
+            <li>
+                put spaces at the proper spaces
+                <pre>
+                    .my-class {
+                        property: value
+                    }
+                </pre>
+            </li>
+
+            <li>
+                follow the order
+                <ul>
+                    <li>Display values (for Flexbox, add children properties after)</li>
+                    <li>Positionning value</li>
+                    <li>Box values (width, height, margin, padding, border)</li>
+                </ul>
+            </li>
+        </ul>
 
         <h1 id="headings">Headings</h1>
 
