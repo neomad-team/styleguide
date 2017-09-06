@@ -2,6 +2,10 @@
     #STYLEGUIDE
 \*------------------------------------*/
 
+.st-section {
+    margin-bottom: 3rem;
+}
+
 .st-container > header {
     position: relative;
 }

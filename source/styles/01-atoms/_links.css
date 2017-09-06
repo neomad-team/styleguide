@@ -4,6 +4,7 @@
 
 a {
     color: #279e6a;
+    text-decoration: none;
     transition: color .3s;
 
     &:hover {
