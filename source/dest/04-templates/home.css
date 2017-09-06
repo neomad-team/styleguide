@@ -19,6 +19,7 @@ a:hover {
 /*------------------------------------*\
 #NAV ACCOUNT
 \*------------------------------------*/
+
 .nav-account {
     position: absolute;
     top: 96px;
@@ -80,38 +81,9 @@ a:hover {
 }
 
 /*------------------------------------*\
-    #HEADER
+#HEADER
 \*------------------------------------*/
 
-<<<<<<< Updated upstream
-body > header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 16px;
-  padding: 1rem;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
-          box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 9;
-}
-
-body > header h1 {
-  margin: 0;
-  font-weight: 300;
-  font-size: 48px;
-  font-size: 3rem;
-=======
 .main-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,55 +132,33 @@ body > header h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center
->>>>>>> Stashed changes
 }
 
-body > header h1 a {
-  padding: 16px;
-  padding: 1rem;
-  text-decoration: inherit;
-  color: #333;
-  text-decoration: inherit;
+.main-header nav a {
+    padding: 3px 15px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-body > header nav {
-  float: right;
-  position: relative;
-  margin: 0 32px 0 0;
-  margin: 0 2rem 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main-header nav .button {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px
 }
 
-body > header nav a {
-  padding: 3px 15px;
-  font-size: 24px;
-  font-size: 1.5rem;
-  text-decoration: none;
+.main-header nav .button:hover {
+    color: #000;
+    background-color: #eee;
 }
 
 .avatar {
-  cursor: pointer;
+    cursor: pointer
 }
 
 .avatar img {
-  display: inline-block;
-  vertical-align: middle;
-  border: 1px solid #666;
-  border-radius: 50%;
-}
-
-body > header nav .button {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-body > header nav .button:hover {
-  color: #000;
-  background-color: #eee;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #666;
+    border-radius: 50%;
 }
