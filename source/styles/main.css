@@ -3,10 +3,15 @@
 @import "00-base/_fonts.css";
 @import "00-base/_body.css";
 
+/* Atoms used on every pages */
 @import "01-atoms/_headings.css";
 @import "01-atoms/_links.css";
 @import "01-atoms/_lists.css";
 
-* {
-    box-sizing: border-box;
-}
+/* Atoms used on every pages */
+@import "01-atoms/_headings.css";
+@import "01-atoms/_links.css";
+@import "01-atoms/_lists.css";
+
+/* Components used on every pages */
+@import "03-components/_header.css";

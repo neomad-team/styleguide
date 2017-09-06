@@ -2,6 +2,16 @@
     #STYLEGUIDE
 \*------------------------------------*/
 
-.st-header {
+.st-container > header {
     position: relative;
+}
+
+h1.st-title {
+    text-align: center;
+    font-size: 4rem;
+}
+
+h2.st-title {
+    font-size: 3rem;
+    margin-left: 2rem;
 }
