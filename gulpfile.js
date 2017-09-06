@@ -1,5 +1,10 @@
 var gulp = require('gulp');
-var postcss = require('gulp-postcss')
+var postcss = require('gulp-postcss');
+var importcss = require('postcss-import');
+var url = require('postcss-url');
+var cssnext = require('postcss-cssnext');
+var browserreporter = require('postcss-browser-reporter');
+var reporter = require('postcss-reporter');
 var browserSync = require('browser-sync').create();
 
 // Static Server + watching css/html files
@@ -15,15 +20,17 @@ gulp.task('serve', ['postcss'], function() {
 
 // Compile postCSS
 gulp.task('postcss', function () {
+    var plugins = [
+        importcss,
+        url,
+        cssnext({autoprefixer: false}),
+        browserreporter,
+        reporter
+    ]
+
     return (
         gulp.src('./source/styles/main.css')
-        .pipe(postcss([
-            require("postcss-import")(),
-            require("postcss-url")(),
-            require("postcss-cssnext")(),
-            require("postcss-browser-reporter")(),
-            require("postcss-reporter")(),
-        ]))
+        .pipe(postcss(plugins))
         .pipe(gulp.dest('./source/dest'))
     )
 });
