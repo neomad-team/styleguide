@@ -2,17 +2,16 @@
 
 ## Installation
 
-
 Install node dependencies:
 
 ```
 npm install
 ```
 
-
 ## TODO
 
-- Installation instructions
+- Building instructions
+- Methodology
 
 ## Source tree
 
