@@ -1,0 +1,7 @@
+:root {
+  --interactive-color: #279e6a;
+}
+
+a {
+  color: var(--interactive-color);
+}
