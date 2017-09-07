@@ -1,8 +1,0 @@
-@import "_variables.css";
-@import "_useful-classes.css";
-@import "_fonts.css";
-@import "_body.css";
-
-* {
-    box-sizing: border-box;
-}
