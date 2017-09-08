@@ -1,10 +1,10 @@
 /*------------------------------------*\
-    #HEADINGS
+#HEADINGS
 \*------------------------------------*/
 
 h1,
 h2,
 h3 {
-  font-family: 'Poppins', arial, sans-serif;
+  font-family: 'Poppins';
   font-weight: 700;
 }

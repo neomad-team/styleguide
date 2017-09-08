@@ -2,36 +2,36 @@
 #NAV ACCOUNT
 \*------------------------------------*/
 .nav-account {
+  position: absolute;
+  top: 6rem;
+  right: -1rem;
+  margin: 0;
+  padding: 1rem 2rem;
+  height: 0;
+  opacity: 0;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(50, 50, 50, .2);
+  border-radius: 3px;
+  transition: all .3s;
+
+  &::before {
+    content: '';
     position: absolute;
-    top: 6rem;
-    right: -1rem;
-    margin: 0;
-    padding: 1rem 2rem;
-    height: 0;
-    opacity: 0;
+    top: -1rem;
+    right: 2rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
     background-color: #fff;
-    box-shadow: 0 0 6px rgba(50, 50, 50, .2);
-    border-radius: 3px;
+    box-shadow: -1px -1px 1px -1px rgba(50, 50, 50, .2);
+    transform: rotate(45deg);
     transition: all .3s;
+  }
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: -1rem;
-        right: 2rem;
-        display: block;
-        width: 2rem;
-        height: 2rem;
-        background-color: #fff;
-        box-shadow: -1px -1px 1px -1px rgba(50, 50, 50, .2);
-        transform: rotate(45deg);
-        transition: all .3s;
-    }
+  &.active {
+    height: auto;
+    opacity: 1;
+    z-index: 1;
+  }
 
-    &.active {
-        height: auto;
-        opacity: 1;
-        z-index: 1;
-    }
-    
 }

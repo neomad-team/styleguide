@@ -3,20 +3,20 @@
 \*------------------------------------*/
 
 .button {
-    display: inline-block;
-    width: auto;
-    padding: 0.5rem 1.5rem;
-    color: #279e6a;
-    text-align: center;
-    background-color: #fff;
-    border: 0.125rem solid #279e6a;
-    border-radius: 0.5rem;
-    transition: all .3s ease;
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  color: #279e6a;
+  text-align: center;
+  background-color: #fff;
+  border: 0.125rem solid #279e6a;
+  border-radius: 0.5rem;
+  transition: all .3s ease;
 
-    &:hover {
-        color: #fff;
-        background-color: rgba(17, 195, 116, 0.8);
-        border: 0.125rem solid rgba(17, 195, 116, 0.8);
-    }
+  &:hover {
+    color: #fff;
+    background-color: rgba(17, 195, 116, 0.8);
+    border: 0.125rem solid rgba(17, 195, 116, 0.8);
+  }
 
 }
