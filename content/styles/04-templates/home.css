@@ -1,5 +1,9 @@
 /*------------------------------------*\
-    #HOME
+#HOME
 \*------------------------------------*/
 
-@import "../03-components/_header.css";
+.home-section-title {
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+}

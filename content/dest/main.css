@@ -8,8 +8,8 @@
     #USEFUL CLASSES
 \*------------------------------------*/
 .wrapper {
-    max-width: 700px;
-    max-width: 70rem;
+    width: 700px;
+    width: 70rem;
     margin: 0 auto;
 }
 /*------------------------------------*\

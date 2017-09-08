@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .wrapper {
-    max-width: 1120px;
-    max-width: 70rem;
+    width: 1120px;
+    width: 70rem;
     margin: 0 auto;
 }
