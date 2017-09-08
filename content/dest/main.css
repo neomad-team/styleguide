@@ -88,9 +88,6 @@ ul {
 /*------------------------------------*\
 #AVATAR
 \*------------------------------------*/
-.avatar {
-  cursor: pointer
-}
 .avatar img {
   display: inline-block;
   vertical-align: middle;
@@ -180,6 +177,9 @@ ul {
   padding: 1rem;
   color: #333;
   text-decoration: inherit;
+}
+.main-header .avatar {
+  cursor: pointer;
 }
 .main-header > nav {
   position: relative;

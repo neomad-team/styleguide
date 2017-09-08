@@ -1,14 +1,12 @@
 /*------------------------------------*\
 #AVATAR
 \*------------------------------------*/
-.avatar {
-  cursor: pointer
-}
 .avatar img {
   display: inline-block;
   vertical-align: middle;
   border: 1px solid #666;
   border-radius: 50%;
+
 }
 /*------------------------------------*\
 #NAV ACCOUNT
@@ -51,11 +49,13 @@
           transform: rotate(45deg);
   -webkit-transition: all .3s;
   transition: all .3s;
+
 }
 .nav-account.active {
   height: auto;
   opacity: 1;
   z-index: 1;
+
 }
 /*------------------------------------*\
 #HEADER
@@ -86,13 +86,19 @@
   margin: 0;
   font-weight: 300;
   font-size: 48px;
-  font-size: 3rem
+  font-size: 3rem;
+
 }
 .main-header h1 a {
   padding: 16px;
   padding: 1rem;
   color: #333;
   text-decoration: inherit;
+
+}
+.main-header .avatar {
+  cursor: pointer;
+
 }
 .main-header > nav {
   position: relative;
@@ -111,16 +117,20 @@
   font-size: 24px;
   font-size: 1.5rem;
   text-decoration: none;
+
 }
 .main-header > nav .button {
   background-color: #f9f9f9;
   border: 1px solid #ccc;
-  border-radius: 5px
+  border-radius: 5px;
+
 }
 .main-header > nav .button:hover {
   color: #000;
   background-color: #eee;
+
 }
 .main-header > nav > nav > a {
   display: block;
+
 }

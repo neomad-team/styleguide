@@ -2,7 +2,6 @@
 #AVATAR
 \*------------------------------------*/
 .avatar {
-  cursor: pointer;
 
   & img {
     display: inline-block;
