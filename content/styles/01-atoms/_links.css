@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 a {
-  color: #279e6a;
+  color: var(--greenLink);
   text-decoration: none;
   transition: color .3s;
 

@@ -1,7 +1,11 @@
+/* custom properties */
+:root {
+
+  /* Colors */
+}
 /*------------------------------------*\
 #BUTTONS
 \*------------------------------------*/
-
 .button {
   display: inline-block;
   width: auto;
@@ -17,11 +21,9 @@
   transition: all .3s ease
 
 }
-
 .button:hover {
   color: #fff;
   background-color: rgba(17, 195, 116, .8);
   border: 2px solid rgba(17, 195, 116, .8);
   border: 0.125rem solid rgba(17, 195, 116, .8);
-
 }
