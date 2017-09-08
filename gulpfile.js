@@ -11,11 +11,11 @@ var browserSync = require('browser-sync').create();
 gulp.task('serve', ['postcss'], function() {
 
     browserSync.init({
-        server: "./source"
+        server: "./content"
     });
 
-    gulp.watch("./source/styles/**/*.css", ['postcss']);
-    gulp.watch("./source/*.html").on('change', browserSync.reload);
+    gulp.watch("./content/styles/**/*.css", ['postcss']);
+    gulp.watch("./content/*.html").on('change', browserSync.reload);
 });
 
 // Compile postCSS
@@ -29,9 +29,10 @@ gulp.task('postcss', function () {
     ]
 
     return (
-        gulp.src('./source/styles/main.css')
+        gulp.src('./content/styles/main.css'),
+        gulp.src('./content/styles/**/*.css')
         .pipe(postcss(plugins))
-        .pipe(gulp.dest('./source/dest'))
+        .pipe(gulp.dest('./content/dest'))
     )
 });
 

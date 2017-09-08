@@ -1,6 +1,11 @@
 /* custom properties */
 :root {
---fontSize: 1rem;
---mainColor: #12345678;
---highlightColor: hwb(190, 35%, 20%);
+
+  /* Colors */
+  --greenLink: #279e6a;
+  --greenLinkHover: #00bf6b;
+
+  --blackFont: #000;
+
+  --greyBg: #fafafa;
 }

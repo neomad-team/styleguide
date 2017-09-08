@@ -1,3 +1,24 @@
+@import "../00-base/_variables.css";
+
 /*------------------------------------*\
-    #BUTTONS
+#BUTTONS
 \*------------------------------------*/
+
+.button {
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  color: var(--greenLink);
+  text-align: center;
+  background-color: #fff;
+  border: 0.125rem solid var(--greenLink);
+  border-radius: 0.5rem;
+  transition: all .3s ease;
+
+  &:hover {
+    color: #fff;
+    background-color: var(--greenLinkHover);
+    border: 0.125rem solid var(--greenLinkHover);
+  }
+
+}

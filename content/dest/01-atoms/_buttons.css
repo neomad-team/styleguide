@@ -1,3 +1,29 @@
+/* custom properties */
+:root {
+
+  /* Colors */
+}
 /*------------------------------------*\
-    #BUTTONS
+#BUTTONS
 \*------------------------------------*/
+.button {
+  display: inline-block;
+  width: auto;
+  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
+  color: #279e6a;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #279e6a;
+  border: 0.125rem solid #279e6a;
+  border-radius: 0.5rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease
+
+}
+.button:hover {
+  color: #fff;
+  background-color: #00bf6b;
+  border: 2px solid #00bf6b;
+  border: 0.125rem solid #00bf6b;
+}

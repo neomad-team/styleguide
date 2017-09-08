@@ -1,13 +1,14 @@
 /*------------------------------------*\
-    #LINKS
+#LINKS
 \*------------------------------------*/
 
 a {
-    color: #279e6a;
-    text-decoration: none;
-    transition: color .3s;
+  color: var(--greenLink);
+  text-decoration: none;
+  transition: color .3s;
 
-    &:hover {
-        color: #00bf6b;
-    }
+  &:hover {
+    /*color: #00bf6b;*/
+    color: var(--greenLinkHover);
+  }
 }

@@ -1,9 +1,6 @@
 /*------------------------------------*\
-#USEFUL CLASSES
+#FIGURES
 \*------------------------------------*/
-
-.wrapper {
-  width: 1120px;
-  width: 70rem;
-  margin: 0 auto;
+figure {
+  margin: 0;
 }
