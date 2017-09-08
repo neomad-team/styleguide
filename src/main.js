@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import Button from './Button.vue'
+import Avatar from './Avatar.vue'
 
 new Vue({
   el: '#app',
-  render: h => h(Button)
+  render: h => h(Avatar)
 })

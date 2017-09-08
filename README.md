@@ -2,13 +2,16 @@
 
 > neomad's styleguide feat vueJS
 
-## installation steps
+## Installation steps
 
-### install dependencies
+### Install dependencies
+
 `npm install`
 
-### test with reload reload:
+### Test with reload
+
 `npm run dev`
 
-### build for prod:
+### Build for prod
+
 `npm run build`
