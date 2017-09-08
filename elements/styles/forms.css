@@ -1,0 +1,14 @@
+input,
+textarea {
+  border: 1px solid #aaa;
+  border-radius: .2rem;
+  padding: .7rem 1rem;
+  font: inherit;
+  color: inherit;
+  transition: border-color .2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #555;
+}
