@@ -1,3 +1,4 @@
+@import "../02-molecules/_avatar.css";
 @import "../02-molecules/_nav-account.css";
 
 /*------------------------------------*\
@@ -61,15 +62,4 @@
     }
   }
 
-}
-
-.avatar {
-  cursor: pointer;
-
-  & img {
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid #666;
-    border-radius: 50%;
-  }
 }
