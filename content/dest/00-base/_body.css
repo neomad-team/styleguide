@@ -6,6 +6,11 @@
  * Body base styles
  */
 
+* {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+
 body {
     height: 100%;
     display: -webkit-box;
@@ -26,4 +31,3 @@ body {
     font-weight: 400;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
   }
-  

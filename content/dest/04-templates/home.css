@@ -3,20 +3,6 @@
 \*------------------------------------*/
 
 /*------------------------------------*\
-    #LINKS
-\*------------------------------------*/
-
-a {
-    color: #279e6a;
-    -webkit-transition: color .3s;
-    transition: color .3s
-}
-
-a:hover {
-    color: #00bf6b;
-}
-
-/*------------------------------------*\
 #NAV ACCOUNT
 \*------------------------------------*/
 
@@ -24,7 +10,8 @@ a:hover {
     position: absolute;
     top: 96px;
     top: 6rem;
-    right: 0;
+    right: -16px;
+    right: -1rem;
     margin: 0;
     padding: 16px 32px;
     padding: 1rem 2rem;
@@ -36,6 +23,7 @@ a:hover {
     border-radius: 3px;
     -webkit-transition: all .3s;
     transition: all .3s
+    
 }
 
 .nav-account::before {
@@ -57,27 +45,14 @@ a:hover {
             transform: rotate(45deg);
     -webkit-transition: all .3s;
     transition: all .3s;
+    
 }
 
 .nav-account.active {
     height: auto;
     opacity: 1;
     z-index: 1;
-}
-
-.nav-account li {
-    display: none;
-    list-style-type: none;
-}
-
-.nav-account li a {
-    display: block;
-    padding: 16px 0;
-    padding: 1rem 0;
-}
-
-.nav-account.active li {
-    display: block;
+    
 }
 
 /*------------------------------------*\
@@ -104,7 +79,6 @@ a:hover {
     background-color: #fff;
     -webkit-box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
             box-shadow: 0 2px 2px rgba(50, 50, 50, .2);
-
     z-index: 9
 }
 
@@ -113,6 +87,7 @@ a:hover {
     font-weight: 300;
     font-size: 48px;
     font-size: 3rem
+    
 }
 
 .main-header h1 a {
@@ -120,9 +95,10 @@ a:hover {
     padding: 1rem;
     color: #333;
     text-decoration: inherit;
+    
 }
 
-.main-header nav {
+.main-header > nav {
     position: relative;
     margin: 0 32px 0 0;
     margin: 0 2rem 0 0;
@@ -132,24 +108,33 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center
+
 }
 
-.main-header nav a {
+.main-header > nav a {
     padding: 3px 15px;
     font-size: 24px;
     font-size: 1.5rem;
     text-decoration: none;
+    
 }
 
-.main-header nav .button {
+.main-header > nav .button {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px
+    
 }
 
-.main-header nav .button:hover {
+.main-header > nav .button:hover {
     color: #000;
     background-color: #eee;
+    
+}
+
+.main-header > nav > nav > a {
+    display: block;
+    
 }
 
 .avatar {
@@ -161,4 +146,5 @@ a:hover {
     vertical-align: middle;
     border: 1px solid #666;
     border-radius: 50%;
+    
 }

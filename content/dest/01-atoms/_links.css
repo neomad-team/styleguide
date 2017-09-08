@@ -4,6 +4,7 @@
 
 a {
     color: #279e6a;
+    text-decoration: none;
     -webkit-transition: color .3s;
     transition: color .3s
 }
