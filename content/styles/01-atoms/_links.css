@@ -8,6 +8,7 @@ a {
   transition: color .3s;
 
   &:hover {
-    color: #00bf6b;
+    /*color: #00bf6b;*/
+    color: var(--greenLinkHover);
   }
 }

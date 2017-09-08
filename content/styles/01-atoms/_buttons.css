@@ -17,8 +17,8 @@
 
   &:hover {
     color: #fff;
-    background-color: rgba(17, 195, 116, 0.8);
-    border: 0.125rem solid rgba(17, 195, 116, 0.8);
+    background-color: var(--greenLinkHover);
+    border: 0.125rem solid var(--greenLinkHover);
   }
 
 }

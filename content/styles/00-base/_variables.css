@@ -3,5 +3,9 @@
 
   /* Colors */
   --greenLink: #279e6a;
-  --highlightColor: hwb(190, 35%, 20%);
+  --greenLinkHover: #00bf6b;
+
+  --blackFont: #000;
+
+  --greyBg: #fafafa;
 }

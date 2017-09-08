@@ -9,8 +9,8 @@ a {
   transition: color .3s
 }
 
-a:hover {
-  color: #00bf6b;
+a:hover {/*color: #00bf6b;*/
+  color: var(--greenLinkHover);
 }
 
 html::before {
@@ -31,5 +31,5 @@ html::before {
   white-space: pre-wrap;
   font-family: Menlo, Monaco, monospace;
   text-shadow: 0 1px #A82734;
-  content: "content/styles/01-atoms/_links.css\00000a6:3	variable '--greenLink' is undefined and used without a fallback [postcss-custom-properties]"
+  content: "content/styles/01-atoms/_links.css\00000a6:3	variable '--greenLink' is undefined and used without a fallback [postcss-custom-properties]\00000a12:5	variable '--greenLinkHover' is undefined and used without a fallback [postcss-custom-properties]"
 }
