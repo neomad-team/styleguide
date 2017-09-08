@@ -4,9 +4,17 @@
 #BUTTONS
 \*------------------------------------*/
 
-.button {
+button,
+input[type=submit]  {
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.button,
+button,
+input[type=submit] {
   display: inline-block;
-  width: auto;
   padding: 0.5rem 1.5rem;
   color: var(--greenLink);
   text-align: center;
