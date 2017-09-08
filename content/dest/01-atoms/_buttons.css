@@ -16,8 +16,8 @@ input[type=submit]  {
 button,
 input[type=submit] {
   display: inline-block;
-  padding: 8px 24px;
-  padding: 0.5rem 1.5rem;
+  padding: 12.8px 40px;
+  padding: 0.8rem 2.5rem;
   color: #279e6a;
   text-align: center;
   background-color: #fff;
@@ -30,7 +30,7 @@ input[type=submit] {
 }
 .button:hover, button:hover, input[type=submit]:hover {
   color: #fff;
-  background-color: #00bf6b;
-  border: 2px solid #00bf6b;
-  border: 0.125rem solid #00bf6b;
+  background-color: #2cbe4e;
+  border: 2px solid #2cbe4e;
+  border: 0.125rem solid #2cbe4e;
 }
