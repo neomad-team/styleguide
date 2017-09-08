@@ -1,32 +1,26 @@
 {
-  "name": "neomad-styleguide",
+  "name": "Styleguide",
+  "description": "neomad's styleguide feat vueJS",
   "version": "0.0.1",
-  "description": "Styleguide for Neomad",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "postcss": "^6.0.9",
-    "postcss-browser-reporter": "^0.5.0",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^10.0.0",
-    "postcss-reporter": "^5.0.0",
-    "postcss-url": "^7.1.2"
-  },
-  "devDependencies": {},
+  "author": "fuentesloic <fuentes.loic@gmail.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neomad-team/styleguide.git"
+  "dependencies": {
+    "vue": "^2.3.3"
   },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/neomad-team/styleguide/issues"
-  },
-  "homepage": "https://github.com/neomad-team/styleguide#readme"
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
 }
