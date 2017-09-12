@@ -8,6 +8,6 @@ import articlePreview from './molecules/articlePreview.vue'
 
 // components creatation
 new Vue({
-  el: '.preview',
+  el: '#app',
   components: {avatar, articleMeta, articlePreview}
 })
