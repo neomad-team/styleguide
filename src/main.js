@@ -1,11 +1,13 @@
 import Vue from 'vue'
-// import Avatar from './atoms/Avatar.vue'
-// import Meta from './atoms/Meta.vue'
-import Header from './molecules/Meta.vue'
-import Content from './molecules/Content.vue'
-import avatare from './molecules/avatare.vue'
+// atoms
+import button from './atoms/button.vue'
+import avatar from './atoms/avatar.vue'
+// molecules
+import articleMeta from './molecules/articleMeta.vue'
+import articlePreview from './molecules/articlePreview.vue'
 
+// components creatation
 new Vue({
-  el: '.meta',
-  components: {Header, Content, avatare}
+  el: '.preview',
+  components: {avatar, articleMeta, articlePreview}
 })

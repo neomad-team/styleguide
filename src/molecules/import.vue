@@ -1,8 +1,5 @@
 <template>
-  <header>
-    <Avatar></Avatar>
-    <Data></Data>
-  </header>
+
 </template>
 
 <script type="text/javascript">
@@ -13,3 +10,5 @@
     components: { Avatar, Data }
   }
 </script>
+
+<!-- importer import dans un plus haut niveau -->

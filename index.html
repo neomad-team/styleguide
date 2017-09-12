@@ -16,16 +16,37 @@ body {
 }
 </style>
 
-<div id=app></div>
-
-<header class=meta>
-  <article is=avatare>
-    <a href=/@loic/ slot=link>Loic Fuentes</a>
-    <img slot=picture src=/photo/de/loic/>
-  </article>
-
-  <div is=Header></div>
-  <div is=Content></div>
-</header>
+<!-- Article preview -->
+<article class="preview">
+  <header>
+    <article is=avatar>
+      <a slot=userlink href=/@loic-fuentes/>
+        <img slot=userpicture src=https://dev.neomad.org/static/uploads/avatars/5924a89801e5cd001678cfe4 alt>
+      </a>
+    </article>
+    <article is=articleMeta>
+      <a slot=user href=/@loic-fuentes/>Loïc Fuentes</a>
+      <time slot=date>21 February, 1987</time>
+      <p slot=time><span>15</span> min read</p>
+    </article>
+  </header>
+  
+  <main is=articlePreview>
+    <a slot=link href=/@loic-fuentes/id-article/>
+      <h1 slot=title>Mon premier article sur vueJS</h1>
+      <img slot=picture src=https://dev.neomad.org/static/images/article.png>
+      <p slot=content>
+        Ceci est un aperçu des premières lignes de mon article sur vueJS,
+        Il n'y a pas de fautes, jusqu'a présent, et offre un preview sur un
+        contenu qui semble sooooo fabulous.
+      </p>
+    </a>
+  </main>
+  
+  <footer is=button>
+    <a slot=read href>Read more</a>
+  </footer>
+  
+</article>
 
 <script src=/dist/build.js></script>
