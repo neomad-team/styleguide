@@ -3,8 +3,9 @@ import Vue from 'vue'
 // import Meta from './atoms/Meta.vue'
 import Header from './molecules/Meta.vue'
 import Content from './molecules/Content.vue'
+import avatare from './molecules/avatare.vue'
 
 new Vue({
   el: '.meta',
-  components: { Header, Content}
+  components: {Header, Content, avatare}
 })
