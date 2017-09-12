@@ -1,7 +1,10 @@
 import Vue from 'vue'
-import avatar from './avatar.vue'
+// import Avatar from './atoms/Avatar.vue'
+// import Meta from './atoms/Meta.vue'
+import Header from './molecules/Meta.vue'
+import Content from './molecules/Content.vue'
 
 new Vue({
-  el: '#app',
-  components: {avatar}
+  el: '.meta',
+  components: { Header, Content}
 })

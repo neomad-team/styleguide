@@ -2,9 +2,25 @@
 <meta charset=utf-8>
 <title>Neomad styleguide feat vueJS</title>
 
-<div id=app>
-  <avatar></avatar>
-  <div is=avatar></div>
-</div>
+<style media="screen">
+html {
+  font-size: 62.5%;
+  font-size: calc(1em * 0.625);  
+}
+body {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+</style>
+
+<div id=app></div>
+
+<header class=meta>
+  <div is=Header></div>
+  <div is=Content></div>
+</header>
 
 <script src=/dist/build.js></script>
