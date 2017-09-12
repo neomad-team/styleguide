@@ -1,38 +1,17 @@
-# Neomad's Styleguide
+# Neomad styleguide
 
-## Installation
+> neomad's styleguide feat vueJS
 
-Install node dependencies:
+## Installation steps
 
-```
-npm install
-```
+### Install dependencies
 
-## TODO
+`npm install`
 
-- Building instructions
-- Methodology
+### Test with reload
 
-## Organizing CSS properties
+`npm run dev`
 
-To keep every CSS declaration readable, let's follow some rules _(TODO: find a linter)_
+### Build for prod
 
-- put spaces at the proper spaces
-        <pre>
-            .my-class {
-                property: value
-            }
-        </pre>
-- follow the order
-    - Display values (for Flexbox, add children properties after)
-    - Positionning value
-    - Box values (width, height, margin, padding, border)
-
-
-## Source tree
-
-- 00-base:
-    - _variables.css: list all variables
-    - __mixins.css: could be added there_
-- 01-atoms:
-    -
+`npm run build`
