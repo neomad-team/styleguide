@@ -1,3 +1,4 @@
+<style scoped>
 input,
 textarea {
   border: 1px solid #aaa;
@@ -13,17 +14,18 @@ textarea:focus {
   border-color: #555;
 }
 
-.form-row {
+form > div {
   margin: 1rem 0;
   display: flex;
   align-items: center;
 }
-.form-row label {
+form > div > label {
   min-width: 5rem;
   padding-right: 1rem;
 }
-.form-row input,
-.form-row textarea, {
+input,
+button,
+textarea, {
   display: inline-block;
   min-width: 20rem;
 }
@@ -40,7 +42,7 @@ form.login {
 form.login label + input {
   flex-grow: 1;
 }
-form.login input[type=submit] {
+form.login [type=submit] {
   width: 100%;
   margin-left: 0;
 }
@@ -49,3 +51,6 @@ form.login hr {
   border-bottom: 1px solid #ccc;
   margin: 1rem 0;
 }
+</style>
+
+<template><form><slot></slot></form></template>

@@ -2,8 +2,6 @@
 @import 'link.css';
 @import 'avatars.css';
 @import 'articles.css';
-@import 'buttons.css';
-@import 'forms.css';
 
 body > hr {
   border: 1px dashed #ccc;

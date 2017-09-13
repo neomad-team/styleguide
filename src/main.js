@@ -1,11 +1,15 @@
 import Vue from 'vue'
 // atoms
-import Button from './atoms/buttons.vue'
-import Avatar from './atoms/avatar.vue'
+import XButton from './atoms/x-button.vue'
+import XInput from './atoms/x-input.vue'
+import XForm from './components/x-form.vue'
+
 
 new Vue({
   el: '#body',
   components: {
-    NButton: Button, Avatar
+    'x-button': XButton,
+    'x-input': XInput,
+    'x-form': XForm
   }
 })
