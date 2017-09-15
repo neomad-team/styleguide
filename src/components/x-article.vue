@@ -1,0 +1,35 @@
+<style scoped>
+  @import '../main.css';
+
+
+  article.preview {
+    margin: 2rem;
+    background-color: #fff;
+    max-width: 20rem;
+  }
+  article.preview {
+    box-shadow: 0 0 3px #eee;
+    padding: 1em;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    border: 1px solid #e9e9e9;
+  }
+  article.preview header {
+    font-size: .9em;
+    text-decoration: none;
+    display: flex;
+    border-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+    line-height: 1.2em;
+  }
+  article.preview > header img {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+  article.preview > section img {
+    max-width: 100%;
+  }
+</style>
+
+<template><article><slot></slot></article></template>

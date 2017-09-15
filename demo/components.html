@@ -36,10 +36,10 @@
 
   <h2>Article preview</h2>
 
-  <article class=preview>
+  <x-article class=preview>
     <header>
-      <a class=avatar href=/@john-doe/>
-        <img src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7>
+      <a href=/@john-doe/>
+        <x-avatar src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7></x-avatar>
       </a>
       <div>
         <a href=/@john-doe/>John Doe</a>
@@ -57,7 +57,23 @@
         Sujet de conférence. Ces 2 derniers jours – comme chaque année à cette période – a eu lieu la rencontre MiXiT. Au-delà de la conférence, ce qui fait la beauté de cet évènement, ce sont les...
       </a>
     </section>
-  </article>
+  </x-article>
+
+
+  <h2>Menu</h2>
+
+  <x-menu>
+    <a href="/articles/" title="Read Neomad's adventures">Read</a>
+    <a href="/around/">Around me</a>
+    <x-avatar src=/static/uploads/avatars/5914dbdca193770016e289a7 alt=""></x-avatar>
+    <nav>
+      <a href="/@vinyll/">Profile</a>
+      <a href="/privacy/">Privacy settings</a>
+      <a href="/logout/">Logout</a>
+    </nav>
+  </x-menu>
+
+
 </div>
 
 <script src=/dist/build.js></script>
