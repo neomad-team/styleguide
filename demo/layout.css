@@ -1,0 +1,15 @@
+body {
+  background-color: f6f6f6;
+  padding: 5rem;
+}
+
+body > h2 {
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+}
+
+body > h2:first-of-type {
+  border-top: none;
+}
