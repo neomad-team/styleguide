@@ -3,3 +3,7 @@
   --interactive-color-highlight: #22875c;
   font-family: Helvetica, sans-serif;
 }
+
+a {
+  color: var(--interactive-color);
+}
