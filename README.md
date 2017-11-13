@@ -2,11 +2,8 @@
 
 ## Installation
 
-Install node dependencies:
+No Installation required
 
-```
-npm install
-```
 
 ## TODO
 
