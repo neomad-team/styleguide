@@ -1,4 +1,4 @@
-@import "../00-base/_variables.css";
+@charset "UTF-8";
 
 /*------------------------------------*\
 #BUTTONS
@@ -22,11 +22,12 @@ input[type=submit] {
   border: 0.125rem solid var(--greenLink);
   border-radius: 0.5rem;
   transition: all .3s ease;
+}
 
-  &:hover {
-    color: #fff;
-    background-color: var(--greenLinkHover);
-    border: 0.125rem solid var(--greenLinkHover);
-  }
-
+.button:hover,
+button:hover,
+input[type=submit]:hover {
+  color: #fff;
+  background-color: var(--greenLinkHover);
+  border: 0.125rem solid var(--greenLinkHover);
 }
