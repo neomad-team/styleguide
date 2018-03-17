@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.st-main {
+  width: 70rem;
+}
+
 .st-section {
   margin-bottom: 3rem;
 }
