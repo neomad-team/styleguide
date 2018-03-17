@@ -57,7 +57,7 @@ h2.st-title {
   border-radius: 8px;
 }
 
-.st-colors li:not(:last-child) {
+.st-colors li {
   margin: 0 1% 10px 0;
 }
 
@@ -70,8 +70,8 @@ h2.st-title {
 
 /* Fonts */
 
-.st-font-head {
-  font-family: var(--head-font);
+.st-font-title {
+  font-family: var(--title-font);
 }
 
 .st-font-content {

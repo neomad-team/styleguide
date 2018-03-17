@@ -29,8 +29,8 @@ input[type=submit]:hover {
 }
 
 .reverse {
-  background-color: var(--primary-color);
   color: var(--white);
+  background-color: var(--primary-color);
   border: 0.125rem solid var(--primary-color);
 }
 

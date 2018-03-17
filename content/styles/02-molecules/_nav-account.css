@@ -6,8 +6,8 @@
   padding: 1rem 2rem;
   height: 0;
   opacity: 0;
-  background-color: #fff;
-  box-shadow: 0 0 6px rgba(50, 50, 50, .2);
+  background-color: var(--white);
+  box-shadow: 0 0 6px var(--shadow-color);
   border-radius: 3px;
   transition: all .3s;
 }
@@ -20,8 +20,8 @@
   display: block;
   width: 2rem;
   height: 2rem;
-  background-color: #fff;
-  box-shadow: -1px -1px 1px -1px rgba(50, 50, 50, .2);
+  background-color: var(--white);
+  box-shadow: -1px -1px 1px -1px var(--shadow-color);
   transform: rotate(45deg);
   transition: all .3s;
 }

@@ -9,9 +9,9 @@
   --gray: #333;
   --white: #fff;
   
-  --gray-opacity: rgba(50, 50, 50, 0.15);
+  --shadow-color: rgba(50, 50, 50, 0.15);
   
-  --head-font: 'Poppins', Arial, sans-serif;
+  --title-font: 'Poppins', Arial, sans-serif;
   --content-font: 'Open sans', Arial, sans-serif;
   --blog-font: 'Merryweather', Arial, sans-serif;
 }

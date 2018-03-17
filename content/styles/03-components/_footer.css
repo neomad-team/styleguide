@@ -1,6 +1,6 @@
 footer {
   padding: 3rem 0;
-  box-shadow: 0 -2px 0 var(--gray-opacity);
+  box-shadow: 0 -2px 0 var(--shadow-color);
   background-color: var(--white);
   z-index: 1;
 }
