@@ -6,7 +6,10 @@
   --secondary-bg-color: #fafafa;
   
   --black: #000;
+  --gray: #333;
   --white: #fff;
+  
+  --gray-opacity: rgba(50, 50, 50, 0.15);
   
   --head-font: 'Poppins', Arial, sans-serif;
   --content-font: 'Open sans', Arial, sans-serif;

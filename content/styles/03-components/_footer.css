@@ -1,7 +1,7 @@
 footer {
   padding: 3rem 0;
-  border-top: 3px solid #eee;
-  background-color: #fff;
+  box-shadow: 0 -2px 0 var(--gray-opacity);
+  background-color: var(--white);
   z-index: 1;
 }
 
