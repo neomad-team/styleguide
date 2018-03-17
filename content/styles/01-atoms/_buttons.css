@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-/*------------------------------------*\
-#BUTTONS
-\*------------------------------------*/
-
 button,
 input[type=submit]  {
   font-size: inherit;
@@ -16,10 +12,11 @@ button,
 input[type=submit] {
   display: inline-block;
   padding: 0.8rem 2.5rem;
-  color: var(--greenLink);
+  margin: 10px 0;
+  color: var(--primary-color);
   text-align: center;
-  background-color: #fff;
-  border: 0.125rem solid var(--greenLink);
+  background-color: var(--white);
+  border: 0.125rem solid var(--primary-color);
   border-radius: 0.5rem;
   transition: all .3s ease;
 }
@@ -27,7 +24,18 @@ input[type=submit] {
 .button:hover,
 button:hover,
 input[type=submit]:hover {
-  color: #fff;
-  background-color: var(--greenLinkHover);
-  border: 0.125rem solid var(--greenLinkHover);
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.reverse {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 0.125rem solid var(--primary-color);
+}
+
+.reverse:hover {
+  color: var(--primary-color);
+  background-color: var(--white);
+  border: 0.125rem solid var(--primary-color);
 }

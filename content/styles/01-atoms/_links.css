@@ -1,14 +1,9 @@
-/*------------------------------------*\
-#LINKS
-\*------------------------------------*/
-
 a {
-  color: var(--greenLink);
+  color: var(--primary-color);
   text-decoration: none;
   transition: color .3s;
+}
 
-  &:hover {
-    /*color: #00bf6b;*/
-    color: var(--greenLinkHover);
-  }
+a:hover {
+  color: var(--secondary-color);
 }

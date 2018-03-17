@@ -1,18 +1,12 @@
-@charset "UTF-8";
-
-/*------------------------------------*\
-#FOOTER
-\*------------------------------------*/
-
 footer {
   padding: 3rem 0;
   border-top: 3px solid #eee;
   background-color: #fff;
   z-index: 1;
+}
 
-  & nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

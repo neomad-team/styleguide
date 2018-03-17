@@ -1,56 +1,62 @@
 @charset "UTF-8";
 
-/*------------------------------------*\
-    #STYLEGUIDE
-\*------------------------------------*/
-
 .st-section {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .st-article {
-    padding-bottom: 3rem;
-    border-bottom: 5px solid #000;
+  padding-bottom: 3rem;
+  border-bottom: 5px solid var(--black);
 }
 
 .st-container {
-    padding: 10px;
-    background-color: #ccc;
+  padding: 10px;
+  background-color: var(--secondary-bg-color);
 }
 
 .st-container > header {
-    position: relative;
+  position: relative;
 }
 
 .st-title {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h1.st-title {
-    text-align: center;
-    font-size: 4rem;
+  text-align: center;
+  font-size: 4rem;
 }
 
 h2.st-title {
-    font-size: 3rem;
-    margin-left: 2rem;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+/* Structure */
+
+.st-colors,
+.st-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Colors */
-.st-colors {
-  display: flex;
-}
 
 .st-colors li {
-  width: 25%;
-  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+  border: 1px solid var(--black);
   text-align: center;
   border-radius: 8px;
 }
 
 .st-colors li:not(:last-child) {
-  margin-right: 1%;
+  margin: 0 1% 10px 0;
 }
+
 .st-colors span:first-of-type {
   display: block;
   width: 100%;
@@ -58,16 +64,16 @@ h2.st-title {
   border-radius: 8px 8px 0 0;
 }
 
-
 /* Fonts */
-.st-font-opensans {
-    font-family: "open sans", Arial, sans-serif;
+
+.st-font-head {
+  font-family: var(--head-font);
 }
 
-.st-font-poppins {
-    font-family: 'Poppins', Arial, sans-serif;
+.st-font-content {
+  font-family: var(--content-font);
 }
 
-.st-font-merryweather {
-    font-family: 'Merryweather', Arial, sans-serif;
+.st-font-blog {
+  font-family: var(--blog-font);
 }
