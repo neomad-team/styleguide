@@ -1,0 +1,16 @@
+label {
+  font-weight: bold;
+  color: var(--gray);
+  text-transform: uppercase;
+  display: inline-block;
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  color: var(--gray);
+  border: .1rem solid var(--shadow-color);
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  padding: 1rem;
+}

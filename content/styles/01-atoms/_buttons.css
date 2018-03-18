@@ -11,13 +11,13 @@ input[type=submit]  {
 button,
 input[type=submit] {
   display: inline-block;
-  padding: 0.8rem 2.5rem;
-  margin: 10px 0;
+  padding: .8rem 2.5rem;
+  margin: 1rem 0;
   color: var(--primary-color);
   text-align: center;
   background-color: var(--white);
-  border: 0.125rem solid var(--primary-color);
-  border-radius: 0.5rem;
+  border: .125rem solid var(--primary-color);
+  border-radius: .5rem;
   transition: all .3s ease;
 }
 
@@ -31,11 +31,11 @@ input[type=submit]:hover {
 .reverse {
   color: var(--white);
   background-color: var(--primary-color);
-  border: 0.125rem solid var(--primary-color);
+  border: .125rem solid var(--primary-color);
 }
 
 .reverse:hover {
   color: var(--primary-color);
   background-color: var(--white);
-  border: 0.125rem solid var(--primary-color);
+  border: .125rem solid var(--primary-color);
 }

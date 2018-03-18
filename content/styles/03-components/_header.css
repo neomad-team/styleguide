@@ -8,7 +8,7 @@
   width: 100%;
   padding: 1rem;
   background-color: var(--white);
-  box-shadow: 0 2px 0 var(--shadow-color);
+  box-shadow: 0 .2rem 0 var(--shadow-color);
   z-index: 9;
 }
 
@@ -39,8 +39,8 @@
 
 .main-header > nav .button {
   background-color: var(--primary-bg-color);
-  border: 1px solid var(--gray);
-  border-radius: 5px;
+  border: .1rem solid var(--gray);
+  border-radius: .5rem;
 }
 
 .main-header > nav .button:hover {
