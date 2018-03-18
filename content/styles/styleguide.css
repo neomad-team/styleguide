@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Structure */
+
 .st-main {
   width: 70rem;
 }
@@ -22,6 +24,19 @@
   position: relative;
 }
 
+.st-colors,
+.st-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.st-full {
+  width: 100%;
+}
+
+/* Title */
+
 .st-title {
   text-decoration: underline;
 }
@@ -34,15 +49,6 @@ h1.st-title {
 h2.st-title {
   font-size: 3rem;
   margin-left: 2rem;
-}
-
-/* Structure */
-
-.st-colors,
-.st-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /* Colors */
