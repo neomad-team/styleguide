@@ -1,11 +1,12 @@
+@import "00-base/_body.css";
 @import "00-base/_fonts.css";
 @import "00-base/_variables.css";
-@import "00-base/_body.css";
 
 @import "01-atoms/_buttons.css";
 @import "01-atoms/_figures.css";
 @import "01-atoms/_forms.css";
 @import "01-atoms/_headings.css";
+@import "01-atoms/_images.css";
 @import "01-atoms/_links.css";
 @import "01-atoms/_lists.css";
 
