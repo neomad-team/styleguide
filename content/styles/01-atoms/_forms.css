@@ -7,10 +7,70 @@ label {
   margin-bottom: 2rem;
 }
 
-input {
+input,
+select,
+.select {
   color: var(--gray);
-  border: .1rem solid var(--shadow-color);
+  background: var(--white);
+  border: none;
   font-size: 1.7rem;
+  height: 5rem;
   border-radius: .5rem;
-  padding: 1rem;
+  padding: 0 1.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  padding: 0;
+  line-height: 3;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  color: var(--gray);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  height: 0;
+  position: absolute;
+  right: 2rem;
+  background: var(--white);
+}
+.select::after {
+  color: var(--primary-color);
+}
+.select:hover::after {
+  color: var(--secondary-color);
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+option {
+  font-size: 1.5rem;
 }
