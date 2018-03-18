@@ -29,27 +29,26 @@ select {
   outline: 0;
   box-shadow: none;
   background-image: none;
-}
-/* Custom Select */
-.select {
-  position: relative;
-  display: block;
-  padding: 0;
-  line-height: 3;
-}
-select {
-  width: 100%;
-  height: 100%;
-  margin: 0;
   padding: 0 0 0 1rem;
-  color: var(--gray);
-  cursor: pointer;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 select::-ms-expand {
   display: none;
+}
+
+option {
+  font-size: 1.5rem;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  padding: 0;
+  line-height: 3;
 }
 /* Arrow */
 .select::after {
@@ -69,8 +68,4 @@ select::-ms-expand {
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
-}
-
-option {
-  font-size: 1.5rem;
 }
