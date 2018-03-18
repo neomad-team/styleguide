@@ -8,17 +8,23 @@ label {
 }
 
 input,
+textarea,
 select,
 .select {
   color: var(--gray);
   background: var(--white);
   border: none;
+  font-family: var(--content-font);
   font-size: 1.7rem;
   height: 5rem;
   border-radius: .5rem;
-  padding: 0 1.5rem;
+  padding: 1.5rem;
   width: 100%;
   cursor: pointer;
+}
+
+textarea {
+  min-height: 9.5rem;
 }
 
 select {
@@ -55,14 +61,14 @@ option {
   content: '\25BC';
   height: 0;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   background: var(--white);
 }
 .select::after {
-  color: var(--primary-color);
+  color: var(--gray);
 }
 .select:hover::after {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .select::after {
   -webkit-transition: .25s all ease;
