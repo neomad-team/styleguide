@@ -1,3 +1,28 @@
+input,
+textarea,
+select,
+.select {
+  font-family: var(--content-font);
+  color: var(--gray);
+  background: var(--white);
+  border: none;
+  width: 100%;
+  font-size: 1.7rem;
+  height: 5rem;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  color: var(--primary-color);
+}
+
+/* LABEL */
+
 label {
   font-weight: bold;
   color: var(--gray);
@@ -7,25 +32,59 @@ label {
   margin-bottom: 2rem;
 }
 
-input,
-textarea,
-select,
-.select {
-  color: var(--gray);
-  background: var(--white);
-  border: none;
-  font-family: var(--content-font);
-  font-size: 1.7rem;
-  height: 5rem;
-  border-radius: .5rem;
-  padding: 1.5rem;
-  width: 100%;
-  cursor: pointer;
-}
+/* TEXTAREA */
 
 textarea {
   min-height: 9.5rem;
 }
+
+/* CHECKBOX */
+
+input[type=checkbox], 
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 3rem;
+  width: 3rem;
+  background: var(--shadow-color);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+}
+input[type=checkbox]:hover, 
+input[type=radio]:hover {
+  background: var(--primary-color);
+}
+input[type=checkbox]:checked, 
+input[type=radio]:checked {
+  background: var(--primary-color);
+}
+
+input[type=checkbox]:checked::before,
+input[type=radio]:checked::before {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+input[type=radio] {
+  border-radius: 50%;
+}
+
+/* SELECT */
 
 select {
   -webkit-appearance: none;
@@ -65,7 +124,7 @@ option {
   background: var(--white);
 }
 .select::after {
-  color: var(--gray);
+  color: var(--shadow-color);
 }
 .select:hover::after {
   color: var(--primary-color);
@@ -74,4 +133,85 @@ option {
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
+}
+
+/* RANGE */
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: .5rem;
+  background: var(--shadow-color);
+  border: none;
+  border-radius: .3rem;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+  margin-top: -0.4rem;
+}
+
+input[type=range]:focus {
+  outline: var(--primary-color);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: var(--shadow-color);
+}
+
+input[type=range]::-moz-range-track {
+  height: 0.5rem;
+  background: var(--shadow-color);
+  border: none;
+  border-radius: .3rem;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+input[type=range]:-moz-focusring {
+    outline: .1rem solid var(--white);
+    outline-offset: -0.1rem;
+}
+
+input[type=range]::-ms-track {
+    height: .5rem;
+    background: transparent;
+    border-color: transparent;
+    border-width: .6rem 0;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: var(--shadow-color);
+    border-radius: 1rem;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: var(--shadow-color);
+    border-radius: 1rem;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    background: var(--shadow-color);
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: var(--shadow-color);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: var(--shadow-color);
 }

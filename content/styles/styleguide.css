@@ -25,7 +25,9 @@
 }
 
 .st-colors,
-.st-buttons {
+.st-buttons,
+.st-checkbox,
+.st-radio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
