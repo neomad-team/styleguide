@@ -2,22 +2,23 @@
 
 ## Installation
 
-No Installation required
+No Installation required.
+
+## TODO
+
+Find a linter.
 
 ## Organizing CSS properties
 
-To keep every CSS declaration readable, let's follow some rules _(TODO: find a linter)_
+To keep every CSS declaration readable, let's follow some rules:
 
-- put spaces at the proper spaces
+- put spaces at the proper spaces:
 ```
-  <tag>
-    .my-class {
-      property: value
-    }
-  </tag>
+.my-class {
+  property: value;
+}
 ```
-
-- follow the order
+- follow the order:
     - Display values (for Flexbox, add children properties after)
     - Positionning value
     - Box values (width, height, margin, padding, border)
@@ -36,4 +37,4 @@ To keep every CSS declaration readable, let's follow some rules _(TODO: find a l
     - _headings.css_
     - _images.css_
     - _links.css_
-    - _lsits.css_
+    - _lists.css_
