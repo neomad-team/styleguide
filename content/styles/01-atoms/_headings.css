@@ -1,10 +1,19 @@
-/*------------------------------------*\
-#HEADINGS
-\*------------------------------------*/
-
 h1,
 h2,
-h3 {
-  font-family: 'Poppins';
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
   font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.5rem;
 }

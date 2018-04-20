@@ -1,9 +1,14 @@
-/*------------------------------------*\
-#AVATAR
-\*------------------------------------*/
-.avatar img {
-  display: inline-block;
-  vertical-align: middle;
-  border: 1px solid #666;
+.avatar {
+  border: .1rem solid var(--gray);
   border-radius: 50%;
+}
+
+.avatar-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.avatar-icon {
+  width: 3.5rem;
+  height: 3.5rem;
 }

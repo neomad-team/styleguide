@@ -1,11 +1,17 @@
-/* custom properties */
 :root {
-
-  /* Colors */
-  --greenLink: #279e6a;
-  --greenLinkHover: #2cbe4e;
-
-  --blackFont: #000;
-
-  --greyBg: #fafafa;
+  --primary-color: #3dd07d;
+  --secondary-color: #4e8;
+    
+  --primary-bg-color: #fefefe;
+  --secondary-bg-color: #fafafa;
+  
+  --black: #000;
+  --gray: #333;
+  --white: #fff;
+  
+  --shadow-color: rgba(50, 50, 50, 0.15);
+  
+  --title-font: 'Poppins', Arial, sans-serif;
+  --content-font: 'Maven Pro', Arial, sans-serif;
+  --blog-font: 'Merryweather', Arial, sans-serif;
 }

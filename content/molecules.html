@@ -1,14 +1,24 @@
 <!DOCTYPE html>
+
 <meta charset=utf-8>
 <title>Styleguide - Neomad</title>
 <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/styleguide.css">
-<link rel="stylesheet" href="styles/02-molecules/_avatar.css">
+<link rel=stylesheet href=styles/main.css>
+<link rel=stylesheet href=styles/styleguide.css>
 
-<div class=wrapper>
+<header class=main-header>
+  <h1>
+    <a href=index.html>Neomad - Styleguide</a>
+  </h1>
+  <nav>
+    <a href=atoms.html>Atoms</a>
+    <a href=molecules.html>Molecules</a>
+    <a href=header-footer.html>Header-Footer</a>
+  </nav>
+</header>
 
+<main class=st-main>
   <h1 class=st-title>Molecules</h1>
   <section class=st-section>
 
@@ -17,11 +27,9 @@
 
       <div class=st-container>
         <h3>Avatar in header</h3>
-        <div class=avatar>
-          <img src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7 class=avatar-img width=35 height=35>
+        <div id=avatar-menu>
+          <img src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7 class=avatar-img>
         </div>
-
-        <h3></h3>
       </div>
     </article>
     
@@ -40,8 +48,6 @@
       </div>
       <button type=submit value="Send this form"></button>
     </form>
+  </section>
 
-
-</section>
-
-</div>
+</main>

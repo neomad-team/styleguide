@@ -1,73 +1,91 @@
 @charset "UTF-8";
 
-/*------------------------------------*\
-    #STYLEGUIDE
-\*------------------------------------*/
+/* Structure */
+
+.st-main {
+  width: 70rem;
+}
 
 .st-section {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .st-article {
-    padding-bottom: 3rem;
-    border-bottom: 5px solid #000;
+  padding-bottom: 3rem;
+  border-bottom: .5rem solid var(--black);
 }
 
 .st-container {
-    padding: 10px;
-    background-color: #ccc;
+  padding: 1rem;
+  background-color: var(--secondary-bg-color);
 }
 
 .st-container > header {
-    position: relative;
+  position: relative;
 }
 
+.st-colors,
+.st-buttons,
+.st-checkbox,
+.st-radio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.st-full {
+  width: 100%;
+}
+
+/* Title */
+
 .st-title {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h1.st-title {
-    text-align: center;
-    font-size: 4rem;
+  text-align: center;
+  font-size: 4rem;
 }
 
 h2.st-title {
-    font-size: 3rem;
-    margin-left: 2rem;
+  font-size: 3rem;
+  margin-left: 2rem;
 }
 
 /* Colors */
-.st-colors {
+
+.st-colors li {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+  border: .1rem solid var(--shadow-color);
+  text-align: center;
+  border-radius: .8rem;
 }
 
 .st-colors li {
-  width: 25%;
-  border: 1px solid #000;
-  text-align: center;
-  border-radius: 8px;
+  margin: 0 1% 1rem 0;
 }
 
-.st-colors li:not(:last-child) {
-  margin-right: 1%;
-}
 .st-colors span:first-of-type {
   display: block;
   width: 100%;
   height: 50px;
-  border-radius: 8px 8px 0 0;
+  border-radius: .8rem .8rem 0 0;
 }
-
 
 /* Fonts */
-.st-font-opensans {
-    font-family: "open sans", Arial, sans-serif;
+
+.st-font-title {
+  font-family: var(--title-font);
 }
 
-.st-font-poppins {
-    font-family: 'Poppins', Arial, sans-serif;
+.st-font-content {
+  font-family: var(--content-font);
 }
 
-.st-font-merryweather {
-    font-family: 'Merryweather', Arial, sans-serif;
+.st-font-blog {
+  font-family: var(--blog-font);
 }
