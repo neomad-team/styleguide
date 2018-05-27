@@ -1,6 +1,7 @@
 @import "00-base/body.css";
 @import "00-base/fonts.css";
 @import "00-base/variables.css";
+@import "00-base/fontawesome.css";
 
 @import "01-atoms/buttons.css";
 @import "01-atoms/figures.css";
@@ -9,9 +10,11 @@
 @import "01-atoms/images.css";
 @import "01-atoms/links.css";
 @import "01-atoms/lists.css";
+@import "01-atoms/time.css";
 
 @import "02-molecules/avatar.css";
 @import "02-molecules/nav-account.css";
+@import "02-molecules/meta.css";
 
 @import "03-components/header.css";
 @import "03-components/footer.css";

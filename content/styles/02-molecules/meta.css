@@ -1,0 +1,17 @@
+.meta {
+  display: flex;
+  align-items: center;
+  font-size: 1.85rem;
+  border-bottom: 1rem;
+  font-family: var(--content-font);
+  color: #aaa;
+  line-height: 2rem;
+}
+
+.meta .meta-data {
+  margin-left: 1.75rem;
+}
+
+.meta .meta-data a {
+  display: block;
+}
