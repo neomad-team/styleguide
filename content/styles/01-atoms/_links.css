@@ -7,3 +7,16 @@ a {
 a:hover {
   color: var(--secondary-color);
 }
+
+a::before {
+  font-family: "fontawesome";
+  font-size: 3.5rem;
+}
+
+a.github::before {
+  content: "\f09b";
+}
+
+a.contact::before {
+  content: "\f0e0";
+}
