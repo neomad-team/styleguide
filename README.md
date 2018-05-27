@@ -49,6 +49,7 @@ _styleguide.css_: style only use to present styleguide
     - _avatar.css_
     - _nav-account.css_
     - _meta.css_
+    - _feature.css_
     
   - 03-components:
     - _header.css_
