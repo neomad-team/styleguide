@@ -1,0 +1,13 @@
+.hero h2, 
+.hero h3 {
+  color: var(--white);
+}
+
+.hero h2 {
+  font-size: 8rem;
+  margin-bottom: 0;
+}
+
+.hero .button {
+  
+}

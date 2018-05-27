@@ -17,6 +17,7 @@
 @import "02-molecules/meta.css";
 @import "02-molecules/feature.css";
 @import "02-molecules/preview.css";
+@import "02-molecules/hero.css";
 
 @import "03-components/header.css";
 @import "03-components/footer.css";

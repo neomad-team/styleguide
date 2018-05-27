@@ -43,3 +43,20 @@ input[type=submit]:hover {
   font-size: 2rem;
   content: "\f518";
 }
+
+.sign {
+  background-color: var(--primary-sign-color);
+  border: .125rem solid var(--primary-sign-color);
+}
+
+.sign:hover {
+  background-color: var(--secondary-sign-color);
+  border: .125rem solid var(--secondary-sign-color);
+}
+
+.sign::before {
+  margin-right: 2rem;
+  font-family: "fontawesome solid";
+  font-size: 2rem;
+  content: "\f234";
+}
