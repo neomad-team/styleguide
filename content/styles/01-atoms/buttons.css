@@ -13,9 +13,9 @@ input[type=submit] {
   display: inline-block;
   padding: .8rem 2.5rem;
   margin: 1rem 0;
-  color: var(--primary-color);
+  color: var(--white);
   text-align: center;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   border: .125rem solid var(--primary-color);
   border-radius: .5rem;
   transition: all .3s ease;
@@ -25,17 +25,21 @@ input[type=submit] {
 button:hover,
 input[type=submit]:hover {
   color: var(--white);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
-.reverse {
-  color: var(--white);
-  background-color: var(--primary-color);
-  border: .125rem solid var(--primary-color);
+.read {
+  display: flex;
+  justify-content: center;
+  padding: .5rem 2.5rem;
+  max-width: 50%;
+  margin: 2rem auto 0;
 }
 
-.reverse:hover {
-  color: var(--primary-color);
-  background-color: var(--white);
-  border: .125rem solid var(--primary-color);
+.read::before {
+  margin-right: 2rem;
+  font-family: "fontawesome solid";
+  font-size: 2rem;
+  content: "\f518";
 }
