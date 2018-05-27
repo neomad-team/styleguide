@@ -13,10 +13,10 @@
 }
 
 .nav-account:before {
-  content: '';
   position: absolute;
   top: -1rem;
   right: 2rem;
+  content: "";
   display: block;
   width: 2rem;
   height: 2rem;

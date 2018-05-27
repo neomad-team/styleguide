@@ -7,9 +7,9 @@
 }
 
 .preview a:hover figure::before {
+  bottom: -0.5rem;
   color: var(--secondary-color);
   font-size: 8rem;
-  bottom: -0.5rem;
 }
 
 .preview h1 {
@@ -18,8 +18,8 @@
 }
 
 .preview figure {
-  padding: 1.5rem 0;
   position: relative;
+  padding: 1.5rem 0;
 }
 
 .preview figure::before {

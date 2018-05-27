@@ -44,17 +44,17 @@ input[type=submit]:hover {
   content: "\f518";
 }
 
-.sign {
-  background-color: var(--primary-sign-color);
-  border: .125rem solid var(--primary-sign-color);
+.strong {
+  background-color: var(--primary-strong-color);
+  border: .125rem solid var(--primary-strong-color);
 }
 
-.sign:hover {
-  background-color: var(--secondary-sign-color);
-  border: .125rem solid var(--secondary-sign-color);
+.strong:hover {
+  background-color: var(--secondary-strong-color);
+  border: .125rem solid var(--secondary-strong-color);
 }
 
-.sign::before {
+.strong::before {
   margin-right: 2rem;
   font-family: "fontawesome solid";
   font-size: 2rem;
