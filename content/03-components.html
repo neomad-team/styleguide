@@ -7,14 +7,16 @@
 <link rel=stylesheet href=styles/main.css>
 <link rel=stylesheet href=styles/styleguide.css>
 
+<script src=js/utils.js></script>
+
 <header class=main-header>
   <h1>
-    <a href=index.html>Neomad - Styleguide</a>
+    <a href=00-index.html>Neomad - Styleguide</a>
   </h1>
   <nav>
-    <a href=atoms.html>Atoms</a>
-    <a href=molecules.html>Molecules</a>
-    <a href=header-footer.html>Header-Footer</a>
+    <a href=01-atoms.html>Atoms</a>
+    <a href=02-molecules.html>Molecules</a>
+    <a href=03-components.html>Components</a>
   </nav>
 </header>
 
@@ -46,7 +48,9 @@
           <a href=#>Around you</a>
 
           <div id=avatar-menu>
-            <img src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7 class=avatar-img>
+            <img
+              src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
+              class="avatar avatar-icon">
           </div>
 
           <nav id=menu class=nav-account>
@@ -61,16 +65,22 @@
   </section>
 
   <section>
-    <h1 class="st-title">Footer</h1>
+    <h1 class=st-title>Footer</h1>
     <div class=st-container>
       <footer>
         <nav class=wrapper>
-          <a href=mailto:contact+website@neomad.org>Contact us</a>
-          <a href=https://github.com/neomad-team/neomad.org>Github repository</a>
+          <a 
+            class=contact
+            href=mailto:contact+website@neomad.org
+            title="Contact us">
+          </a>
+          <a 
+            class=github
+            href=https://github.com/neomad-team/neomad.org
+            title="Github repository">
+          </a>
         </nav>
       </footer>
     </div>
   </section>
-</main>    
-  
-<script src=js/utils.js></script>
+</main>

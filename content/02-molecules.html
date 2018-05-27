@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<meta charset=utf-8>
+<title>Styleguide - Neomad</title>
+<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel=stylesheet href=styles/main.css>
+<link rel=stylesheet href=styles/styleguide.css>
+
+<header class=main-header>
+  <h1>
+    <a href=00-index.html>Neomad - Styleguide</a>
+  </h1>
+  <nav>
+    <a href=01-atoms.html>Atoms</a>
+    <a href=02-molecules.html>Molecules</a>
+    <a href=03-components.html>Components</a>
+  </nav>
+</header>
+
+<main class=st-main>
+  <h1 class=st-title>Molecules</h1>
+  <section class=st-section>
+
+    <article class=st-article>
+      <h2 class=st-title>Header</h2>
+
+      <div class="st-container st-full">
+        <header class=main-header>
+          <h1>
+            <a href=https://neomad.org>Neomad</a>
+          </h1>
+        </header>
+      </div>
+      
+      <div class="st-container st-full">
+        <header class=main-header>
+          <nav>
+            <a href=# title="Read nomad's adventures">Read</a>
+            <a href=# class=login>Log in</a>
+          </nav>
+        </header>
+      </div>
+      
+      <div class="st-container st-full">
+        <header class=main-header>
+          <div id=avatar-menu>
+            <img
+              src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
+              class="avatar avatar-icon">
+          </div>
+
+          <nav id=menu class=nav-account>
+            <a href=#>Profile</a>
+            <a href=#>Privacy settings</a>
+            <a href=#>Logout</a>
+          </nav>
+        </header>
+      </div>
+      
+      <div class="st-container st-full">
+        <header class="meta">
+          <a href=#>
+            <img
+              src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
+              class="avatar avatar-icon"
+              onerror=this.src='https://neomad.org/static/images/avatar.png'
+              alt>
+          </a>
+          
+          <div class=meta-data>
+            <a href=#>Vinyll</a>
+            <time class=time datetime="2018-05-23" 12:36:51.397000 pubdate>23 May, 2018</time>
+            <p class="time time-reading"><span>1</span> min read</p>
+          </div>
+        </header>
+      </div>
+
+    </article>
+    
+    <article class=st-article>
+      <h2 class=st-title>Footer</h2>
+      
+      <div class=st-container>
+        <footer>
+          <nav class=wrapper>
+            <a 
+              class=contact
+              href=mailto:contact+website@neomad.org
+              title="Contact us">
+            </a>
+            <a 
+              class=github
+              href=https://github.com/neomad-team/neomad.org
+              title="Github repository">
+            </a>
+          </nav>
+        </footer>
+      </div>
+
+    </article>
+    
+    <form>
+      <div>
+        <label>Email</label>
+        <input type=email placeholder=testy@example.com>
+      </div>
+      <div>
+        <label>Subject</label>
+        <input type=text placeholder="Best thing ever">
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea placeholder="You guyz are great!"></textarea>
+      </div>
+      <button type=submit value="Send this form"></button>
+    </form>
+  </section>
+
+</main>
