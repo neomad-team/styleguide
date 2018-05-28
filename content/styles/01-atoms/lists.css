@@ -4,3 +4,17 @@ ol {
   margin: 0;
   list-style: none;
 }
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profiles li {
+  margin: 1rem 2rem;
+}
+
+.profiles figcaption {
+  margin-top: .75rem;
+}

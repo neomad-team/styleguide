@@ -25,10 +25,15 @@ To keep every CSS declaration readable, let's follow some rules:
 
 ## Source tree
 
+_main.css_: call all css behind
+_styleguide.css_: style only use to present styleguide
+
 - 00-base:
-    - _body.css: base for html_
-    - _fonts.css: import of fonts_
-    - _variables.css: list all variables_
+    - _fonts/_
+    - _body.css_
+    - _fonts.css_
+    - _variables.css_
+    - _fontawesome.css_
     
 - 01-atoms:
     - _buttons.css_
@@ -38,3 +43,19 @@ To keep every CSS declaration readable, let's follow some rules:
     - _images.css_
     - _links.css_
     - _lists.css_
+    - _time.css_
+    
+  - 02-molecules:
+    - _avatar.css_
+    - _nav-account.css_
+    - _meta.css_
+    - _feature.css_
+    - _preview.css_
+    - _hero.css_
+    
+  - 03-components:
+    - _header.css_
+    - _footer.css_
+    
+  - 04-templates:
+    - _home_

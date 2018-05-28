@@ -1,0 +1,34 @@
+.preview {
+  margin: 0;
+}
+
+.preview a {
+  color: var(--black);
+}
+
+.preview a:hover figure::before {
+  bottom: -0.5rem;
+  color: var(--secondary-color);
+  font-size: 8rem;
+}
+
+.preview h1 {
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.preview figure {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.preview figure::before {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3.25rem;
+  font-family: "fontawesome solid";
+  content: "\f2f6";
+  color: var(--primary-color);
+  transition: all .3s ease;
+}

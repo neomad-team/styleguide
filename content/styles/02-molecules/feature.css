@@ -1,0 +1,15 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem 2rem;
+  background: var(--primary-bg-color);
+}
+
+.feature li {
+  margin-bottom: 1.25rem;
+}
+
+.feature .button {
+  margin: 2rem 5rem 0;
+}
