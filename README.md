@@ -45,7 +45,7 @@ _styleguide.css_: style only use to present styleguide
     - _lists.css_
     - _time.css_
     
-  - 02-molecules:
+- 02-molecules:
     - _avatar.css_
     - _nav-account.css_
     - _meta.css_
@@ -53,9 +53,9 @@ _styleguide.css_: style only use to present styleguide
     - _preview.css_
     - _hero.css_
     
-  - 03-components:
+- 03-components:
     - _header.css_
     - _footer.css_
     
-  - 04-templates:
+- 04-templates:
     - _home_
