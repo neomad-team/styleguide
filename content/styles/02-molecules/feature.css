@@ -7,7 +7,29 @@
 }
 
 .feature li {
+  display: flex;
+  align-items: center;
   margin-bottom: 1.25rem;
+}
+
+.feature li::before {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+
+.feature ul li::before {
+  content: var(--circle);
+}
+
+.feature ol {
+  counter-reset: counter;
+}
+
+.feature ol li::before {
+  counter-increment: counter;
+  content: counter(counter);
+  font-size: 1.7rem;
 }
 
 .feature .button {
