@@ -37,13 +37,6 @@ input[type=submit]:hover {
   margin: 2rem auto 0;
 }
 
-.read::before {
-  margin-right: 2rem;
-  font-family: "fontawesome solid";
-  font-size: 2rem;
-  content: "\f518";
-}
-
 .strong {
   background-color: var(--primary-strong-color);
   border: .125rem solid var(--primary-strong-color);
@@ -52,11 +45,4 @@ input[type=submit]:hover {
 .strong:hover {
   background-color: var(--secondary-strong-color);
   border: .125rem solid var(--secondary-strong-color);
-}
-
-.strong::before {
-  margin-right: 2rem;
-  font-family: "fontawesome solid";
-  font-size: 2rem;
-  content: "\f234";
 }
