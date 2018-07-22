@@ -4,12 +4,12 @@
   font-size: 1.85rem;
   border-bottom: 1rem;
   font-family: var(--content-font);
-  color: #aaa;
-  line-height: 2rem;
+  color: -var(--time);
+  line-height: 2.2rem;
 }
 
 .meta .meta-data {
-  margin-left: 1.75rem;
+  margin-left: 2rem;
 }
 
 .meta .meta-data a {

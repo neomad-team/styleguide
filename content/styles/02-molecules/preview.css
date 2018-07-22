@@ -1,23 +1,42 @@
 .preview {
+  background-color: var(--white);
+  
+  box-shadow: 0 0 .3rem #eee;
+  padding: 1.7rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: .3rem;
+  border: .1rem solid #e9e9e9;
+}
+
+.preview header {
+  margin-bottom: 2rem;
+}
+
+.content-preview {
   margin: 0;
 }
 
-.preview a {
+.content-preview a {
   color: var(--black);
 }
 
-.preview h1 {
+.content-preview h1 {
   font-size: 2.6rem;
   margin: 0;
 }
 
-.preview figure {
+.content-preview figure {
   position: relative;
   padding: 1.5rem 0;
 }
 
-.preview a:hover .read-more::before {
-  bottom: -0.5rem;
+.content-preview a.button {
+  color: var(--white);
+}
+
+.content-preview a:hover .read-more::before {
+  bottom: .9rem;
   color: var(--secondary-color);
-  font-size: 8rem;
+  font-size: 4rem;
 }

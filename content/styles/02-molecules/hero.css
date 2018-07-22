@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/home.jpg');
+  background: linear-gradient(0deg, var(--shadow-color), var(--shadow-color)), url('../../img/home.jpg');
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
