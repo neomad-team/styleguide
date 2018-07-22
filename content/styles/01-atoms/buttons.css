@@ -30,8 +30,7 @@ input[type=submit]:hover {
 }
 
 .read {
-  display: flex;
-  justify-content: center;
+  display: block;
   padding: .5rem 2.5rem;
   max-width: 50%;
   margin: 2rem auto 0;
