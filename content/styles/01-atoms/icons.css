@@ -5,44 +5,44 @@
 }
 
 .read::before {
-  content: '\f518';
+  content: var(--book);
 }
 
 .become-user::before {
-  content: '\f234';
+  content: var(--signin);
 }
 
 .account::before {
-  content: '\f2f6';
+  content: var(--login);
 }
 
 .github::before {
-  content: '\f09b';
+  content: var(--github);
   font-size: 3.5rem;
   margin-right: 0;
 }
 
 .contact::before {
-  content: '\f0e0';
+  content: var(--email);
   font-size: 3.5rem;
   margin-right: 0;
 }
 
 .time::before {
-  content: '\f073';
+  content: var(--calendar);
   margin-right: .7rem;
   font-size: 1.5rem;
 }
 
 .time-reading::before {
-  content: '\f017';
+  content: var(--clock);
   font-size: 1.5rem;
   margin-right: .7rem;
   margin-left: 1rem;
 }
 
 .read-more::before {
-  content: '\f2f6';
+  content: var(--get-article);
   font-size: 3.25rem;
   margin-right: 0;
   position: absolute;
