@@ -51,3 +51,11 @@
   color: var(--primary-color);
   transition: all .3s ease;
 }
+
+.arrow-down::before {
+  content: var(--arrow-down);
+  font-size: 3rem;
+  margin-right: 0;
+  color: var(--white);
+  transition: all .3s ease;
+}

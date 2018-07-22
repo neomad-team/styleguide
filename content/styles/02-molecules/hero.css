@@ -5,6 +5,7 @@
   background-size: cover;
   height: 70rem;
   padding: 10rem 10rem;
+  position: relative;
 }
 
 .hero h2, 
@@ -20,4 +21,13 @@
 .hero h3 {
   font-size: 3.2rem;
   margin: 0 0 2rem;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  animation: 10s updown infinite ease-in-out;
 }

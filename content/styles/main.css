@@ -1,6 +1,7 @@
 @import "00-base/body.css";
 @import "00-base/fonts.css";
 @import "00-base/variables.css";
+@import "00-base/animations.css";
 
 @import "01-atoms/buttons.css";
 @import "01-atoms/icons.css";
