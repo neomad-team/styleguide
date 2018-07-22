@@ -89,3 +89,32 @@ h2.st-title {
 .st-font-blog {
   font-family: var(--blog-font);
 }
+
+/* Icons */
+
+.st-icons {
+  position: relative;
+}
+
+.st-icons > div {
+  display: flex;
+  align-items: center;
+}
+
+.st-icons .icon {
+  width: auto;
+  position: relative;
+  animation: none;
+  margin: 0;
+  padding: 0;
+}
+
+.st-icons .icon::before {
+  color: var(--primary-color);
+  position: relative;
+  font-size: 2.5rem;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  width: auto;
+}
