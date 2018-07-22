@@ -12,9 +12,13 @@ ol {
 }
 
 .profiles li {
-  margin: 1rem 2rem;
+  margin: 2rem auto;
+  width: 20rem;
 }
 
 .profiles figcaption {
   margin-top: .75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
