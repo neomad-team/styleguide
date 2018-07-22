@@ -1,3 +1,12 @@
+.hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/home.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70rem;
+  padding: 10rem 10rem;
+}
+
 .hero h2, 
 .hero h3 {
   color: var(--white);
@@ -5,5 +14,10 @@
 
 .hero h2 {
   font-size: 8rem;
-  margin-bottom: 0;
+  margin: 0;
+}
+
+.hero h3 {
+  font-size: 3.2rem;
+  margin: 0 0 2rem;
 }

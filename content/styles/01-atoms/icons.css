@@ -1,0 +1,53 @@
+.icon::before {
+  font-family: var(--icon-font);
+  margin-right: 2rem;
+  font-size: 1.7rem;
+}
+
+.read::before {
+  content: '\f518';
+}
+
+.become-user::before {
+  content: '\f234';
+}
+
+.account::before {
+  content: '\f2f6';
+}
+
+.github::before {
+  content: '\f09b';
+  font-size: 3.5rem;
+  margin-right: 0;
+}
+
+.contact::before {
+  content: '\f0e0';
+  font-size: 3.5rem;
+  margin-right: 0;
+}
+
+.time::before {
+  content: '\f073';
+  margin-right: .7rem;
+  font-size: 1.5rem;
+}
+
+.time-reading::before {
+  content: '\f017';
+  font-size: 1.5rem;
+  margin-right: .7rem;
+  margin-left: 1rem;
+}
+
+.read-more::before {
+  content: '\f2f6';
+  font-size: 3.25rem;
+  margin-right: 0;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: var(--primary-color);
+  transition: all .3s ease;
+}

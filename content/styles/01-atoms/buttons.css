@@ -30,18 +30,10 @@ input[type=submit]:hover {
 }
 
 .read {
-  display: flex;
-  justify-content: center;
+  display: block;
   padding: .5rem 2.5rem;
   max-width: 50%;
   margin: 2rem auto 0;
-}
-
-.read::before {
-  margin-right: 2rem;
-  font-family: "fontawesome solid";
-  font-size: 2rem;
-  content: "\f518";
 }
 
 .strong {
@@ -52,11 +44,4 @@ input[type=submit]:hover {
 .strong:hover {
   background-color: var(--secondary-strong-color);
   border: .125rem solid var(--secondary-strong-color);
-}
-
-.strong::before {
-  margin-right: 2rem;
-  font-family: "fontawesome solid";
-  font-size: 2rem;
-  content: "\f234";
 }

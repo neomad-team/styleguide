@@ -4,6 +4,7 @@
 @import "00-base/fontawesome.css";
 
 @import "01-atoms/buttons.css";
+@import "01-atoms/icons.css";
 @import "01-atoms/figures.css";
 @import "01-atoms/forms.css";
 @import "01-atoms/headings.css";
