@@ -10,3 +10,9 @@ footer nav {
   justify-content: space-around;
   align-items: center;
 }
+
+footer nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
