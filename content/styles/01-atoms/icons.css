@@ -1,3 +1,7 @@
+.icon {
+  vertical-align: middle;
+}
+
 .icon::before {
   font-family: var(--icon-font);
   margin-right: 2rem;
