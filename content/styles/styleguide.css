@@ -18,6 +18,11 @@
 .st-container {
   padding: 1rem;
   background-color: var(--secondary-bg-color);
+  align-items: flex-start;
+}
+
+.st-container li {
+  margin-bottom: 0;
 }
 
 .st-container > header {
