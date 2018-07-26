@@ -16,11 +16,11 @@
 @import "02-molecules/avatar.css";
 @import "02-molecules/nav-account.css";
 @import "02-molecules/meta.css";
-@import "02-molecules/feature.css";
-@import "02-molecules/preview.css";
-@import "02-molecules/hero.css";
 
 @import "03-components/header.css";
 @import "03-components/footer.css";
+@import "03-components/presentation.css";
+@import "03-components/preview.css";
+@import "03-components/hero.css";
 
 @import "04-templates/home.css";
