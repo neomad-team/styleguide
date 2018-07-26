@@ -22,3 +22,25 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.presentation li::before {
+  width: 2rem;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+  text-align: right;
+}
+
+.presentation ul li::before {
+  content: var(--circle);
+}
+
+.presentation ol {
+  counter-reset: counter;
+}
+
+.presentation ol li::before {
+  counter-increment: counter;
+  content: counter(counter);
+  font-size: 1.7rem;
+}
