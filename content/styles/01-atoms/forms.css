@@ -7,31 +7,34 @@ select,
   color: var(--gray);
   background: var(--white);
   border: none;
-  box-shadow: 0 0 2px 1px var(--shadow-color);
+  box-shadow: 0 0 .2rem .1rem var(--shadow-color);
   border-radius: .5rem;
   width: 100%;
   padding: 1.5rem;
-  margin: 0;
+  margin: 0 0 2rem;
   height: 5rem;
   cursor: pointer;
 }
 
 input:focus,
+input:active,
 textarea:focus,
-select:focus {
+textarea:active,
+select:focus,
+select:active {
+  cursor: text;
   color: inherit;
-  box-shadow: 0 0 2px 1px var(--primary-color);
+  box-shadow: 0 0 .2rem .1rem var(--primary-color);
 }
 
 /* LABEL */
 
 label {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   font-weight: bold;
   color: var(--gray);
-  margin-bottom: 2rem;
-  width: 10rem;
+  margin-bottom: 1.25rem;
 }
 
 /* TEXTAREA */
@@ -56,7 +59,6 @@ input[type=radio] {
   -o-appearance: none;
   height: 3rem;
   width: 3rem;
-  margin: 0;
   padding: 0;
   cursor: pointer;
   position: relative;
@@ -64,7 +66,7 @@ input[type=radio] {
 
 input[type=checkbox]:hover,
 input[type=radio]:hover {
-  box-shadow: 0 0 0 3px var(--primary-color);
+  box-shadow: 0 0 0 .3rem var(--primary-color);
 }
 
 input[type=checkbox]:checked, 
@@ -186,32 +188,32 @@ input[type=range]::-moz-range-thumb {
 }
 
 input[type=range]:-moz-focusring {
-    outline: .1rem solid var(--white);
-    outline-offset: -0.1rem;
+  outline: .1rem solid var(--white);
+  outline-offset: -0.1rem;
 }
 
 input[type=range]::-ms-fill-lower {
-    background: var(--shadow-color);
-    border-radius: 1rem;
+  background: var(--shadow-color);
+  border-radius: 1rem;
 }
 
 input[type=range]::-ms-fill-upper {
-    background: var(--shadow-color);
-    border-radius: 1rem;
+  background: var(--shadow-color);
+  border-radius: 1rem;
 }
 
 input[type=range]::-ms-thumb {
-    background: var(--shadow-color);
-    border: none;
-    border-radius: 50%;
-    height: 1.6rem;
-    width: 1.6rem;
+  background: var(--shadow-color);
+  border: none;
+  border-radius: 50%;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 input[type=range]:focus::-ms-fill-lower {
-    background: var(--shadow-color);
+  background: var(--shadow-color);
 }
 
 input[type=range]:focus::-ms-fill-upper {
-    background: var(--shadow-color);
+  background: var(--shadow-color);
 }

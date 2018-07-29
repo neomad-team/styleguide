@@ -125,3 +125,22 @@ h2.st-title {
   margin: 0 2rem;
   width: auto;
 }
+
+/* Component */
+
+.st-component .st-section {
+  border-bottom: .5rem solid var(--shadow-color);
+  background-color: var(--secondary-bg-color);
+  padding: 1rem 0 3rem;
+  margin: 0;
+}
+
+.st-component .st-section > .st-title {
+  background-color: var(--secondary-bg-color);
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.st-component .st-container {
+  padding: 1rem 0;
+}

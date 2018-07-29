@@ -20,7 +20,7 @@
   </nav>
 </header>
 
-<main class="st-main st-full">
+<main class="st-main st-full st-component">
   <section class=st-section>
     <h1 class=st-title>Headers</h1>
 
@@ -62,8 +62,44 @@
       </header>
     </div>
   </section>
+  
+  <section class=st-section>
+    <h1 class=st-title>Register form</h1>
+    
+    <div class=st-container>
+      <form class=register action="/login/" method="post">
+        <h1>Create a new account</h1>
+        
+        <label for=email>Email</label>
+        <input id=email name=email type=email placeholder=writeyour@email.com required>
+        
+        <label for=password>Password</label>
+        <input id=password name=password type=password placeholder="set my password" required>
+        
+        <button class="icon become-user" type=submit>Log in</button>
+        
+        <a class="icon account" href=#>I already have an account, log me</a>
+      </form>
+    </div>
 
-  <section>
+    <div class=st-container>
+      <form class=register action="/login/" method="post">
+        <h1>Log into my account</h1>
+        
+        <label for=email>Email</label>
+        <input id=email name=email type=email placeholder=writeyour@email.com required>
+        
+        <label for=password>Password</label>
+        <input id=password name=password type=password placeholder="write your password" required>
+        
+        <button class="icon account" type=submit>Log in</button>
+        
+        <a class="icon become-user" href=#>I don't have an account yet, create an account</a>
+      </form>
+    </div>
+  </section>
+
+  <section class=st-section>
     <h1 class=st-title>Hero banners</h1>
 
     <div class=st-container>
@@ -85,7 +121,7 @@
     </div>
   </section>
 
-  <section>
+  <section class=st-section>
     <h1 class=st-title>Presentation unordered list</h1>
     <div class=st-container>
       <article class=presentation>
@@ -103,7 +139,7 @@
     </div>
   </section>
   
-  <section>
+  <section class=st-section>
     <h1 class=st-title>Presentation icons list</h1>
     <div class=st-container>
       <article class=presentation>
@@ -121,7 +157,7 @@
     </div>
   </section>
 
-  <section>
+  <section class=st-section>
     <h1 class=st-title>Presentation ordered list</h1>
     <div class=st-container>
       <article class=presentation>
@@ -139,7 +175,7 @@
     </div>
   </section>
 
-  <section>
+  <section class=st-section>
     <h1 class=st-title>Preview article</h1>
     <div class=st-container>
 
@@ -169,7 +205,8 @@
               alt>
             </figure>
             <figcaption>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi...
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi...
             </figcaption>
           </a>
         </main>
@@ -180,7 +217,7 @@
     </div>
   </section>
 
-  <section>
+  <section class=st-section>
     <h1 class=st-title>List of users</h1>
     <div class=st-container>
       <ul class=profiles>
@@ -221,7 +258,7 @@
     </div>
   </section>
 
-  <section>
+  <section class=st-section>
     <h1 class=st-title>Footer</h1>
     <div class=st-container>
       <footer>
