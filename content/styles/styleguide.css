@@ -103,7 +103,9 @@ h2.st-title {
 
 .st-icons > div {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .st-icons .icon {
@@ -120,6 +122,6 @@ h2.st-title {
   font-size: 2.5rem;
   top: 0;
   left: 0;
-  margin-left: 20px;
+  margin: 0 2rem;
   width: auto;
 }

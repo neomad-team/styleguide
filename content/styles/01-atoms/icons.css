@@ -22,44 +22,24 @@
 
 .github::before {
   content: var(--github);
-  font-size: 3.5rem;
-  margin-right: 0;
 }
 
 .contact::before {
   content: var(--email);
-  font-size: 3.5rem;
-  margin-right: 0;
 }
 
 .time::before {
   content: var(--calendar);
-  margin-right: .7rem;
-  font-size: 1.5rem;
 }
 
 .time-reading::before {
   content: var(--clock);
-  font-size: 1.5rem;
-  margin-right: .7rem;
-  margin-left: 1rem;
 }
 
 .read-more::before {
   content: var(--get-article);
-  font-size: 3.25rem;
-  margin-right: 0;
-  position: absolute;
-  bottom: 1.25rem;
-  right: 1rem;
-  color: var(--primary-color);
-  transition: all .3s ease;
 }
 
 .arrow-down::before {
   content: var(--arrow-down);
-  font-size: 3rem;
-  margin-right: 0;
-  color: var(--white);
-  transition: all .3s ease;
 }
