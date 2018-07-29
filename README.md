@@ -2,7 +2,7 @@
 
 ## Installation
 
-No Installation required.
+No Installation required (yet).
 
 ## TODO
 
@@ -33,10 +33,12 @@ _styleguide.css_: style only use to present styleguide
     - _body.css_
     - _fonts.css_
     - _variables.css_
+    - _animation.css_
     - _fontawesome.css_
     
 - 01-atoms:
     - _buttons.css_
+    - _icons.css_
     - _figures.css_
     - _forms.css_
     - _headings.css_
@@ -49,13 +51,13 @@ _styleguide.css_: style only use to present styleguide
     - _avatar.css_
     - _nav-account.css_
     - _meta.css_
-    - _feature.css_
-    - _preview.css_
-    - _hero.css_
     
 - 03-components:
     - _header.css_
     - _footer.css_
+    - _presentation.css_
+    - _preview.css_
+    - _hero.css_
     
 - 04-templates:
     - _home_

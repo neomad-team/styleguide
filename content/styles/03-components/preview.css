@@ -34,6 +34,16 @@
   color: var(--white);
 }
 
+.content-preview a .read-more::before {
+  font-size: 3.25rem;
+  margin-right: 0;
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1rem;
+  color: var(--primary-color);
+  transition: all .3s ease;
+}
+
 .content-preview a:hover .read-more::before {
   bottom: .9rem;
   color: var(--secondary-color);

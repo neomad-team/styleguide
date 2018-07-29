@@ -15,3 +15,12 @@
 .meta .meta-data a {
   display: block;
 }
+
+.meta .meta-data time {
+  margin-right: 1rem;
+}
+
+.meta .icon::before {
+  margin-right: .7rem;
+  font-size: 1.5rem;  
+}
