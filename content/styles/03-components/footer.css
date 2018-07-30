@@ -19,5 +19,5 @@ footer nav a {
 
 footer .icon::before {
   font-size: 3.5rem;
-  margin-right: 0;
+  margin: 0 0 -1rem 0;
 }

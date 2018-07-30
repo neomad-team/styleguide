@@ -16,6 +16,7 @@
 @import "02-molecules/avatar.css";
 @import "02-molecules/nav-account.css";
 @import "02-molecules/meta.css";
+@import "02-molecules/register.css";
 
 @import "03-components/header.css";
 @import "03-components/footer.css";
