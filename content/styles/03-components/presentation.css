@@ -6,12 +6,6 @@
   background: var(--primary-bg-color);
 }
 
-.presentation li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.25rem;
-}
-
 .presentation .button {
-  margin: 2rem 5rem 0;
+  margin: 2rem 5rem;
 }
