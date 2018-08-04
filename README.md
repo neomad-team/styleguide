@@ -2,7 +2,17 @@
 
 ## Installation
 
-No Installation required (yet).
+`npm install`
+
+To build css for prod
+`npm run prod`
+
+To work in styleguide (watch included)
+`npm run dev`
+
+Built with postcss: https://www.npmjs.com/package/postcss-cli
+
+Builds are in `./content/dist/`
 
 ## TODO
 
