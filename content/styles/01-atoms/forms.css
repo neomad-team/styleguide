@@ -14,7 +14,7 @@ select,
   margin: 0 0 2rem;
   height: 5rem;
   cursor: pointer;
-  
+
   &:focus,
   &:active {
     cursor: text;
@@ -62,7 +62,7 @@ input[type=radio] {
   &:hover {
     box-shadow: 0 0 0 .3rem var(--primary-color);
   }
-  
+
   &:checked {
     background: var(--primary-color);
     
@@ -98,7 +98,7 @@ select {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   &::-ms-expand {
     display: none;
   }
@@ -114,7 +114,7 @@ option {
   line-height: 3;
   padding: 0;
   position: relative;
-  
+
   &::after {
     background: var(--white);
     content: '\25BC';
@@ -125,7 +125,7 @@ option {
     transition: .25s all ease;
     -webkit-transition: .25s all ease;
     -o-transition: .25s all ease;
-    
+
     &::after {
       color: var(--primary-color);
     }
@@ -135,14 +135,14 @@ option {
 /* RANGE */
 
 input[type=range] {
-  
+
   &::-webkit-slider-runnable-track {
     background: var(--shadow-color);
     border: none;
     border-radius: .3rem;
     height: .5rem;
   }
-  
+
   &::-webkit-slider-thumb {
     background: var(--primary-color);
     border: none;
@@ -152,7 +152,7 @@ input[type=range] {
     width: 1.6rem;
     margin-top: -0.4rem;
   }
-  
+
   &:focus {
     outline: var(--primary-color);
     cursor: pointer;

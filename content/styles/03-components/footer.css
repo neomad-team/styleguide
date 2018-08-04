@@ -3,21 +3,21 @@ footer {
   box-shadow: 0 -0.2rem 0 var(--shadow-color);
   background-color: var(--white);
   z-index: 1;
-}
 
-footer nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  & nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-footer nav a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    & a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
-footer .icon::before {
-  font-size: 3.5rem;
-  margin: 0 0 -1rem 0;
+  & .icon::before {
+    font-size: 3.5rem;
+    margin: 0 0 -1rem 0;
+  }
 }

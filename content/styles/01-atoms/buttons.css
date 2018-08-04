@@ -15,14 +15,14 @@ input[type=submit] {
   border: .125rem solid var(--primary-color);
   border-radius: .5rem;
   transition: all .3s ease;
-  
+
   &:hover,
   &:focus {
     color: var(--white);
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
   }
-  
+
   &.read {
     display: block;
     padding: .5rem 2.5rem;

@@ -486,8 +486,13 @@ ol {
   list-style: none;
 }
 
-.presentation ul li,
-.presentation ol li {
+.presentation ul,
+  .presentation ol {
+  padding: 10px 50px 20px;
+  padding: 1rem 5rem 2rem;
+}
+
+.presentation ul li, .presentation ol li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,30 +506,7 @@ ol {
   margin-bottom: .75rem;
 }
 
-.presentation li::before {
-  font-size: 11px;
-  font-size: 1.1rem;
-  margin-right: 10px;
-  margin-right: 1rem;
-  color: #00d1b2;
-}
-
-.presentation ul,
-.presentation ol {
-  padding: 10px 50px 20px;
-  padding: 1rem 5rem 2rem;
-}
-
-.presentation.with-icon ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-}
-
-.presentation ul li.icon {
+.presentation ul li.icon, .presentation ol li.icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,19 +521,19 @@ ol {
   margin-bottom: 2rem;
 }
 
-.presentation ul li.icon::before {
+.presentation ul li.icon::before, .presentation ol li.icon::before {
   font-size: 35px;
   font-size: 3.5rem;
   margin: 0 0 -10px 0;
   margin: 0 0 -1rem 0;
 }
 
-.presentation.with-icon ul li::before {
-  margin: 0;
-}
-
-.presentation:not(.with-icon) ul li::before {
-  content: '\25CF';
+.presentation ul li::before, .presentation ol li::before {
+  font-size: 11px;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  margin-right: 1rem;
+  color: #00d1b2;
 }
 
 .presentation ol {
@@ -565,6 +547,23 @@ ol {
   font-size: 1.7rem;
 }
 
+.presentation.with-icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.presentation.with-icon ul li::before {
+  margin: 0;
+}
+
+.presentation:not(.with-icon) ul li::before {
+  content: '\25CF';
+}
+
 .profiles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,7 +572,7 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      flex-wrap: wrap
 }
 
 .profiles li {
@@ -683,7 +682,7 @@ time.time-reading, .time.time-reading {
   font-family: 'Maven Pro', Arial, sans-serif;
   color: -var(--time);
   line-height: 22px;
-  line-height: 2.2rem;
+  line-height: 2.2rem
 }
 
 .meta .meta-data {
@@ -704,7 +703,7 @@ time.time-reading, .time.time-reading {
   margin-right: 7px;
   margin-right: .7rem;
   font-size: 15px;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .register {
@@ -715,7 +714,7 @@ time.time-reading, .time.time-reading {
   padding: 2rem;
   border: 1px solid rgba(50, 50, 50, .15);
   border: .1rem solid rgba(50, 50, 50, .15);
-  background-color: #fff;
+  background-color: #fff
 }
 
 .register button {
@@ -730,7 +729,7 @@ time.time-reading, .time.time-reading {
   margin-top: 30px;
   margin-top: 3rem;
   padding: 15px 0 0;
-  padding: 1.5rem 0 0
+  padding: 1.5rem 0 0;
 }
 
 .register a::before {
@@ -759,7 +758,7 @@ time.time-reading, .time.time-reading {
   background-color: #fff;
   -webkit-box-shadow: 0 .2rem 0 rgba(50, 50, 50, .15);
           box-shadow: 0 .2rem 0 rgba(50, 50, 50, .15);
-  z-index: 9;
+  z-index: 9
 }
 
 .main-header h1 {
@@ -799,7 +798,7 @@ time.time-reading, .time.time-reading {
   background-color: #fefefe;
   border: 1px solid #333;
   border: .1rem solid #333;
-  border-radius: .5rem
+  border-radius: .5rem;
 }
 
 .main-header > nav .button:hover {
@@ -821,7 +820,7 @@ footer {
   -webkit-box-shadow: 0 -0.2rem 0 rgba(50, 50, 50, .15);
           box-shadow: 0 -0.2rem 0 rgba(50, 50, 50, .15);
   background-color: #fff;
-  z-index: 1;
+  z-index: 1
 }
 
 footer nav {
@@ -868,7 +867,7 @@ footer .icon::before {
           align-items: center;
   padding: 0 20px 20px;
   padding: 0 2rem 2rem;
-  background: #fefefe;
+  background: #fefefe
 }
 
 .presentation .button {
@@ -887,7 +886,7 @@ footer .icon::before {
   margin-bottom: 2rem;
   border-radius: .3rem;
   border: 1px solid #e9e9e9;
-  border: .1rem solid #e9e9e9;
+  border: .1rem solid #e9e9e9
 }
 
 .preview header {
@@ -896,11 +895,7 @@ footer .icon::before {
 }
 
 .content-preview {
-  margin: 0;
-}
-
-.content-preview a {
-  color: #000;
+  margin: 0  
 }
 
 .content-preview h1 {
@@ -913,6 +908,10 @@ footer .icon::before {
   position: relative;
   padding: 15px 0;
   padding: 1.5rem 0;
+}
+
+.content-preview a {
+  color: #000;
 }
 
 .content-preview a.button {
@@ -951,11 +950,11 @@ footer .icon::before {
   height: 70rem;
   padding: 100px 100px;
   padding: 10rem 10rem;
-  position: relative;
+  position: relative
 }
 
 .hero h2, 
-.hero h3 {
+  .hero h3 {
   color: #fff;
 }
 
@@ -972,17 +971,17 @@ footer .icon::before {
   margin: 0 0 2rem;
 }
 
-.arrow-down {
+.hero .arrow-down {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
   -webkit-animation: 10s updown infinite ease-in-out;
-          animation: 10s updown infinite ease-in-out
+          animation: 10s updown infinite ease-in-out;
 }
 
-.arrow-down::before {
+.hero .arrow-down::before {
   font-size: 30px;
   font-size: 3rem;
   margin-right: 0;

@@ -10,48 +10,48 @@
   background-color: var(--white);
   box-shadow: 0 .2rem 0 var(--shadow-color);
   z-index: 9;
-}
 
-.main-header h1 {
-  margin: 0;
-  font-weight: 300;
-  font-size: 3rem;
-}
+  & h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 3rem;
 
-.main-header h1 a {
-  padding: 1rem;
-  color: var(--gray);
-  text-decoration: inherit;
-}
-
-.main-header > nav {
-  position: relative;
-  margin: 0 2rem 0 0;
-  display: flex;
-  align-items: center;
-}
-
-.main-header > nav a {
-  padding: 3px 15px;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.main-header > nav .button {
-  background-color: var(--primary-bg-color);
-  border: .1rem solid var(--gray);
-  border-radius: .5rem;
-  
-  &:hover {
-    color: var(--black);
-    background-color: var(--gray);
+    & a {
+      padding: 1rem;
+      color: var(--gray);
+      text-decoration: inherit;
+    }
   }
-}
 
-.main-header .avatar {
-  cursor: pointer;
-}
+  & > nav {
+    position: relative;
+    margin: 0 2rem 0 0;
+    display: flex;
+    align-items: center;
 
-.main-header .nav-account a {
-  display: block;
+    & a {
+      padding: 3px 15px;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    & .button {
+      background-color: var(--primary-bg-color);
+      border: .1rem solid var(--gray);
+      border-radius: .5rem;
+
+      &:hover {
+        color: var(--black);
+        background-color: var(--gray);
+      }
+    }
+  }
+
+  & .avatar {
+    cursor: pointer;
+  }
+
+  & .nav-account a {
+    display: block;
+  }
 }

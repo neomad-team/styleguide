@@ -1,16 +1,16 @@
 .icon {
   vertical-align: middle;
-  
+
   &::before {
     font-family: var(--icon-font);
     margin-right: 2rem;
     font-size: 1.7rem;
   }
-  
+
   &.read::before {
     content: var(--book);
   }
-  
+
   &.become-user::before {
     content: var(--signin);
   }
