@@ -75,6 +75,7 @@ input[type=radio] {
       height: 3rem;
       width: 3rem;
       position: absolute;
+      top: -.1rem;
     }
   }
 }

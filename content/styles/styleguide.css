@@ -30,12 +30,25 @@
 }
 
 .st-colors,
-.st-buttons,
+.st-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .st-checkbox,
 .st-radio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 0;
+  
+  & label {
+    margin: 0 5rem 0 0;
+  }
+  
+  & input {
+    margin: 0;
+  }
 }
 
 .st-full {

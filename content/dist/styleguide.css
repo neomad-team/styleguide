@@ -291,6 +291,8 @@ input[type=checkbox]:checked::before, input[type=radio]:checked::before {
   width: 30px;
   width: 3rem;
   position: absolute;
+  top: -1px;
+  top: -.1rem;
 }
 
 input[type=radio] {
@@ -1034,9 +1036,7 @@ footer .icon::before {
 }
 
 .st-colors,
-.st-buttons,
-.st-checkbox,
-.st-radio {
+.st-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,6 +1045,25 @@ footer .icon::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.st-checkbox,
+.st-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 0
+}
+
+.st-checkbox label, .st-radio label {
+  margin: 0 50px 0 0;
+  margin: 0 5rem 0 0;
+}
+
+.st-checkbox input, .st-radio input {
+  margin: 0;
 }
 
 .st-full {
