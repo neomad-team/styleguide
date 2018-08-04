@@ -97,16 +97,12 @@ main {
 
 @charset "UTF-8";
 
-button,
-input[type=submit]  {
-  font-size: inherit;
-  line-height: inherit;
-  cursor: pointer;
-}
-
 .button,
 button,
 input[type=submit] {
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
   display: inline-block;
   padding: 8px 25px;
   padding: .8rem 2.5rem;
@@ -119,18 +115,21 @@ input[type=submit] {
   border: .125rem solid #00d1b2;
   border-radius: .5rem;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all .3s ease
 }
 
 .button:hover,
-button:hover,
-input[type=submit]:hover {
+  .button:focus,
+  button:hover,
+  button:focus,
+  input[type=submit]:hover,
+  input[type=submit]:focus {
   color: #fff;
   background-color: #00c4a7;
   border-color: #00c4a7;
 }
 
-.read {
+.button.read, button.read, input[type=submit].read {
   display: block;
   padding: 5px 25px;
   padding: .5rem 2.5rem;
@@ -140,7 +139,7 @@ input[type=submit]:hover {
 }
 
 .icon {
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 .icon::before {
@@ -151,39 +150,39 @@ input[type=submit]:hover {
   font-size: 1.7rem;
 }
 
-.read::before {
+.icon.read::before {
   content: '\f518';
 }
 
-.become-user::before {
+.icon.become-user::before {
   content: '\f234';
 }
 
-.account::before {
+.icon.account::before {
   content: '\f2f6';
 }
 
-.github::before {
+.icon.github::before {
   content: '\f09b';
 }
 
-.contact::before {
+.icon.contact::before {
   content: '\f0e0';
 }
 
-.time::before {
+.icon.time::before {
   content: '\f073';
 }
 
-.time-reading::before {
+.icon.time-reading::before {
   content: '\f017';
 }
 
-.read-more::before {
+.icon.read-more::before {
   content: '\f2f6';
 }
 
-.arrow-down::before {
+.icon.arrow-down::before {
   content: '\f358';
 }
 
@@ -212,15 +211,17 @@ select,
   margin: 0 0 2rem;
   height: 50px;
   height: 5rem;
-  cursor: pointer;
+  cursor: pointer
 }
 
 input:focus,
-input:active,
-textarea:focus,
-textarea:active,
-select:focus,
-select:active {
+  input:active,
+  textarea:focus,
+  textarea:active,
+  select:focus,
+  select:active,
+  .select:focus,
+  .select:active {
   cursor: text;
   color: inherit;
   -webkit-box-shadow: 0 0 .2rem .1rem #00d1b2;
@@ -265,22 +266,19 @@ input[type=radio] {
   width: 3rem;
   padding: 0;
   cursor: pointer;
-  position: relative;
+  position: relative
 }
 
-input[type=checkbox]:hover,
-input[type=radio]:hover {
+input[type=checkbox]:hover, input[type=radio]:hover {
   -webkit-box-shadow: 0 0 0 .3rem #00d1b2;
           box-shadow: 0 0 0 .3rem #00d1b2;
 }
 
-input[type=checkbox]:checked, 
-input[type=radio]:checked {
+input[type=checkbox]:checked, input[type=radio]:checked {
   background: #00d1b2;
 }
 
-input[type=checkbox]:checked::before,
-input[type=radio]:checked::before {
+input[type=checkbox]:checked::before, input[type=radio]:checked::before {
   display: inline-block;
   content: '✔';
   font-size: 25px;
@@ -315,7 +313,7 @@ select {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 
 select::-ms-expand {
@@ -333,31 +331,24 @@ option {
   display: block;
   line-height: 3;
   padding: 0;
-  position: relative;
+  position: relative
 }
-
-/* Arrow */
 
 .select::after {
   background: #fff;
   content: '\25BC';
+  color: rgba(50, 50, 50, .15);
   height: 0;
   position: absolute;
   right: 10px;
   right: 1rem;
-}
-
-.select::after {
-  color: rgba(50, 50, 50, .15);
-}
-
-.select:hover::after {
-  color: #00d1b2;
-}
-
-.select::after {
-  -webkit-transition: .25s all ease;
   transition: .25s all ease;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+}
+
+.select::after::after {
+  color: #00d1b2;
 }
 
 /* RANGE */
@@ -385,6 +376,7 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]:focus {
   outline: #00d1b2;
+  cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -480,7 +472,7 @@ a {
   color: #00d1b2;
   text-decoration: none;
   -webkit-transition: color .3s;
-  transition: color .3s;
+  transition: color .3s
 }
 
 a:hover {
@@ -604,27 +596,27 @@ time,
   margin: 0;
   color: #aaa;
   font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 1.5rem
 }
 
-.time-reading {
+time.time-reading, .time.time-reading {
   display: inline;
 }
 
 .avatar {
   border: 1px solid #333;
   border: .1rem solid #333;
-  border-radius: 50%;
+  border-radius: 50%
 }
 
-.avatar-img {
+.avatar.avatar-img {
   width: 100px;
   width: 10rem;
   height: 100px;
   height: 10rem;
 }
 
-.avatar-icon {
+.avatar.avatar-icon {
   width: 35px;
   width: 3.5rem;
   height: 35px;
@@ -647,10 +639,16 @@ time,
           box-shadow: 0 0 .6rem rgba(50, 50, 50, .15);
   border-radius: 3px;
   -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all .3s
 }
 
-.nav-account:before {
+.nav-account.active {
+  height: auto;
+  opacity: 1;
+  z-index: 1;
+}
+
+.nav-account::before {
   position: absolute;
   top: -10px;
   top: -1rem;
@@ -669,12 +667,6 @@ time,
           transform: rotate(45deg);
   -webkit-transition: all .3s;
   transition: all .3s;
-}
-
-.nav-account.active {
-  height: auto;
-  opacity: 1;
-  z-index: 1;
 }
 
 .meta {
@@ -738,7 +730,7 @@ time,
   margin-top: 30px;
   margin-top: 3rem;
   padding: 15px 0 0;
-  padding: 1.5rem 0 0;
+  padding: 1.5rem 0 0
 }
 
 .register a::before {
@@ -807,7 +799,7 @@ time,
   background-color: #fefefe;
   border: 1px solid #333;
   border: .1rem solid #333;
-  border-radius: .5rem;
+  border-radius: .5rem
 }
 
 .main-header > nav .button:hover {
@@ -987,7 +979,7 @@ footer .icon::before {
   width: 100%;
   text-align: center;
   -webkit-animation: 10s updown infinite ease-in-out;
-          animation: 10s updown infinite ease-in-out;
+          animation: 10s updown infinite ease-in-out
 }
 
 .arrow-down::before {
@@ -1097,9 +1089,6 @@ h2.st-title {
   border: .1rem solid rgba(50, 50, 50, .15);
   text-align: center;
   border-radius: .8rem;
-}
-
-.st-colors li {
   margin: 0 1% 10px 0;
   margin: 0 1% 1rem 0;
 }
@@ -1153,7 +1142,7 @@ h2.st-title {
   -webkit-animation: none;
           animation: none;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .st-icons .icon::before {

@@ -1,45 +1,45 @@
 .icon {
   vertical-align: middle;
-}
+  
+  &::before {
+    font-family: var(--icon-font);
+    margin-right: 2rem;
+    font-size: 1.7rem;
+  }
+  
+  &.read::before {
+    content: var(--book);
+  }
+  
+  &.become-user::before {
+    content: var(--signin);
+  }
 
-.icon::before {
-  font-family: var(--icon-font);
-  margin-right: 2rem;
-  font-size: 1.7rem;
-}
+  &.account::before {
+    content: var(--login);
+  }
 
-.read::before {
-  content: var(--book);
-}
+  &.github::before {
+    content: var(--github);
+  }
 
-.become-user::before {
-  content: var(--signin);
-}
+  &.contact::before {
+    content: var(--email);
+  }
 
-.account::before {
-  content: var(--login);
-}
+  &.time::before {
+    content: var(--calendar);
+  }
 
-.github::before {
-  content: var(--github);
-}
+  &.time-reading::before {
+    content: var(--clock);
+  }
 
-.contact::before {
-  content: var(--email);
-}
+  &.read-more::before {
+    content: var(--get-article);
+  }
 
-.time::before {
-  content: var(--calendar);
-}
-
-.time-reading::before {
-  content: var(--clock);
-}
-
-.read-more::before {
-  content: var(--get-article);
-}
-
-.arrow-down::before {
-  content: var(--arrow-down);
+  &.arrow-down::before {
+    content: var(--arrow-down);
+  }
 }

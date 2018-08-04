@@ -41,11 +41,11 @@
   background-color: var(--primary-bg-color);
   border: .1rem solid var(--gray);
   border-radius: .5rem;
-}
-
-.main-header > nav .button:hover {
-  color: var(--black);
-  background-color: var(--gray);
+  
+  &:hover {
+    color: var(--black);
+    background-color: var(--gray);
+  }
 }
 
 .main-header .avatar {

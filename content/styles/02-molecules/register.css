@@ -16,9 +16,9 @@
   font-size: 1.55rem;
   margin-top: 3rem;
   padding: 1.5rem 0 0;
-}
 
-.register a::before {
-  margin-right: 1.25rem;
-  font-size: 1.55rem;
+  &::before {
+    margin-right: 1.25rem;
+    font-size: 1.55rem;
+  }
 }
