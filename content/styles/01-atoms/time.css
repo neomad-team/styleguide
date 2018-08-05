@@ -3,8 +3,8 @@ time,
   margin: 0;
   color: var(--time);
   font-size: 1.5rem;
-}
 
-.time-reading {
-  display: inline;
+  &.time-reading {
+    display: inline;
+  }
 }

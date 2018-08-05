@@ -4,8 +4,8 @@
   align-items: center;
   padding: 0 2rem 2rem;
   background: var(--primary-bg-color);
-}
 
-.presentation .button {
-  margin: 2rem 5rem;
+  & .button {
+    margin: 2rem 5rem;
+  }
 }

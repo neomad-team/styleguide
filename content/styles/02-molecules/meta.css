@@ -6,21 +6,21 @@
   font-family: var(--content-font);
   color: -var(--time);
   line-height: 2.2rem;
-}
 
-.meta .meta-data {
-  margin-left: 2rem;
-}
+  & .meta-data {
+    margin-left: 2rem;
 
-.meta .meta-data a {
-  display: block;
-}
+    & a {
+      display: block;
+    }
 
-.meta .meta-data time {
-  margin-right: 1rem;
-}
+    & time {
+      margin-right: 1rem;
+    }
+  }
 
-.meta .icon::before {
-  margin-right: .7rem;
-  font-size: 1.5rem;  
+  & .icon::before {
+    margin-right: .7rem;
+    font-size: 1.5rem;  
+  }
 }

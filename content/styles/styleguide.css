@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import "main";
 
 /* Structure */
 
@@ -30,12 +30,25 @@
 }
 
 .st-colors,
-.st-buttons,
+.st-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .st-checkbox,
 .st-radio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 0;
+  
+  & label {
+    margin: 0 5rem 0 0;
+  }
+  
+  & input {
+    margin: 0;
+  }
 }
 
 .st-full {
@@ -68,9 +81,6 @@ h2.st-title {
   border: .1rem solid var(--shadow-color);
   text-align: center;
   border-radius: .8rem;
-}
-
-.st-colors li {
   margin: 0 1% 1rem 0;
 }
 
@@ -114,16 +124,16 @@ h2.st-title {
   animation: none;
   margin: 0;
   padding: 0;
-}
 
-.st-icons .icon::before {
-  color: var(--primary-color);
-  position: relative;
-  font-size: 2.5rem;
-  top: 0;
-  left: 0;
-  margin: 0 2rem;
-  width: auto;
+  &::before {
+    color: var(--primary-color);
+    position: relative;
+    font-size: 2.5rem;
+    top: 0;
+    left: 0;
+    margin: 0 2rem;
+    width: auto;
+  }
 }
 
 /* Component */
