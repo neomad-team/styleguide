@@ -23,7 +23,7 @@
     content: var(--github);
   }
 
-  &.contact::before {
+  &.email::before {
     content: var(--email);
   }
 
@@ -41,5 +41,25 @@
 
   &.arrow-down::before {
     content: var(--arrow-down);
+  }
+
+  &.twitter::before {
+    content: var(--twitter);
+  }
+
+  &.facebook::before {
+    content: var(--facebook);
+  }
+
+  &.instagram::before {
+    content: var(--instagram);
+  }
+
+  &.setting::before {
+    content: var(--setting);
+  }
+
+  &.trip::before {
+    content: var(--trip);
   }
 }
