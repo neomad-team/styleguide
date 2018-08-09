@@ -458,59 +458,6 @@ input[type=range]:focus::-ms-fill-upper {
   background: rgba(50, 50, 50, .15);
 }
 
-/* SOCIALS */
-
-.socials-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap
-}
-
-.socials-form li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 15px 0;
-  margin: 1.5rem 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-}
-
-.socials-form li input {
-  margin: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: 0;
-  height: auto;
-  line-height: 17px;
-  line-height: 1.7rem;
-  padding: 0 15px 2.5px;
-  padding: 0 1.5rem .25rem;
-}
-
-.socials-form li input:focus,
-      .socials-form li input:active {
-  cursor: text;
-  color: inherit;
-  color: #00d1b2;
-}
-
-.socials-form li::before {
-  color: #333;
-  margin-right: 0;
-}
-
-.socials-form li.valid input {
-  color: #00c4a7;
-}
-
-.socials-form li.valid::before {
-  color: #00c4a7;
-}
-
 h1,
 h2,
 h3,
@@ -812,6 +759,78 @@ time.time-reading, .time.time-reading {
   margin-right: 1.25rem;
   font-size: 15.5px;
   font-size: 1.55rem;
+}
+
+.socials-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap
+}
+
+.socials-form li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+  margin: 1.5rem 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.socials-form li input,
+    .socials-form li a {
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  height: auto;
+  line-height: 17px;
+  line-height: 1.7rem;
+  padding: 0;
+}
+
+.socials-form li input:focus,
+      .socials-form li input:active,
+      .socials-form li a:focus,
+      .socials-form li a:active {
+  cursor: text;
+  color: inherit;
+  color: #00d1b2;
+}
+
+.socials-form li a {
+  padding: 0;
+}
+
+.socials-form li a::before {
+  position: relative;
+  top: 1px;
+  top: .1rem;
+  margin-right: 12.5px;
+  margin-right: 1.25rem;
+}
+
+.socials-form li::before {
+  color: #333;
+  position: relative;
+  top: 1px;
+  top: .1rem;
+  margin-right: 12.5px;
+  margin-right: 1.25rem;
+}
+
+.socials-form li.valid input {
+  color: #00c4a7;
+}
+
+.socials-form li.valid::before {
+  color: #00c4a7;
 }
 
 .main-header {
