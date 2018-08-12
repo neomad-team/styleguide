@@ -11,7 +11,7 @@ body {
 
 html {
   font-size: 62.5%; /* 10px */
-  font-size: calc(1em * 0.625); /* fix */
+  font-size: calc(1em * .625); /* fix */
   font-weight: 400;
   font-family: var(--content-font), Arial, Helvetica, sans-serif;
 }

@@ -31,11 +31,11 @@ ol {
       &::before {
         font-size: 1.1rem;
         margin-right: 1rem;
-        color: var(--primary-color);      
-      }  
+        color: var(--primary-color);
+      }
     }
   }
-  
+
   & ol {
     counter-reset: counter;
 
@@ -45,7 +45,7 @@ ol {
       font-size: 1.7rem;
     }
   }
-  
+
   &.with-icon ul {
     display: flex;
     justify-content: space-around;
@@ -55,7 +55,7 @@ ol {
       margin: 0;
     }
   }
-  
+
   &:not(.with-icon) ul li::before {
     content: var(--circle);
   }
