@@ -5,10 +5,10 @@
 `npm install`
 
 To build css for prod
-`npm run prod`
+`npm run build-prod`
 
-To work in styleguide (watch included)
-`npm run dev`
+To build a preview for test (watch included)
+`npm run build-test`
 
 Built with postcss: https://www.npmjs.com/package/postcss-cli
 
@@ -18,7 +18,10 @@ Builds are in `./content/dist/`
 
 Linter is propulse by https://stylelint.io/user-guide/rules/
 
-To change CSS rule, overide it in postcss.config.js features
+To run the linter
+`npm run linter`
+
+To change CSS rule, change `postcss.linter.json`
 
 ## Support
 
