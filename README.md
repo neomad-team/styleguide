@@ -10,7 +10,7 @@ To build css for prod
 To build a preview for test
 `npm run watch`
 
-Built with [Postcss](Built with postcss: https://www.npmjs.com/package/postcss-cli).
+Built with [postcss](https://www.npmjs.com/package/postcss-cli).
 
 Builds are in `./content/dist/`
 
