@@ -4,8 +4,8 @@
   "description": "Neomad styleguide, built with atomic design mindset",
   "scripts": {
     "lint": "stylelint content/styles/**/*.css --config postcss.linter.json",
-    "build-test": "postcss ./content/styles/main.css -o ./content/dist/neomad-test.css --env dev --watch --verbose",
-    "build-prod": "postcss ./content/styles/main.css -o ./content/dist/neomad-prod.css --env prod"
+    "watch": "postcss ./content/styles/main.css -o ./content/dist/neomad-test.css --env dev --watch --verbose",
+    "build": "postcss ./content/styles/main.css -o ./content/dist/neomad-prod.css --env prod"
   },
   "repository": {
     "type": "git",
