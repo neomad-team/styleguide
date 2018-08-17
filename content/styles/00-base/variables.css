@@ -10,7 +10,7 @@
   --time: #aaa;
   --white: #fff;
 
-  --shadow-color: rgba(50, 50, 50, 0.15);
+  --shadow-color: rgba(50, 50, 50, .15);
 
   --title-font: 'Poppins', Arial, sans-serif;
   --content-font: 'Maven Pro', Arial, sans-serif;

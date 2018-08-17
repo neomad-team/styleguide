@@ -16,7 +16,7 @@
       height: auto;
       line-height: 1.7rem;
       padding: 0;
-      
+
       &:focus,
       &:active {
         cursor: text;
@@ -24,24 +24,24 @@
         color: var(--primary-color);
       }
     }
-    
+
     & a {
       padding: 0;
-      
+
       &::before {
         position: relative;
         top: .1rem;
         margin-right: 1.25rem;
       }
     }
-    
+
     &::before {
       color: var(--gray);
       position: relative;
       top: .1rem;
       margin-right: 1.25rem;
     }
-    
+
     &.valid {
       & input {
         color: var(--secondary-color);
