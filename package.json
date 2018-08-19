@@ -4,9 +4,9 @@
   "description": "Neomad styleguide, built with atomic design mindset",
   "scripts": {
     "lint": "stylelint content/styles/**/*.css --config postcss.linter.json",
-    "build": "postcss ./content/styles/styleguide.css -o ./content/dist/styleguide.css --env dev",
+    "dev": "postcss ./content/styles/styleguide.css -o ./content/dist/styleguide.css --env dev",
     "watch": "npm run lint && postcss ./content/styles/styleguide.css -o ./content/dist/styleguide.css --env dev --watch --verbose",
-    "prod": "postcss ./content/styles/main.css -o ./content/dist/main.css --env prod"
+    "build": "postcss ./content/styles/main.css -o ./content/dist/main.css --env prod"
   },
   "repository": {
     "type": "git",
