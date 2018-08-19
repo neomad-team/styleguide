@@ -1,6 +1,11 @@
 machine:
   node:
     version: stable
+    
+general:
+  branches:
+    ignore:
+      - dist
 
 dependencies:
   override:
@@ -13,6 +18,7 @@ test:
     - npm run lint
     
 deployment:
-  release:
+  production:
+    branch: master
     commands:
-      - npm run dev
+      - deploy.sh
