@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: v5.4.1
+
+dependencies:
+  override:
+    - npm install
+  cache_directories:
+    - node_modules
+
+test:
+  override:
+    - npm run lint
+    
+deployment:
+  release:
+    commands:
+      - npm run dev
