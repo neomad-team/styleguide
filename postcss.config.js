@@ -1,12 +1,6 @@
 module.exports = (ctx) => ({
 
   plugins: {
-    'stylelint': {
-      'extends': './postcss.linter.json',
-      'rules': {
-        'at-rule-empty-line-before': null
-      }
-    },
     'precss': {},
     'postcss-pxtorem': {},
     'postcss-custom-properties': {
