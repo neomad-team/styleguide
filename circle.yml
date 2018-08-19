@@ -16,9 +16,3 @@ dependencies:
 test:
   override:
     - npm run lint
-    
-deployment:
-  production:
-    branch: master
-    commands:
-      - deploy.sh
