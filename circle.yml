@@ -1,11 +1,6 @@
 machine:
   node:
     version: stable
-    
-general:
-  branches:
-    ignore:
-      - dist
 
 dependencies:
   override:
