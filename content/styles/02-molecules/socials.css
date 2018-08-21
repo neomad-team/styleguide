@@ -1,0 +1,55 @@
+.profile-socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  & li {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    flex: 1 1 50%;
+
+    & input,
+    & a {
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+      height: auto;
+      line-height: 1.7rem;
+      padding: 0;
+
+      &:focus,
+      &:active {
+        cursor: text;
+        color: inherit;
+        color: var(--primary-color);
+      }
+    }
+
+    & a {
+      padding: 0;
+
+      &::before {
+        position: relative;
+        top: .1rem;
+        margin-right: 1.25rem;
+      }
+    }
+
+    &::before {
+      color: var(--gray);
+      position: relative;
+      top: .1rem;
+      margin-right: 1.25rem;
+    }
+
+    &.valid {
+      & input {
+        color: var(--secondary-color);
+      }
+
+      &::before {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}

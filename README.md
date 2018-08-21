@@ -2,11 +2,33 @@
 
 ## Installation
 
-No Installation required.
+`npm install`
 
-## TODO
+To build css for prod
+`npm run build`
 
-Find a linter.
+To build a preview for test
+`npm run watch`
+
+Built with [postcss](https://www.npmjs.com/package/postcss-cli).
+
+Builds are in `./content/dist/`
+
+## Linter
+
+Linter is propulse by https://stylelint.io/user-guide/rules/
+
+To run the linter
+`npm run linter`
+
+To change CSS rule, change `postcss.linter.json`
+
+## Support
+
+To see which support is provide in prod:
+Use `npx autoprefixer --info` in project root.
+
+Change staging process according https://cssdb.org/#staging-process
 
 ## Organizing CSS properties
 
@@ -22,19 +44,3 @@ To keep every CSS declaration readable, let's follow some rules:
     - Display values (for Flexbox, add children properties after)
     - Positionning value
     - Box values (width, height, margin, padding, border)
-
-## Source tree
-
-- 00-base:
-    - _body.css: base for html_
-    - _fonts.css: import of fonts_
-    - _variables.css: list all variables_
-    
-- 01-atoms:
-    - _buttons.css_
-    - _figures.css_
-    - _forms.css_
-    - _headings.css_
-    - _images.css_
-    - _links.css_
-    - _lists.css_

@@ -1,0 +1,23 @@
+footer {
+  padding: 2rem 0;
+  box-shadow: 0 -.2rem 0 var(--shadow-color);
+  background-color: var(--white);
+  z-index: 1;
+
+  & nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  & .icon::before {
+    font-size: 3.5rem;
+    margin: 0 0 -1rem 0;
+  }
+}

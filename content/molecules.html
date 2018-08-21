@@ -4,8 +4,7 @@
 <title>Styleguide - Neomad</title>
 <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link rel=stylesheet href=styles/main.css>
-<link rel=stylesheet href=styles/styleguide.css>
+<link rel=stylesheet href=dist/styleguide.css>
 
 <header class=main-header>
   <h1>
@@ -14,7 +13,7 @@
   <nav>
     <a href=atoms.html>Atoms</a>
     <a href=molecules.html>Molecules</a>
-    <a href=header-footer.html>Header-Footer</a>
+    <a href=components.html>Components</a>
   </nav>
 </header>
 
@@ -23,31 +22,146 @@
   <section class=st-section>
 
     <article class=st-article>
-      <h2 class=st-title>Images</h2>
+      <h2 class=st-title>Header</h2>
 
-      <div class=st-container>
-        <h3>Avatar in header</h3>
-        <div id=avatar-menu>
-          <img src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7 class=avatar-img>
-        </div>
+      <div class="st-container st-full">
+        <header class=main-header>
+          <h1>
+            <a href=https://neomad.org>Neomad</a>
+          </h1>
+        </header>
+      </div>
+
+      <div class="st-container st-full">
+        <header class=main-header>
+          <nav>
+            <a href=# title="Read nomad's adventures">Read</a>
+            <a href=# class=login>Log in</a>
+          </nav>
+        </header>
+      </div>
+
+      <div class="st-container st-full">
+        <header class=main-header>
+          <div id=avatar-menu>
+            <img
+              src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
+              class="avatar avatar-icon">
+          </div>
+
+          <nav id=menu class=nav-account>
+            <a href=#>Profile</a>
+            <a href=#>Privacy settings</a>
+            <a href=#>Logout</a>
+          </nav>
+        </header>
+      </div>
+
+      <div class="st-container st-full">
+        <header class=meta>
+          <a href=#>
+            <img
+              src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
+              class="avatar avatar-icon"
+              onerror=this.src='./img/avatar.png'
+              alt>
+          </a>
+
+          <div class=meta-data>
+            <a href=#>Vinyll</a>
+            <time class="icon time" datetime=2018-05-23T12:36:51.397000 pubdate>23 May, 2018</time>
+            <p class="icon time time-reading"><span>1</span> min read</p>
+          </div>
+        </header>
       </div>
     </article>
-    
-    <form>
-      <div>
-        <label>Email</label>
-        <input type=email placeholder=testy@example.com>
-      </div>
-      <div>
-        <label>Subject</label>
-        <input type=text placeholder="Best thing ever">
-      </div>
-      <div>
-        <label>Message</label>
-        <textarea placeholder="You guyz are great!"></textarea>
-      </div>
-      <button type=submit value="Send this form"></button>
-    </form>
-  </section>
 
+    <article class=st-article>
+      <h2 class=st-title>Button with icon</h2>
+
+      <div class=st-container>
+        <a class="button icon account" href=# title>Label</a>
+        <a class="button icon become-user" href=# title>Label</a>
+        <button type=button class="button icon email" title>Label</button>
+      </div>
+    </article>
+
+    <article class=st-article>
+      <h2 class=st-title>Article preview</h2>
+
+      <div class=st-container>
+        <main class=content-preview>
+          <a href=# lang=en>
+            <h1>Article title</h1>
+            <figure class="icon read-more">
+              <img
+                src=https://neomad.org/static/uploads/articles/59182b6101e5cd050ded7f4c/ffb21e7e4063867b29c165ce506bc400
+                alt>
+            </figure>
+            <figcaption>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi...
+            </figcaption>
+          </a>
+        </main>
+      </div>
+    </article>
+
+    <article class="st-article">
+      <h2 class=st-title>Social form</h2>
+      
+      <ul class=profile-socials>
+        <li class="icon email">
+          <input name=email placeholder=mycontact@email.com type=email>
+        </li>
+        <li class="icon instagram">
+          <input name=twitter placeholder="my Twitter username" type=text>
+        </li>
+        <li class="icon twitter">
+          <input name=facebook placeholder="my Facebook username" type=text>
+        </li>
+        <li class="icon facebook">
+          <input name=instagram placeholder="my Instagram username" type=text>
+        </li>
+      </ul>
+    </article>
+
+    <article class="st-article">
+      <h2 class=st-title>Social form validate</h2>
+      
+      <ul class=profile-socials>
+        <li class="icon email valid">
+          <input name=email placeholder=mycontact@email.com type=email value=email_value>
+        </li>
+        <li class="icon instagram valid">
+          <input name=twitter placeholder="my Twitter username" type=text value=instagram_value>
+        </li>
+        <li class="icon twitter valid">
+          <input name=facebook placeholder="my Facebook username" type=text value=twitter_value>
+        </li>
+        <li class="icon facebook valid">
+          <input name=instagram placeholder="my Instagram username" type=text value=facebook_value>
+        </li>
+      </ul>
+    </article>
+
+    <article class="st-article">
+      <h2 class=st-title>Socials</h2>
+      
+      <ul class=profile-socials>
+        <li class=valid>
+          <a class="icon email" href=#>email_value</a>
+        </li>
+        <li class=valid>
+          <a class="icon instagram" href=#>instagram_value</a>
+        </li>
+        <li class=valid>
+          <a class="icon twitter" href=#>twitter_value</a>
+        </li>
+        <li class=valid>
+          <a class="icon facebook" href=#>facebook_value</a>
+        </li>
+      </ul>
+    </article>
+
+  </section>
 </main>

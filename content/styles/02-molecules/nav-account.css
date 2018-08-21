@@ -1,0 +1,33 @@
+.nav-account {
+  position: absolute;
+  top: 6rem;
+  right: -1rem;
+  margin: 0;
+  padding: 1rem 2rem;
+  height: 0;
+  opacity: 0;
+  background-color: var(--white);
+  box-shadow: 0 0 .6rem var(--shadow-color);
+  border-radius: 3px;
+  transition: all .3s;
+
+  &.active {
+    height: auto;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    top: -1rem;
+    right: 2rem;
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--white);
+    box-shadow: -.1rem -.1rem .1rem -.1rem var(--shadow-color);
+    transform: rotate(45deg);
+    transition: all .3s;
+  }
+}

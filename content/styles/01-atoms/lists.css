@@ -1,0 +1,80 @@
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.presentation {
+  & ul,
+  & ol {
+    padding: 1rem 5rem 2rem;
+
+    & li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: .75rem;
+
+      &.icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        &::before {
+          font-size: 3.5rem;
+          margin: 0 0 -1rem 0;
+        }
+      }
+
+      &::before {
+        font-size: 1.1rem;
+        margin-right: 1rem;
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  & ol {
+    counter-reset: counter;
+
+    & li::before {
+      counter-increment: counter;
+      content: counter(counter);
+      font-size: 1.7rem;
+    }
+  }
+
+  &.with-icon ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    & li::before {
+      margin: 0;
+    }
+  }
+
+  &:not(.with-icon) ul li::before {
+    content: var(--circle);
+  }
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & li {
+    margin: 2rem auto;
+    width: 20rem;
+  }
+
+  & figcaption {
+    margin-top: .75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

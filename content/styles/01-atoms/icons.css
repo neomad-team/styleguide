@@ -1,0 +1,65 @@
+.icon {
+  vertical-align: middle;
+
+  &::before {
+    font-family: var(--icon-font);
+    margin-right: 2rem;
+    font-size: 1.7rem;
+  }
+
+  &.read::before {
+    content: var(--book);
+  }
+
+  &.become-user::before {
+    content: var(--signin);
+  }
+
+  &.account::before {
+    content: var(--login);
+  }
+
+  &.github::before {
+    content: var(--github);
+  }
+
+  &.email::before {
+    content: var(--email);
+  }
+
+  &.time::before {
+    content: var(--calendar);
+  }
+
+  &.time-reading::before {
+    content: var(--clock);
+  }
+
+  &.read-more::before {
+    content: var(--get-article);
+  }
+
+  &.arrow-down::before {
+    content: var(--arrow-down);
+  }
+
+  &.twitter::before {
+    content: var(--twitter);
+  }
+
+  &.facebook::before {
+    content: var(--facebook);
+  }
+
+  &.instagram::before {
+    content: var(--instagram);
+  }
+
+  &.setting::before {
+    content: var(--setting);
+  }
+
+  &.trip::before {
+    content: var(--trip);
+  }
+}

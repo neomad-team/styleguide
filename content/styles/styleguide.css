@@ -1,9 +1,9 @@
-@charset "UTF-8";
+@import "main.css";
 
 /* Structure */
 
 .st-main {
-  width: 70rem;
+  width: 100rem;
 }
 
 .st-section {
@@ -18,19 +18,45 @@
 .st-container {
   padding: 1rem;
   background-color: var(--secondary-bg-color);
+  align-items: flex-start;
+
+  & li {
+    margin-bottom: 0;
+  }
+
+  & > header {
+    position: relative;
+  }
+  
+  &.presentation {
+    & ul,
+    & ol {
+      padding: 0;
+    }
+  }
 }
 
-.st-container > header {
-  position: relative;
-}
 
 .st-colors,
-.st-buttons,
+.st-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .st-checkbox,
 .st-radio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 0;
+  
+  & label {
+    margin: 0 5rem 0 0;
+  }
+  
+  & input {
+    margin: 0;
+  }
 }
 
 .st-full {
@@ -55,25 +81,24 @@ h2.st-title {
 
 /* Colors */
 
-.st-colors li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 49%;
-  border: .1rem solid var(--shadow-color);
-  text-align: center;
-  border-radius: .8rem;
-}
-
-.st-colors li {
-  margin: 0 1% 1rem 0;
-}
-
-.st-colors span:first-of-type {
-  display: block;
-  width: 100%;
-  height: 50px;
-  border-radius: .8rem .8rem 0 0;
+.st-colors {
+  & li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49%;
+    border: .1rem solid var(--shadow-color);
+    text-align: center;
+    border-radius: .8rem;
+    margin: 0 1% 1rem 0;
+  }
+  
+  & span:first-of-type {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: .8rem .8rem 0 0;
+  }
 }
 
 /* Fonts */
@@ -88,4 +113,56 @@ h2.st-title {
 
 .st-font-blog {
   font-family: var(--blog-font);
+}
+
+/* Icons */
+
+.st-icons {
+  position: relative;
+
+  & > div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;  
+  }
+  
+  & .icon {
+    width: auto;
+    position: relative;
+    animation: none;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      color: var(--primary-color);
+      position: relative;
+      font-size: 2.5rem;
+      top: 0;
+      left: 0;
+      margin: 0 2rem;
+      width: auto;
+    }
+  }
+}
+
+/* Component */
+
+.st-component {
+  & .st-section {
+    border-bottom: .5rem solid var(--shadow-color);
+    background-color: var(--secondary-bg-color);
+    padding: 1rem 0 3rem;
+    margin: 0;
+
+    & > .st-title {
+      background-color: var(--secondary-bg-color);
+      padding: 1rem 0;
+      margin: 0;
+    }
+  }
+
+  & .st-container {
+    padding: 1rem 0;
+  }
 }

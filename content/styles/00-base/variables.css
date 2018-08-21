@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #00d1b2;
+  --secondary-color: #00c4a7;
+
+  --primary-bg-color: #fefefe;
+  --secondary-bg-color: #fafafa;
+
+  --black: #000;
+  --gray: #333;
+  --time: #aaa;
+  --white: #fff;
+
+  --shadow-color: rgba(50, 50, 50, .15);
+
+  --title-font: 'Poppins', Arial, sans-serif;
+  --content-font: 'Maven Pro', Arial, sans-serif;
+  --blog-font: 'Merryweather', Arial, sans-serif;
+  --icon-font: 'fontawesome', 'fontawesome solid';
+
+  --circle: '\25CF';
+  --book: '\f518';
+  --signin: '\f234';
+  --login: '\f2f6';
+  --github: '\f09b';
+  --email: '\f0e0';
+  --calendar: '\f073';
+  --clock: '\f017';
+  --get-article: '\f2f6';
+  --arrow-down: '\f358';
+  --twitter: '\f099';
+  --instagram: '\f16d';
+  --facebook: '\f09a';
+  --setting: '\f013';
+  --trip: '\f277';
+}

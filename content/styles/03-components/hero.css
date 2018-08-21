@@ -1,0 +1,40 @@
+.hero {
+  background: linear-gradient(0deg, var(--shadow-color), var(--shadow-color)), url('../../img/home.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70rem;
+  padding: 10rem 10rem;
+  position: relative;
+
+  & h2,
+  & h3 {
+    color: var(--white);
+  }
+
+  & h2 {
+    font-size: 8rem;
+    margin: 0;
+  }
+
+  & h3 {
+    font-size: 3.2rem;
+    margin: 0 0 2rem;
+  }
+
+  & .arrow-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    animation: 10s updown infinite ease-in-out;
+
+    &::before {
+      font-size: 3rem;
+      margin-right: 0;
+      color: var(--white);
+      transition: all .3s ease;
+    }
+  }
+}

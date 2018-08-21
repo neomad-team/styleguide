@@ -1,0 +1,24 @@
+.register {
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border: .1rem solid var(--shadow-color);
+  background-color: var(--white);
+
+  & button {
+    width: 100%;
+  }
+
+  & a {
+    display: block;
+    border-top: 1px solid var(--shadow-color);
+    font-size: 1.55rem;
+    margin-top: 3rem;
+    padding: 1.5rem 0 0;
+
+    &::before {
+      margin-right: 1.25rem;
+      font-size: 1.55rem;
+    }
+  }
+}
