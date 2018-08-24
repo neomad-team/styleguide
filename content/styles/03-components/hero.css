@@ -10,6 +10,7 @@
   & h2,
   & h3 {
     color: var(--white);
+    text-shadow: 0 0 .3rem #555;
   }
 
   & h2 {
