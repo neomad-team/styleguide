@@ -158,7 +158,7 @@ h2.st-title {
     & article,
     & form {
       max-width: 100rem;
-      margin: 0 auto;
+      margin: 2rem auto;
     }
 
     & > .st-title {
