@@ -2,69 +2,69 @@ header {
   background-color: var(--white);
   box-shadow: 0 .2rem 0 var(--shadow-color);
   padding: 1rem;
-}
-
-header.main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-
-  & h1 {
-    margin: 0;
-    font-weight: 300;
-    font-size: 3rem;
-
-    & a {
-      padding: 1rem;
-      color: var(--gray);
-      text-decoration: inherit;
-    }
-  }
-
-  & > nav {
-    position: relative;
-    margin: 0 2rem 0 0;
+  
+  &.navigation {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
 
-    & a {
-      padding: 3px 15px;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
+    & h1 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 3rem;
 
-    & .button {
-      background-color: var(--primary-bg-color);
-      border: .1rem solid var(--gray);
-      border-radius: .5rem;
-
-      &:hover {
-        color: var(--black);
-        background-color: var(--gray);
+      & a {
+        padding: 1rem;
+        color: var(--gray);
+        text-decoration: inherit;
       }
     }
+
+    & > nav {
+      position: relative;
+      margin: 0 2rem 0 0;
+      display: flex;
+      align-items: center;
+
+      & a {
+        padding: 3px 15px;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+
+      & .button {
+        background-color: var(--primary-bg-color);
+        border: .1rem solid var(--gray);
+        border-radius: .5rem;
+
+        &:hover {
+          color: var(--black);
+          background-color: var(--gray);
+        }
+      }
+    }
+
+    & .avatar {
+      cursor: pointer;
+    }
+
+    & .nav-account a {
+      display: block;
+    }
   }
+  
+  &.profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
 
-  & .avatar {
-    cursor: pointer;
-  }
-
-  & .nav-account a {
-    display: block;
-  }
-}
-
-header.profile {
-  display: flex;
-  justify-content: space-between;
-  padding: 3rem 1rem;
-
-  .profile-socials {
-    margin: 3rem 0;
+    .profile-socials {
+      margin: 3rem 0;
+    }
   }
 }
