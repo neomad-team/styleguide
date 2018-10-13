@@ -1,0 +1,19 @@
+.profile-user {
+  & h1 {
+    margin: 0 0 2rem;
+  }
+
+  & p {
+    margin: .5rem 0;
+    font-size: 1.9rem;
+  }
+
+  & .about {
+    font-style: italic;
+
+    &::before,
+    &::after {
+      content: '"';
+    }
+  }
+}

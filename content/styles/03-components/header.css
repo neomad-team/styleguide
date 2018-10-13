@@ -1,4 +1,10 @@
-.main-header {
+header {
+  background-color: var(--white);
+  box-shadow: 0 .2rem 0 var(--shadow-color);
+  padding: 1rem;
+}
+
+header.main {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,9 +12,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
-  background-color: var(--white);
-  box-shadow: 0 .2rem 0 var(--shadow-color);
   z-index: 9;
 
   & h1 {
@@ -53,5 +56,15 @@
 
   & .nav-account a {
     display: block;
+  }
+}
+
+header.profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+
+  .profile-socials {
+    margin: 3rem 0;
   }
 }
