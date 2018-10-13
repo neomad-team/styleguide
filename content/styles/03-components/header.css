@@ -2,7 +2,7 @@ header {
   background-color: var(--white);
   box-shadow: 0 .2rem 0 var(--shadow-color);
   padding: 1rem;
-  
+
   &.navigation {
     display: flex;
     justify-content: space-between;
@@ -57,10 +57,8 @@ header {
       display: block;
     }
   }
-  
+
   &.profile {
-    display: flex;
-    justify-content: space-between;
     padding: 3rem 1rem;
 
     .profile-socials {

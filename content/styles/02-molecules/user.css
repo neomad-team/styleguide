@@ -1,4 +1,6 @@
 .profile-user {
+  position: relative;
+
   & h1 {
     margin: 0 0 2rem;
   }
@@ -15,5 +17,11 @@
     &::after {
       content: '"';
     }
+  }
+  
+  figure {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
