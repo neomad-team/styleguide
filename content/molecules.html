@@ -6,7 +6,9 @@
 
 <link rel=stylesheet href=dist/styleguide.css>
 
-<header class=main-header>
+<script src=dist/assets/js/utils.js></script>
+
+<header class=navigation>
   <h1>
     <a href=index.html>Neomad - Styleguide</a>
   </h1>
@@ -25,7 +27,7 @@
       <h2 class=st-title>Header</h2>
 
       <div class="st-container st-full">
-        <header class=main-header>
+        <header class=navigation>
           <h1>
             <a href=https://neomad.org>Neomad</a>
           </h1>
@@ -33,7 +35,7 @@
       </div>
 
       <div class="st-container st-full">
-        <header class=main-header>
+        <header class=navigation>
           <nav>
             <a href=# title="Read nomad's adventures">Read</a>
             <a href=# class=login>Log in</a>
@@ -42,11 +44,11 @@
       </div>
 
       <div class="st-container st-full">
-        <header class=main-header>
+        <header class=navigation>
           <div id=avatar-menu>
             <img
               src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-              class="avatar avatar-icon">
+              class="avatar icon">
           </div>
 
           <nav id=menu class=nav-account>
@@ -62,7 +64,7 @@
           <a href=#>
             <img
               src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-              class="avatar avatar-icon"
+              class="avatar icon"
               onerror="this.src='dist/assets/img/avatar.png'"
               alt>
           </a>
@@ -106,10 +108,10 @@
       </div>
     </article>
 
-    <article class="st-article">
+    <article class=st-article>
       <h2 class=st-title>Social form</h2>
       
-      <ul class=profile-socials>
+      <ul class=socials>
         <li class="icon email">
           <input name=email placeholder=mycontact@email.com type=email>
         </li>
@@ -125,10 +127,10 @@
       </ul>
     </article>
 
-    <article class="st-article">
+    <article class=st-article>
       <h2 class=st-title>Social form validate</h2>
       
-      <ul class=profile-socials>
+      <ul class=socials>
         <li class="icon email valid">
           <input name=email placeholder=mycontact@email.com type=email value=email_value>
         </li>
@@ -144,10 +146,10 @@
       </ul>
     </article>
 
-    <article class="st-article">
+    <article class=st-article>
       <h2 class=st-title>Socials</h2>
       
-      <ul class=profile-socials>
+      <ul class=socials>
         <li class=valid>
           <a class="icon email" href=#>email_value</a>
         </li>
@@ -161,6 +163,26 @@
           <a class="icon facebook" href=#>facebook_value</a>
         </li>
       </ul>
+    </article>
+    
+    <article class=st-article>
+      <h2 class=st-title>User profile header</h2>
+      
+      <div class=profile-user>
+        <h1 class=username>User name</h1>
+        <p class=about>Some about content to define user</p>
+        <p>User is currently around
+          <a
+          href
+          data-latlng=45,-74>the world</a>
+        </p>
+        
+        <figure>
+          <img
+            src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
+            class=avatar>
+        </figure>
+      </div>
     </article>
 
   </section>

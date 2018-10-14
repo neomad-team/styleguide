@@ -8,7 +8,7 @@
 
 <script src=dist/assets/js/utils.js></script>
 
-<header class=main-header>
+<header class=navigation>
   <h1>
     <a href=index.html>Neomad - Styleguide</a>
   </h1>
@@ -24,7 +24,7 @@
     <h1 class=st-title>Headers</h1>
 
     <div class="st-container st-full">
-      <header class=main-header>
+      <header class=navigation>
         <h1>
           <a href=https://neomad.org>Neomad - User not logged</a>
         </h1>
@@ -37,7 +37,7 @@
     </div>
 
     <div class=st-container>
-      <header class=main-header>
+      <header class=navigation>
         <h1>
           <a href=https://neomad.org>Neomad - User logged</a>
         </h1>
@@ -49,7 +49,7 @@
           <div id=avatar-menu>
             <img
               src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-              class="avatar avatar-icon">
+              class="avatar icon">
           </div>
 
           <nav id=menu class=nav-account>
@@ -57,6 +57,44 @@
             <a href=#>Privacy settings</a>
             <a href=#>Logout</a>
           </nav>
+        </nav>
+      </header>
+    </div>
+
+    <div class=st-container>
+      <header class=profile>
+        <article class=profile-user>
+          <h1>User name</h1>
+          <p class=about>Some about content to define user</p>
+          <p>User is currently around
+            <a href data-latlng=45,-74></a>
+          </p>
+          
+          <figure>
+            <img
+              src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
+              class=avatar>
+          </figure>
+        </article>
+      
+        <ul class=socials>
+          <li class="icon email">
+            <input name=email placeholder="mycontact@email.com" type=email>
+          </li>
+          <li class="icon instagram">
+            <input name=twitter placeholder="my Twitter username" type=text>
+          </li>
+          <li class="icon twitter">
+            <input name=facebook placeholder="my Facebook username" type=text>
+          </li>
+          <li class="icon facebook">
+            <input name=instagram placeholder="my Instagram username" type=text>
+          </li>
+        </ul>
+        
+        <nav>
+          <a class="button icon setting" href>Label button</a>
+          <a class="button icon trip" href>Label button</a>
         </nav>
       </header>
     </div>
@@ -183,7 +221,7 @@
           <a href=#>
             <img
             src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class="avatar avatar-icon"
+            class="avatar icon"
             onerror="this.src='dist/assets/img/avatar.png'"
             alt>
           </a>
@@ -225,7 +263,7 @@
             <figure>
               <img
                 src=dist/assets/img/avatar.png
-                class="avatar avatar-img"
+                class=avatar
                 title="User name">
               <figcaption>User name</figcaption>
             </figure>
@@ -236,7 +274,7 @@
             <figure>
               <img
                 src=dist/assets/img/avatar.png
-                class="avatar avatar-img"
+                class=avatar
                 title="User name">
               <figcaption>User name</figcaption>
             </figure>
@@ -247,7 +285,7 @@
             <figure>
               <img
                 src=dist/assets/img/avatar.png
-                class="avatar avatar-img"
+                class=avatar
                 title="User name">
               <figcaption>User name</figcaption>
             </figure>
