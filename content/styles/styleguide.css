@@ -153,7 +153,13 @@ h2.st-title {
     border-bottom: .5rem solid var(--shadow-color);
     background-color: var(--secondary-bg-color);
     padding: 1rem 0 3rem;
-    margin: 0;
+    margin: 0 auto;
+    
+    & article,
+    & form {
+      max-width: 100rem;
+      margin: 2rem auto;
+    }
 
     & > .st-title {
       background-color: var(--secondary-bg-color);

@@ -1,5 +1,4 @@
 .register {
-  max-width: 55rem;
   margin: 0 auto;
   padding: 2rem;
   border: .1rem solid var(--shadow-color);
