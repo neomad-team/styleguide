@@ -18,11 +18,11 @@
 </header>
 
 <main class=st-main>
-  <h1 class=st-title>Atoms</h1>
+  <div class=st-title>Atoms</div>
   <section class=st-section>
 
     <article class=st-article>
-      <h2 class=st-title>Colors</h2>
+      <div class=st-title>Colors</div>
 
       <div class=st-container>
         <ul class=st-colors>
@@ -71,7 +71,7 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Fonts</h2>
+      <div class=st-title>Fonts</div>
 
       <div class=st-container>
         <ul>
@@ -83,7 +83,7 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Headings</h2>
+      <div class=st-title>Headings</div>
 
       <div class=st-container>
         <h1 class=st-font-title>Default Title level 1</h1>
@@ -93,7 +93,7 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Text content</h2>
+      <div class=st-title>Text content</div>
 
       <div class=st-container>
         <p>The <a href=#>a element</a> and <a href=# target=_blank>external a element</a> examples</p>
@@ -112,13 +112,13 @@
         <p>The <sub>sub element</sub> example</p>
         <p>The <sup>sup element</sup> example</p>
         <p>The <u>u element</u> example</p>
-        <p>The <time class="icon time" datetime=2018-05-23T12:36:51.397000 pubdate>time element</time> exemple</p>
-        <p class="icon time time-reading">The reading time <span>quantity</span> exemple</p>
+        <p>The <time class="time" datetime=2018-05-23T12:36:51.397000 pubdate>time element</time> exemple</p>
+        <p class="time time-reading">The reading time <span>quantity</span> exemple</p>
       </div>
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Buttons</h2>
+      <div class=st-title>Buttons</div>
 
       <div class=st-container>
         <div class=st-buttons>
@@ -130,34 +130,32 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>List</h2>
+      <div class=st-title>List</div>
 
       <div class=st-container>
-        <h3>Unordered list</h3>
+        <div class="st-title st-sub">Unordered list</div>
         <ul>
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ul>
 
-        <h3>Ordered list</h3>
+        <div class="st-title st-sub">Ordered list</div>
         <ol>
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ol>
-      </div>
 
-      <div class="st-container presentation">
-        <h3>Unordered presentation list</h3>
-        <ul>
+        <div class="st-title st-sub">Unordered list with icon</div>
+        <ul class="with-icon">
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ul>
 
-        <h3>Ordered presentation list</h3>
-        <ol>
+        <div class="st-title st-sub">Ordered list with index</div>
+        <ol class="with-index">
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
@@ -173,20 +171,20 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Images</h2>
+      <div class=st-title>Images</div>
 
       <div class=st-container>
         <div>
           <h3>Avatar image</h3>
           <img
             src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class=avatar>
+            class="avatar avatar-img">
         </div>
         <div>
           <h3>Avatar icon</h3>
           <img
             src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class="avatar icon">
+            class="avatar avatar-icon">
         </div>
         <div>
           <h3>Article</h3>
@@ -196,7 +194,7 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Icons</h2>
+      <div class=st-title>Icons</div>
 
       <div class="st-container st-icons">
         <div>
@@ -259,36 +257,36 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Figures</h2>
+      <div class=st-title>Figures</div>
 
       <div class=st-container>
         <figure>
-          <img src=dist/assets/img/avatar.png class=avatar>
+          <img src=dist/assets/img/avatar.png class="avatar avatar-icon">
           <figcaption>Figure</figcaption>
         </figure>
       </div>
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Forms</h2>
+      <div class=st-title>Forms</div>
 
       <div class=st-container>
-        <h3>Label</h3>
+        <div class="st-title st-sub">Label</div>
         <label>I'm a label</label>
 
-        <h3>Input - text</h3>
+        <div class="st-title st-sub">Input - text</div>
         <input type=text placeholder=Placeholder>
 
-        <h3>Input - email</h3>
+        <div class="st-title st-sub">Input - email</div>
         <input type=email placeholder=Placeholder>
 
-        <h3>Input - password</h3>
+        <div class="st-title st-sub">Input - password</div>
         <input type=password placeholder=Password>
 
-        <h3>Input - number</h3>
+        <div class="st-title st-sub">Input - number</div>
         <input type=number placeholder=Number>
 
-        <h3>Select</h3>
+        <div class="st-title st-sub">Select</div>
         <div class=select>
           <select>
             <option>Choose an option</option>
@@ -298,13 +296,13 @@
           </select>
         </div>
 
-        <h3>Textarea</h3>
+        <div class="st-title st-sub">Textarea</div>
         <textarea type=text placeholder=Textarea></textarea>
 
-        <h3>Range</h3>
+        <div class="st-title st-sub">Range</div>
         <input type=range min=0 max=10 value=5>
 
-        <h3>Checkbox</h3>
+        <div class="st-title st-sub">Checkbox</div>
         <div class=st-checkbox>
           <label>
             <input type=checkbox checked>
@@ -317,7 +315,7 @@
           </label>
         </div>
 
-        <h3>Radio</h3>
+        <div class="st-title st-sub">Radio</div>
         <div class=st-radio>
           <label>
             <input type=radio name=styleguide checked>

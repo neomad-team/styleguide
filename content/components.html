@@ -20,10 +20,12 @@
 </header>
 
 <main class="st-main st-full st-component">
-  <section class=st-section>
-    <h1 class=st-title>Headers</h1>
+  <div class=st-title>Components</div>
 
-    <div class="st-container st-full">
+  <section class=st-section>
+    <div class=st-title>Headers</div>
+
+    <div class="st-container">
       <header class=main-header>
         <h1>
           <a href=https://neomad.org>Neomad - User not logged</a>
@@ -49,7 +51,7 @@
           <div id=avatar-menu>
             <img
               src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-              class="avatar icon">
+              class="avatar avatar-icon">
           </div>
 
           <nav id=menu class=nav-account>
@@ -63,7 +65,7 @@
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>Register form</h1>
+    <div class=st-title>Register form</div>
 
     <div class=st-container>
       <form class=register action="/login/" method="post">
@@ -99,7 +101,7 @@
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>Hero banners</h1>
+    <div class=st-title>Hero banners</div>
 
     <div class=st-container>
       <section class=hero>
@@ -121,61 +123,81 @@
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>Presentation unordered list</h1>
+    <div class=st-title>Presentation list order</div>
+
     <div class=st-container>
-      <article class=presentation>
-        <h2>Presentation title</h2>
-        <ul>
-          <li>This is the description about feature number 1</li>
-          <li>This is the description about feature number 2</li>
-          <li>This is the description about feature number 3</li>
-        </ul>
-        <div class=button-group>
-          <a class=button href=#>link name 1</a>
-          <a class=button href=#>link name 2</a>
-        </div>
-      </article>
+      <section class="presentation with-image">
+        <aside>
+          <img src=dist/assets/img/coffee.svg alt="section description">
+        </aside>
+
+        <article>
+          <h2>Presentation title</h2>
+
+          <ul>
+            <li>This is the sweet and short description</li>
+            <li>This is the sweet and short description</li>
+            <li>This is the sweet and short description</li>
+          </ul>
+          <div class=button-group>
+            <a class=button href=#>link name 1</a>
+            <a class=button href=#>link name 2</a>
+          </div>
+        </article>
+      </section>
     </div>
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>Presentation ordered list</h1>
+    <div class=st-title>Presentation ordered list</div>
+
     <div class=st-container>
-      <article class=presentation>
-        <h2>Presentation title</h2>
-        <ol>
-          <li>This is the description about feature number 1</li>
-          <li>This is the description about feature number 2</li>
-          <li>This is the description about feature number 3</li>
-        </ol>
-        <div class=button-group>
-          <a class=button href=#>link name 1</a>
-          <a class=button href=#>link name 2</a>
-        </div>
-      </article>
+      <section class="presentation with-image">
+        <aside>
+          <img src=dist/assets/img/trips.svg alt="section description">
+        </aside>
+
+        <article>
+          <h2>Presentation title</h2>
+
+          <ol class=with-index>
+            <li>This is the sweet and short description</li>
+            <li>This is the sweet and short description</li>
+            <li>This is the sweet and short description</li>
+          </ol>
+          <div class=button-group>
+            <a class=button href=#>link name 1</a>
+            <a class=button href=#>link name 2</a>
+          </div>
+        </article>
+      </section>
     </div>
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>Presentation icons list</h1>
+    <div class=st-title>Presentation icons list</div>
+
     <div class=st-container>
-      <article class="presentation with-icon">
-        <h2>Presentation title</h2>
-        <ul>
-          <li class="icon github">Feature number 1</li>
-          <li class="icon github">Feature number 2</li>
-          <li class="icon github">Feature number 3</li>
-        </ul>
-        <div class=button-group>
-          <a class=button href=#>link name 1</a>
-          <a class=button href=#>link name 2</a>
-        </div>
-      </article>
+      <section class="presentation with-image with-icon">
+        <aside>
+          <img src=dist/assets/img/van.svg alt="section description">
+        </aside>
+
+        <article>
+          <h2>Presentation title</h2>
+
+          <ul>
+            <li class="icon github">Feature number 1</li>
+            <li class="icon github">Feature number 2</li>
+            <li class="icon github">Feature number 3</li>
+          </ul>
+        </article>
+      </section>
     </div>
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>Preview article</h1>
+    <div class=st-title>Preview article</div>
     <div class=st-container>
 
       <article class=preview>
@@ -183,7 +205,7 @@
           <a href=#>
             <img
             src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class="avatar icon"
+            class="avatar avatar-icon"
             onerror="this.src='dist/assets/img/avatar.png'"
             alt>
           </a>
@@ -217,8 +239,11 @@
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>List of users</h1>
+    <div class=st-title>List of users</div>
+
     <div class=st-container>
+      <h2>Neomad profiles</h2>
+
       <ul class=profiles>
         <li>
           <a href=#>
@@ -258,7 +283,8 @@
   </section>
 
   <section class=st-section>
-    <h1 class=st-title>Footer</h1>
+    <div class=st-title>Footer</div>
+
     <div class=st-container>
       <footer>
         <nav>
@@ -280,7 +306,7 @@
   </section>
 
   <section class=st-section>
-    <h2 class=st-title>Article in profil list</h2>
+    <div class=st-title>Article in profil list</div>
 
     <article class=preview>
       <div class=bar>&nbsp;</div>
@@ -313,7 +339,7 @@
         <a href=#>
           <img
             src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class="avatar icon"
+            class="avatar avatar-icon"
             onerror="this.src='dist/assets/img/avatar.png'"
             alt>
         </a>

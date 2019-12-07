@@ -15,11 +15,23 @@ select,
   margin: 0 0 2rem;
   cursor: pointer;
 
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  &:focus,
+  &:active {
+    color: var(--gray);
+    box-shadow: 0 0 .2rem .1rem var(--primary-color);
+  }
+}
+
+input,
+textarea {
+  &:hover,
   &:focus,
   &:active {
     cursor: text;
-    color: inherit;
-    box-shadow: 0 0 .2rem .1rem var(--primary-color);
   }
 }
 
@@ -136,6 +148,23 @@ option {
 /* RANGE */
 
 input[type=range] {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: var(--primary-color);
+    cursor: pointer;
+  }
+
+  &:focus::-ms-fill-lower {
+    background: var(--shadow-color);
+  }
+
+  &:focus::-ms-fill-upper {
+    background: var(--shadow-color);
+  }
+
   &::-webkit-slider-runnable-track {
     background: var(--shadow-color);
     border: none;
@@ -151,11 +180,6 @@ input[type=range] {
     height: 1.6rem;
     width: 1.6rem;
     margin-top: -.4rem;
-  }
-
-  &:focus {
-    outline: var(--primary-color);
-    cursor: pointer;
   }
 
   &::-moz-range-track {
@@ -194,13 +218,5 @@ input[type=range] {
     border-radius: 50%;
     height: 1.6rem;
     width: 1.6rem;
-  }
-
-  &:focus::-ms-fill-lower {
-    background: var(--shadow-color);
-  }
-
-  &:focus::-ms-fill-upper {
-    background: var(--shadow-color);
   }
 }
