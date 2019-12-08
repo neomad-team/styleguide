@@ -9,18 +9,19 @@ input[type=submit] {
   display: inline-block;
   padding: .8rem 2.5rem;
   margin: 1rem 0;
-  color: var(--white);
+  color: var(--color-white);
   text-align: center;
-  background-color: var(--primary-color);
-  border: .125rem solid var(--primary-color);
+  background-color: var(--color-primary);
+  border: .125rem solid var(--color-primary);
   border-radius: .5rem;
   transition: all .3s ease;
 
   &:hover,
+  &:active,
   &:focus {
-    color: var(--white);
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
   }
 
   &.read {

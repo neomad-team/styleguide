@@ -1,7 +1,7 @@
 footer {
   padding: 2rem 0;
-  box-shadow: 0 -.2rem 0 var(--shadow-color);
-  background-color: var(--white);
+  box-shadow: 0 -.2rem 0 var(--color-shadow);
+  background-color: var(--color-white);
   z-index: 1;
 
   & nav {

@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(0deg, var(--shadow-color), var(--shadow-color)), url('assets/img/home.jpg');
+  background: linear-gradient(0deg, var(--color-shadow), var(--color-shadow)), url('assets/img/home.jpg');
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,8 @@
 
   & h2,
   & h3 {
-    color: var(--white);
+    color: var(--color-white);
+    text-shadow: 0 0 .3rem #555;
   }
 
   & h2 {
@@ -33,7 +34,7 @@
     &::before {
       font-size: 3rem;
       margin-right: 0;
-      color: var(--white);
+      color: var(--color-white);
       transition: all .3s ease;
     }
   }

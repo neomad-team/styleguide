@@ -1,12 +1,12 @@
 .presentation {
-  background: var(--primary-bg-color);
+  background: var(--color-background-primary);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
 
   &.with-image {
-    background-color: var(--white);
+    background-color: var(--color-white);
 
     .button-group {
       justify-content: flex-start;
@@ -18,9 +18,9 @@
       width: 100%;
     }
 
-   ul {
-    display: flex;
-    justify-content: space-around;
+    ul {
+      display: flex;
+      justify-content: space-around;
 
       & li::before {
         margin: 0;
@@ -28,15 +28,11 @@
     }
   }
 
-  &:not(.with-icon) ul li::before {
-    content: var(--circle);
-  }
-
   article {
     padding: 0 2rem 2rem;
 
     h2 {
-      text-align: center
+      text-align: center;
     }
 
     ul,

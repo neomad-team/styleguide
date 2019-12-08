@@ -7,10 +7,10 @@ ol {
 
 ul {
   &.with-icon {
-    li  {
+    li {
       &::before {
-        content: '\25CF';
-        font-size: 1rem;
+        content: var(--icon-circle);
+        font-size: 1.5rem;
       }
     }
   }
@@ -32,7 +32,7 @@ li {
   &::before {
     font-size: 1.1rem;
     margin-right: 1rem;
-    color: var(--primary-color);
+    color: var(--color-primary);
   }
 
   &.icon {
@@ -53,19 +53,19 @@ li {
   justify-content: center;
   flex-wrap: wrap;
 
-  & li {
+  li {
     margin: 2rem auto;
     width: 20rem;
   }
 
-  & figcaption {
+  figcaption {
     margin-top: .75rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  & img {
+  img {
     height: 10rem;
     width: 10rem;
   }

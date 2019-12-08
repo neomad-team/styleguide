@@ -1,5 +1,5 @@
 a {
-  color: var(--primary-color);
+  color: var(--color-primary);
   text-decoration: none;
   transition: color .3s;
 
@@ -8,6 +8,6 @@ a {
   &:active {
     cursor: pointer;
     color: inherit;
-    color: var(--primary-color);
+    color: var(--color-primary);
   }
 }

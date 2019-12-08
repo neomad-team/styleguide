@@ -18,6 +18,7 @@
 @import "02-molecules/meta.css";
 @import "02-molecules/register.css";
 @import "02-molecules/socials.css";
+@import "02-molecules/user.css";
 
 @import "03-components/header.css";
 @import "03-components/footer.css";

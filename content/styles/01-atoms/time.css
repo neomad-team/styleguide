@@ -1,7 +1,7 @@
 time,
 .time {
   margin: 0;
-  color: var(--time);
+  color: var(--color-time);
   font-size: 1.5rem;
 
   &.time-reading {
