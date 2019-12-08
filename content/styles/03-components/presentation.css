@@ -31,10 +31,6 @@
   article {
     padding: 0 2rem 2rem;
 
-    h2 {
-      text-align: center;
-    }
-
     ul,
     ol {
       padding: 0;

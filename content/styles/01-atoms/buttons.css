@@ -7,14 +7,16 @@ input[type=submit] {
   line-height: inherit;
   cursor: pointer;
   display: inline-block;
-  padding: .8rem 2.5rem;
+  padding: .7rem 2.5rem;
   margin: 1rem 0;
   color: var(--color-white);
   text-align: center;
   background-color: var(--color-primary);
-  border: .125rem solid var(--color-primary);
-  border-radius: .5rem;
-  transition: all .3s ease;
+  border: 1px solid var(--color-primary);
+  border-radius: .3rem;
+  transition: color,background-color .3s ease;
+  box-shadow: 0 2px 3px var(--color-shadow);
+  text-transform: uppercase;
 
   &:hover,
   &:active,
