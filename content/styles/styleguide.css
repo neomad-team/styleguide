@@ -25,12 +25,16 @@
   padding: 3rem;
   margin-bottom: 2rem;
 
-  & li {
+  li {
     margin-bottom: 0;
   }
 
-  & > header {
+  > header {
     position: relative;
+  }
+
+  &.st-dark {
+    background-color: var(--color-gray);
   }
 
   &.presentation {
@@ -80,15 +84,6 @@
   text-decoration: underline;
   font-size: 3rem;
   margin: 2rem 0;
-
-  &.st-sub {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-  }
 }
 
 .st-main {

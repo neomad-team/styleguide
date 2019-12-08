@@ -9,3 +9,17 @@
   42% { bottom: 1rem; }
   100% { bottom: 1rem; }
 }
+
+@keyframes mouse-wheel {
+  0% { top: 0; }
+  25% { top: .2rem; }
+  50% { top: .4rem; }
+  75% { top: .2rem; }
+  100% { top: 0; }
+}
+
+@keyframes mouse-scroll {
+  0% { opacity: 0; }
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}

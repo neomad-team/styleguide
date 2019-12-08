@@ -133,28 +133,28 @@
       <div class=st-title>List</div>
 
       <div class=st-container>
-        <div class="st-title st-sub">Unordered list</div>
+        <div class=st-title>Unordered list</div>
         <ul>
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ul>
 
-        <div class="st-title st-sub">Ordered list</div>
+        <div class=st-title>Ordered list</div>
         <ol>
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ol>
 
-        <div class="st-title st-sub">Unordered list with icon</div>
+        <div class=st-title>Unordered list with icon</div>
         <ul class="with-icon">
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ul>
 
-        <div class="st-title st-sub">Ordered list with index</div>
+        <div class=st-title>Ordered list with index</div>
         <ol class="with-index">
           <li>list item 1</li>
           <li>list item 2</li>
@@ -175,20 +175,27 @@
 
       <div class=st-container>
         <div>
-          <h3>Avatar image</h3>
-          <img
-            src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class=avatar>
+          <div class="st-title">Figure</div>
+          <figure>
+            <img src=dist/assets/img/avatar.png class=avatar>
+            <figcaption>Figure</figcaption>
+          </figure>
         </div>
         <div>
-          <h3>Avatar icon</h3>
-          <img
-            src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class="avatar icon">
+          <div class="st-title">Avatar image</div>
+          <img class=avatar src=dist/assets/img/neomad.png>
         </div>
         <div>
-          <h3>Article</h3>
-          <img src=https://neomad.org/static/uploads/articles/59182b6101e5cd050ded7f4c/ffb21e7e4063867b29c165ce506bc400>
+          <div class="st-title">Avatar icon</div>
+          <img class="avatar icon" src=dist/assets/img/neomad.png>
+        </div>
+        <div>
+          <div class="st-title">Article</div>
+          <img src=dist/assets/img/article.jpg>
+        </div>
+        <div>
+          <div class="st-title">Hero banner</div>
+          <section class=hero></section>
         </div>
       </div>
     </article>
@@ -257,36 +264,25 @@
     </article>
 
     <article class=st-article>
-      <div class=st-title>Figures</div>
-
-      <div class=st-container>
-        <figure>
-          <img src=dist/assets/img/avatar.png class=avatar>
-          <figcaption>Figure</figcaption>
-        </figure>
-      </div>
-    </article>
-
-    <article class=st-article>
       <div class=st-title>Forms</div>
 
       <div class=st-container>
-        <div class="st-title st-sub">Label</div>
+        <div class=st-title>Label</div>
         <label>I'm a label</label>
 
-        <div class="st-title st-sub">Input - text</div>
+        <div class=st-title>Input - text</div>
         <input type=text placeholder=Placeholder>
 
-        <div class="st-title st-sub">Input - email</div>
+        <div class=st-title>Input - email</div>
         <input type=email placeholder=Placeholder>
 
-        <div class="st-title st-sub">Input - password</div>
+        <div class=st-title>Input - password</div>
         <input type=password placeholder=Password>
 
-        <div class="st-title st-sub">Input - number</div>
+        <div class=st-title>Input - number</div>
         <input type=number placeholder=Number>
 
-        <div class="st-title st-sub">Select</div>
+        <div class=st-title>Select</div>
         <div class=select>
           <select>
             <option>Choose an option</option>
@@ -296,13 +292,13 @@
           </select>
         </div>
 
-        <div class="st-title st-sub">Textarea</div>
+        <div class=st-title>Textarea</div>
         <textarea type=text placeholder=Textarea></textarea>
 
-        <div class="st-title st-sub">Range</div>
+        <div class=st-title>Range</div>
         <input type=range min=0 max=10 value=5>
 
-        <div class="st-title st-sub">Checkbox</div>
+        <div class=st-title>Checkbox</div>
         <div class=st-checkbox>
           <label>
             <input type=checkbox checked>
@@ -315,14 +311,16 @@
           </label>
         </div>
 
-        <div class="st-title st-sub">Radio</div>
+        <div class=st-title>Radio</div>
         <div class=st-radio>
           <label>
             <input type=radio name=styleguide checked>
           </label>
+
           <label>
             <input type=radio name=styleguide>
           </label>
+
           <label>
             <input type=radio name=styleguide>
           </label>
@@ -330,6 +328,23 @@
       </div>
     </article>
 
+    <article class=st-article>
+      <div class=st-title>Animation</div>
+
+      <div class="st-container st-dark">
+        <div class="scroll-invitation">
+
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="arrow first"></span>
+            <span class="arrow second"></span>
+            <span class="arrow third"></span>
+          </div>
+        </div>
+      </div>
+    </article>
   </section>
 
 </main>
