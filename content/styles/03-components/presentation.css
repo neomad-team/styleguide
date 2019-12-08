@@ -1,11 +1,66 @@
 .presentation {
+  background: var(--color-background-primary);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 0 2rem 2rem;
-  background: var(--primary-bg-color);
+  padding: 2rem;
 
-  & .button {
-    margin: 2rem 5rem;
+  &.with-image {
+    background-color: var(--color-white);
+
+    .button-group {
+      justify-content: flex-start;
+    }
+  }
+
+  &.with-icon {
+    article {
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      & li::before {
+        margin: 0;
+      }
+    }
+  }
+
+  article {
+    padding: 0 2rem 2rem;
+
+    ul,
+    ol {
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+
+      .button {
+        margin-right: 2rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  aside {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 35rem;
+    width: 37.5rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
   }
 }

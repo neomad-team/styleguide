@@ -4,10 +4,10 @@ select,
 .select {
   font-family: inherit;
   font-size: 1.7rem;
-  color: var(--gray);
-  background: var(--white);
+  color: var(--color-gray);
+  background: var(--color-white);
   border: none;
-  box-shadow: 0 0 .2rem .1rem var(--shadow-color);
+  box-shadow: 0 0 .2rem .1rem var(--color-shadow);
   border-radius: .5rem;
   width: 100%;
   padding: 1.5rem;
@@ -15,11 +15,23 @@ select,
   margin: 0 0 2rem;
   cursor: pointer;
 
+  &:hover {
+    color: var(--color-primary);
+  }
+
+  &:focus,
+  &:active {
+    color: var(--color-gray);
+    box-shadow: 0 0 .2rem .1rem var(--color-primary);
+  }
+}
+
+input,
+textarea {
+  &:hover,
   &:focus,
   &:active {
     cursor: text;
-    color: inherit;
-    box-shadow: 0 0 .2rem .1rem var(--primary-color);
   }
 }
 
@@ -29,7 +41,7 @@ label {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--gray);
+  color: var(--color-gray);
   margin-bottom: 1.25rem;
 }
 
@@ -44,9 +56,9 @@ textarea {
 input[type=checkbox],
 input[type=radio] {
   display: inline-block;
-  background: var(--shadow-color);
+  background: var(--color-shadow);
   border: none;
-  color: var(--white);
+  color: var(--color-white);
   outline: none;
   appearance: none;
   -webkit-appearance: none;
@@ -60,11 +72,11 @@ input[type=radio] {
   position: relative;
 
   &:hover {
-    box-shadow: 0 0 0 .3rem var(--primary-color);
+    box-shadow: 0 0 0 .3rem var(--color-primary);
   }
 
   &:checked {
-    background: var(--primary-color);
+    background: var(--color-primary);
 
     &::before {
       display: inline-block;
@@ -117,9 +129,9 @@ option {
   position: relative;
 
   &::after {
-    background: var(--white);
+    background: var(--color-white);
     content: '\25BC';
-    color: var(--shadow-color);
+    color: var(--color-shadow);
     height: 0;
     position: absolute;
     right: 1rem;
@@ -128,7 +140,7 @@ option {
     -o-transition: .25s all ease;
 
     &::after {
-      color: var(--primary-color);
+      color: var(--color-primary);
     }
   }
 }
@@ -136,15 +148,32 @@ option {
 /* RANGE */
 
 input[type=range] {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: var(--color-primary);
+    cursor: pointer;
+  }
+
+  &:focus::-ms-fill-lower {
+    background: var(--color-shadow);
+  }
+
+  &:focus::-ms-fill-upper {
+    background: var(--color-shadow);
+  }
+
   &::-webkit-slider-runnable-track {
-    background: var(--shadow-color);
+    background: var(--color-shadow);
     border: none;
     border-radius: .3rem;
     height: .5rem;
   }
 
   &::-webkit-slider-thumb {
-    background: var(--primary-color);
+    background: var(--color-primary);
     border: none;
     border-radius: 50%;
     -webkit-appearance: none;
@@ -153,20 +182,15 @@ input[type=range] {
     margin-top: -.4rem;
   }
 
-  &:focus {
-    outline: var(--primary-color);
-    cursor: pointer;
-  }
-
   &::-moz-range-track {
-    background: var(--shadow-color);
+    background: var(--color-shadow);
     height: .5rem;
     border: none;
     border-radius: .3rem;
   }
 
   &::-moz-range-thumb {
-    background: var(--primary-color);
+    background: var(--color-primary);
     border: none;
     height: 2.5rem;
     width: 2.5rem;
@@ -174,33 +198,25 @@ input[type=range] {
   }
 
   &:-moz-focusring {
-    outline: .1rem solid var(--white);
+    outline: .1rem solid var(--color-white);
     outline-offset: -.1rem;
   }
 
   &::-ms-fill-lower {
-    background: var(--shadow-color);
+    background: var(--color-shadow);
     border-radius: 1rem;
   }
 
   &::-ms-fill-upper {
-    background: var(--shadow-color);
+    background: var(--color-shadow);
     border-radius: 1rem;
   }
 
   &::-ms-thumb {
-    background: var(--shadow-color);
+    background: var(--color-shadow);
     border: none;
     border-radius: 50%;
     height: 1.6rem;
     width: 1.6rem;
-  }
-
-  &:focus::-ms-fill-lower {
-    background: var(--shadow-color);
-  }
-
-  &:focus::-ms-fill-upper {
-    background: var(--shadow-color);
   }
 }

@@ -2,64 +2,64 @@
   vertical-align: middle;
 
   &::before {
-    font-family: var(--icon-font);
-    margin-right: 2rem;
+    font-family: var(--font-icon);
+    margin-right: .8rem;
     font-size: 1.7rem;
   }
 
   &.read::before {
-    content: var(--book);
+    content: var(--icon-book);
   }
 
   &.become-user::before {
-    content: var(--signin);
+    content: var(--icon-signin);
   }
 
   &.account::before {
-    content: var(--login);
+    content: var(--icon-login);
   }
 
   &.github::before {
-    content: var(--github);
+    content: var(--icon-github);
   }
 
   &.email::before {
-    content: var(--email);
+    content: var(--icon-email);
   }
 
   &.time::before {
-    content: var(--calendar);
+    content: var(--icon-calendar);
   }
 
   &.time-reading::before {
-    content: var(--clock);
+    content: var(--icon-clock);
   }
 
   &.read-more::before {
-    content: var(--get-article);
+    content: var(--icon-get-article);
   }
 
   &.arrow-down::before {
-    content: var(--arrow-down);
+    content: var(--icon-arrow-down);
   }
 
   &.twitter::before {
-    content: var(--twitter);
+    content: var(--icon-twitter);
   }
 
   &.facebook::before {
-    content: var(--facebook);
+    content: var(--icon-facebook);
   }
 
   &.instagram::before {
-    content: var(--instagram);
+    content: var(--icon-instagram);
   }
 
   &.setting::before {
-    content: var(--setting);
+    content: var(--icon-setting);
   }
 
   &.trip::before {
-    content: var(--trip);
+    content: var(--icon-trip);
   }
 }

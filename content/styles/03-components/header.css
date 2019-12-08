@@ -1,9 +1,9 @@
 header {
-  background-color: var(--white);
-  box-shadow: 0 .2rem 0 var(--shadow-color);
+  background-color: var(--color-white);
+  box-shadow: 0 .2rem 0 var(--color-shadow);
   padding: 1rem;
 
-  &.navigation {
+  &.main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,47 +13,47 @@ header {
     width: 100%;
     z-index: 9;
 
-    & h1 {
+    h1 {
       margin: 0;
       font-weight: 300;
       font-size: 3rem;
 
-      & a {
+      a {
         padding: 1rem;
-        color: var(--gray);
+        color: var(--color-gray);
         text-decoration: inherit;
       }
     }
 
-    & > nav {
+    > nav {
       position: relative;
       margin: 0 2rem 0 0;
       display: flex;
       align-items: center;
 
-      & a {
+      a {
         padding: 3px 15px;
         font-size: 1.5rem;
         text-decoration: none;
       }
 
-      & .button {
-        background-color: var(--primary-bg-color);
-        border: .1rem solid var(--gray);
+      .button {
+        background-color: var(--color-background-primary);
+        border: .1rem solid var(--color-gray);
         border-radius: .5rem;
 
         &:hover {
-          color: var(--black);
-          background-color: var(--gray);
+          color: var(--color-black);
+          background-color: var(--color-gray);
         }
       }
     }
 
-    & .avatar {
+    .avatar {
       cursor: pointer;
     }
 
-    & .nav-account a {
+    .nav-account a {
       display: block;
     }
   }

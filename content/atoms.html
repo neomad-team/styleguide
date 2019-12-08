@@ -6,7 +6,7 @@
 
 <link rel=stylesheet href=dist/styleguide.css>
 
-<header class=navigation>
+<header class=main>
   <h1>
     <a href=index.html>Neomad - Styleguide</a>
   </h1>
@@ -18,72 +18,64 @@
 </header>
 
 <main class=st-main>
-  <h1 class=st-title>Atoms</h1>
-  <section class=st-section>
+  <div class=st-title>Atoms</div>
 
+  <section class=st-section>
     <article class=st-article>
-      <h2 class=st-title>Colors</h2>
-      
+      <div class=st-title>Colors</div>
+
       <div class=st-container>
         <ul class=st-colors>
           <li>
-            <span style=background-color:#3dd07d></span>
-            <span>--primary-color</span>
-            <span>#3dd07d;</span>
+            <span style="background-color: var(--color-primary)"></span>
+            <span>--color-primary</span>
           </li>
           <li>
-            <span style=background-color:#4e8></span>
-            <span>--secondary-color</span>
-            <span>#4e8;</span>
+            <span style="background-color: var(--color-secondary)"></span>
+            <span>--color-secondary</span>
           </li>
           <li>
-            <span style=background-color:#fefefe></span>
-            <span>--primary-bg-color</span>
-            <span>#fefefe;</span>
+            <span style="background-color: var(--color-background-primary)"></span>
+            <span>--color-background-primary</span>
           </li>
           <li>
-            <span style=background-color:#fafafa></span>
-            <span>--secondary-bg-color</span>
-            <span>#fafafa;</span>
+            <span style="background-color: var(--color-background-secondary)"></span>
+            <span>--color-background-secondary</span>
           </li>
           <li>
-            <span style=background-color:#000></span>
-            <span>--black</span>
-            <span>#000;</span>
+            <span style="background-color: var(--color-black)"></span>
+            <span>--color-black</span>
           </li>
           <li>
-            <span style=background-color:#333></span>
-            <span>--gray</span>
-            <span>#333;</span>
+            <span style="background-color: var(--color-gray)"></span>
+            <span>--color-gray</span>
           </li>
           <li>
-            <span style=background-color:#aaa></span>
-            <span>--time</span>
-            <span>#aaa;</span>
+            <span style="background-color: var(--color-time)"></span>
+            <span>--color-time</span>
           </li>
           <li>
-            <span style=background-color:#fff></span>
-            <span>--white</span>
-            <span>#fff;</span>
+            <span style="background-color: var(--color-white)"></span>
+            <span>--color-white</span>
           </li>
         </ul>
       </div>
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Fonts</h2>
+      <div class=st-title>Fonts</div>
 
       <div class=st-container>
         <ul>
           <li class=st-font-title>--head-font: Poppins</li>
-          <li class=st-font-content>--content-font: Maven Pro</li>
-          <li class=st-font-blog>--blog-font: Merryweather</li>
+          <li class=st-font-content>--font-content: Maven Pro</li>
+          <li class=st-font-blog>--font-blog: Merryweather</li>
         </ul>
       </div>
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Headings</h2>
+      <div class=st-title>Headings</div>
 
       <div class=st-container>
         <h1 class=st-font-title>Default Title level 1</h1>
@@ -93,7 +85,7 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Text content</h2>
+      <div class=st-title>Text content</div>
 
       <div class=st-container>
         <p>The <a href=#>a element</a> and <a href=# target=_blank>external a element</a> examples</p>
@@ -112,13 +104,13 @@
         <p>The <sub>sub element</sub> example</p>
         <p>The <sup>sup element</sup> example</p>
         <p>The <u>u element</u> example</p>
-        <p>The <time class="icon time" datetime=2018-05-23T12:36:51.397000 pubdate>time element</time> exemple</p>
-        <p class="icon time time-reading">The reading time <span>quantity</span> exemple</p>
+        <p>The <time class="time" datetime=2018-05-23T12:36:51.397000 pubdate>time element</time> exemple</p>
+        <p class="time time-reading">The reading time <span>quantity</span> exemple</p>
       </div>
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Buttons</h2>
+      <div class=st-title>Buttons</div>
 
       <div class=st-container>
         <div class=st-buttons>
@@ -128,36 +120,34 @@
         </div>
       </div>
     </article>
-    
+
     <article class=st-article>
-      <h2 class=st-title>List</h2>
+      <div class=st-title>List</div>
 
       <div class=st-container>
-        <h3>Unordered list</h3>
+        <div class=st-title>Unordered list</div>
         <ul>
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ul>
-        
-        <h3>Ordered list</h3>
+
+        <div class=st-title>Ordered list</div>
         <ol>
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ol>
-      </div>
-      
-      <div class="st-container presentation">
-        <h3>Unordered presentation list</h3>
-        <ul>
+
+        <div class=st-title>Unordered list with icon</div>
+        <ul class="with-icon">
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
         </ul>
-        
-        <h3>Ordered presentation list</h3>
-        <ol>
+
+        <div class=st-title>Ordered list with index</div>
+        <ol class="with-index">
           <li>list item 1</li>
           <li>list item 2</li>
           <li>list item 3</li>
@@ -173,122 +163,118 @@
     </article>
 
     <article class=st-article>
-      <h2 class=st-title>Images</h2>
+      <div class=st-title>Images</div>
 
       <div class=st-container>
         <div>
-          <h3>Avatar image</h3>
-          <img
-            src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class=avatar>
+          <div class="st-title">Figure</div>
+          <figure>
+            <img src=dist/assets/img/avatar.png class=avatar>
+            <figcaption>Figure</figcaption>
+          </figure>
         </div>
         <div>
-          <h3>Avatar icon</h3>
-          <img
-            src=https://neomad.org/static/uploads/avatars/5914dbdca193770016e289a7
-            class="avatar icon">
+          <div class="st-title">Avatar image</div>
+          <img class=avatar src=dist/assets/img/neomad.png>
         </div>
         <div>
-          <h3>Article</h3>
-          <img src=https://neomad.org/static/uploads/articles/59182b6101e5cd050ded7f4c/ffb21e7e4063867b29c165ce506bc400>
+          <div class="st-title">Avatar icon</div>
+          <img class="avatar icon" src=dist/assets/img/neomad.png>
+        </div>
+        <div>
+          <div class="st-title">Article</div>
+          <img src=dist/assets/img/article.jpg>
+        </div>
+        <div>
+          <div class="st-title">Hero banner</div>
+          <section class=hero></section>
         </div>
       </div>
     </article>
-    
+
     <article class=st-article>
-      <h2 class=st-title>Icons</h2>
+      <div class=st-title>Icons</div>
 
       <div class="st-container st-icons">
         <div>
-          <p>--book</p>
+          <p>--icon-book</p>
           <div class="icon read"></div>
         </div>
         <div>
-          <p>--signin</p>
+          <p>--icon-signin</p>
           <div class="icon become-user"></div>
         </div>
         <div>
-          <p>--login</p>
+          <p>--icon-login</p>
           <div class="icon account"></div>
         </div>
         <div>
-          <p>--github</p>
+          <p>--icon-github</p>
           <div class="icon github"></div>
         </div>
         <div>
-          <p>--email</p>
+          <p>--icon-email</p>
           <div class="icon email"></div>
         </div>
         <div>
-          <p>--calendar</p>
+          <p>--icon-calendar</p>
           <div class="icon time"></div>
         </div>
         <div>
-          <p>--clock</p>
+          <p>--icon-clock</p>
           <div class="icon time-reading"></div>
         </div>
         <div>
-          <p>--get-article</p>
+          <p>--icon-get-article</p>
           <div class="icon read-more"></div>
         </div>
         <div>
-          <p>--arrow-down</p>
+          <p>--icon-arrow-down</p>
           <div class="icon arrow-down"></div>
         </div>
         <div>
-          <p>--twitter</p>
+          <p>--icon-twitter</p>
           <div class="icon twitter"></div>
         </div>
         <div>
-          <p>--instagram</p>
+          <p>--icon-instagram</p>
           <div class="icon instagram"></div>
         </div>
         <div>
-          <p>--facebook</p>
+          <p>--icon-facebook</p>
           <div class="icon facebook"></div>
         </div>
         <div>
-          <p>--setting</p>
+          <p>--icon-setting</p>
           <div class="icon setting"></div>
         </div>
         <div>
-          <p>--trip</p>
+          <p>--icon-trip</p>
           <div class="icon trip"></div>
         </div>
       </div>
     </article>
-    
-    <article class=st-article>
-      <h2 class=st-title>Figures</h2>
-
-      <div class=st-container>
-        <figure>
-          <img src=dist/assets/img/avatar.png class=avatar>
-          <figcaption>Figure</figcaption>
-        </figure>
-      </div>
-    </article>
 
     <article class=st-article>
-      <h2 class=st-title>Forms</h2>
+      <div class=st-title>Forms</div>
 
       <div class=st-container>
-        <h3>Label</h3>
+        <div class=st-title>Label</div>
         <label>I'm a label</label>
 
-        <h3>Input - text</h3>
+        <div class=st-title>Input - text</div>
         <input type=text placeholder=Placeholder>
-        
-        <h3>Input - email</h3>
+
+        <div class=st-title>Input - email</div>
         <input type=email placeholder=Placeholder>
 
-        <h3>Input - password</h3>
+        <div class=st-title>Input - password</div>
         <input type=password placeholder=Password>
-        
-        <h3>Input - number</h3>
+
+        <div class=st-title>Input - number</div>
         <input type=number placeholder=Number>
-        
-        <h3>Select</h3>
+
+        <div class=st-title>Select</div>
         <div class=select>
           <select>
             <option>Choose an option</option>
@@ -297,14 +283,14 @@
             <option value=3>Option 3</option>
           </select>
         </div>
-        
-        <h3>Textarea</h3>
+
+        <div class=st-title>Textarea</div>
         <textarea type=text placeholder=Textarea></textarea>
-        
-        <h3>Range</h3>
+
+        <div class=st-title>Range</div>
         <input type=range min=0 max=10 value=5>
-        
-        <h3>Checkbox</h3>
+
+        <div class=st-title>Checkbox</div>
         <div class=st-checkbox>
           <label>
             <input type=checkbox checked>
@@ -316,23 +302,41 @@
             <input type=checkbox>
           </label>
         </div>
-        
-        <h3>Radio</h3>
+
+        <div class=st-title>Radio</div>
         <div class=st-radio>
           <label>
             <input type=radio name=styleguide checked>
           </label>
+
           <label>
             <input type=radio name=styleguide>
           </label>
+
           <label>
             <input type=radio name=styleguide>
           </label>
         </div>
-        
       </div>
     </article>
 
+    <article class=st-article>
+      <div class=st-title>Animation</div>
+
+      <div class="st-container st-dark">
+        <div class="scroll-invitation">
+
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="arrow first"></span>
+            <span class="arrow second"></span>
+            <span class="arrow third"></span>
+          </div>
+        </div>
+      </div>
+    </article>
   </section>
-  
+
 </main>

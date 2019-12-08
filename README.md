@@ -16,7 +16,7 @@ Builds are in `./content/dist/`
 
 ## Linter
 
-Linter is propulse by https://stylelint.io/user-guide/rules/
+Linter is propulse by [stylehint.io](https://stylelint.io/user-guide/rules/)
 
 To run the linter
 `npm run linter`
@@ -28,19 +28,21 @@ To change CSS rule, change `postcss.linter.json`
 To see which support is provide in prod:
 Use `npx autoprefixer --info` in project root.
 
-Change staging process according https://cssdb.org/#staging-process
+Change staging process according [cssdb.org](https://cssdb.org/#staging-process)
 
 ## Organizing CSS properties
 
 To keep every CSS declaration readable, let's follow some rules:
 
 - put spaces at the proper spaces:
-```
+
+``` css
 .my-class {
   property: value;
 }
 ```
+
 - follow the order:
-    - Display values (for Flexbox, add children properties after)
-    - Positionning value
-    - Box values (width, height, margin, padding, border)
+  - Display values (for Flexbox, add children properties after)
+  - Positionning value
+  - Box values (width, height, margin, padding, border)

@@ -1,25 +1,26 @@
 .meta {
   display: flex;
   align-items: center;
+  box-shadow: none;
   font-size: 1.85rem;
   border-bottom: 1rem;
-  font-family: var(--content-font);
-  color: -var(--time);
+  font-family: var(--font-content);
+  color: -var(--color-time);
   line-height: 2.2rem;
 
-  & .meta-data {
+  .meta-data {
     margin-left: 2rem;
 
-    & a {
+    a {
       display: block;
     }
 
-    & time {
+    time {
       margin-right: 1rem;
     }
   }
 
-  & .icon::before {
+  .icon::before {
     margin-right: .7rem;
     font-size: 1.5rem;
   }

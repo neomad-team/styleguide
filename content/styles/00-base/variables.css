@@ -1,35 +1,37 @@
 :root {
-  --primary-color: #00d1b2;
-  --secondary-color: #00c4a7;
+  --color-black: #333;
+  --color-gray: #555;
+  --color-silver: #aaa;
+  --color-white: #fff;
 
-  --primary-bg-color: #fefefe;
-  --secondary-bg-color: #fafafa;
+  --color-primary: #1caf6f;
+  --color-secondary: #169e62;
 
-  --black: #000;
-  --gray: #333;
-  --time: #aaa;
-  --white: #fff;
+  --color-background-primary: #fefefe;
+  --color-background-secondary: #fafafa;
 
-  --shadow-color: rgba(50, 50, 50, .15);
+  --color-time: #aaa;
 
-  --title-font: 'Poppins', Arial, sans-serif;
-  --content-font: 'Maven Pro', Arial, sans-serif;
-  --blog-font: 'Merryweather', Arial, sans-serif;
-  --icon-font: 'fontawesome', 'fontawesome solid';
+  --color-shadow: rgba(50, 50, 50, .15);
 
-  --circle: '\25CF';
-  --book: '\f518';
-  --signin: '\f234';
-  --login: '\f2f6';
-  --github: '\f09b';
-  --email: '\f0e0';
-  --calendar: '\f073';
-  --clock: '\f017';
-  --get-article: '\f2f6';
-  --arrow-down: '\f358';
-  --twitter: '\f099';
-  --instagram: '\f16d';
-  --facebook: '\f09a';
-  --setting: '\f013';
-  --trip: '\f277';
+  --font-title: 'Poppins', Arial, sans-serif;
+  --font-content: 'Maven Pro', Arial, sans-serif;
+  --font-blog: 'Merryweather', Arial, sans-serif;
+  --font-icon: 'fontawesome', 'fontawesome solid';
+
+  --icon-circle: '\25CF';
+  --icon-book: '\f518';
+  --icon-signin: '\f234';
+  --icon-login: '\f2f6';
+  --icon-github: '\f09b';
+  --icon-email: '\f0e0';
+  --icon-calendar: '\f073';
+  --icon-clock: '\f017';
+  --icon-get-article: '\f2f6';
+  --icon-arrow-down: '\f358';
+  --icon-twitter: '\f099';
+  --icon-instagram: '\f16d';
+  --icon-facebook: '\f09a';
+  --icon-setting: '\f013';
+  --icon-trip: '\f277';
 }

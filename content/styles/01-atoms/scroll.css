@@ -1,0 +1,75 @@
+.wheel {
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+.scroll-invitation {
+  display: block;
+	margin: 0 auto;
+	width: 2.5rem;
+	height: 10rem;
+}
+
+.arrow {
+  display: block;
+  width: .5rem;
+  height: .5rem;
+  transform: rotate(45deg);
+
+  border-right: .2rem solid white;
+  border-bottom: .2rem solid white;
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+
+  &.first,
+  &.second,
+  &.third {
+    animation: mouse-scroll 1s infinite;
+  }
+
+  &.first {
+    animation-direction: alternate;
+    animation-delay: alternate;
+
+    margin-top: 1px;
+  }
+
+  &.second {
+    animation-delay: .2s;
+    animation-direction: alternate;
+
+    margin-top: -6px;
+  }
+
+  &.third {
+    animation-delay: .3s;
+    animation-direction: alternate;
+
+    margin-top: -6px;
+  }
+}
+
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+
+  .wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+    position: relative;
+
+    height: 4px;
+    width: 4px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
+}
