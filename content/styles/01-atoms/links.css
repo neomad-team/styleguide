@@ -7,6 +7,6 @@ a {
   &:focus,
   &:active {
     cursor: pointer;
-    color: var(--color-gray);
+    color: var(--color-primary);
   }
 }

@@ -18,6 +18,15 @@ header {
       font-weight: 300;
       font-size: 3rem;
 
+      &:hover,
+      &:focus,
+      &:active {
+        a {
+          cursor: pointer;
+          color: var(--color-primary);
+        }
+      }
+
       a {
         padding: 1rem;
         color: var(--color-gray);
