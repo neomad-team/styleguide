@@ -8,10 +8,12 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    padding: 1rem 9rem;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9;
+    /* overide leaflet and notification */
+    z-index: 1001;
 
     h1 {
       margin: 0;
@@ -55,6 +57,7 @@ header {
 
     .nav-account a {
       display: block;
+      padding: 1rem;
     }
   }
 

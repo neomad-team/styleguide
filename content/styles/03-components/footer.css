@@ -1,23 +1,25 @@
 footer {
-  padding: 2rem 0;
+  padding: 1rem 9rem;
   box-shadow: 0 -.2rem 0 var(--color-shadow);
   background-color: var(--color-white);
   z-index: 1;
 
   & nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    padding: 1rem;
 
     & a {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      margin-right: 2.5rem;
+      align-items: flex-start;
     }
   }
 
   & .icon::before {
-    font-size: 3.5rem;
-    margin: 0 0 -1rem 0;
+    font-size: 2rem;
+    margin-right: 1rem;
   }
 }

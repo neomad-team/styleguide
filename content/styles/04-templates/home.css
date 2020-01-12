@@ -1,5 +1,11 @@
-.home {
+/* .home {
   font-size: 3.5rem;
   text-align: center;
   position: relative;
+}
+ */
+.article-list {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 2rem 4rem;
 }

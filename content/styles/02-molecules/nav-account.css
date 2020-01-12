@@ -1,4 +1,5 @@
 .nav-account {
+  display: none;
   position: absolute;
   top: 6rem;
   right: -1rem;
@@ -12,6 +13,7 @@
   transition: all .3s;
 
   &.active {
+    display: block;
     height: auto;
     opacity: 1;
     z-index: 1;

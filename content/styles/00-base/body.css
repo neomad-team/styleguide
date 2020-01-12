@@ -14,6 +14,7 @@ html {
   font-size: calc(1em * .625); /* fix */
   font-weight: 400;
   font-family: var(--font-content), Arial, Helvetica, sans-serif;
+  background-color: var(--color-background-primary);
 }
 
 body {
@@ -28,5 +29,5 @@ body {
 }
 
 main {
-  margin: 6.5rem auto 0;
+  margin: 6.5rem 0 0;
 }
