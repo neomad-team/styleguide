@@ -22,7 +22,6 @@ header {
       &:focus,
       &:active {
         a {
-          cursor: pointer;
           color: var(--color-primary);
         }
       }
