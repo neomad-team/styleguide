@@ -67,13 +67,15 @@
     }
   }
 
-  .blog-preview {
+  .list-preview {
     display: flex;
     flex-wrap: wrap;
+    padding: 2rem 0;
+    justify-content: space-evenly;
 
-    .article-list {
-      padding: 2rem;
-      max-width: 100%;
+    .preview {
+      margin: 1rem;
+      width: 40rem;
     }
   }
 }

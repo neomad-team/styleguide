@@ -1,3 +1,7 @@
+.list-preview {
+  padding: 5rem 25rem;
+}
+
 .preview {
   display: flex;
   flex: 0 0 30%;
@@ -143,17 +147,5 @@
       color: var(--color-white);
       background: var(--color-secondary);
     }
-  }
-}
-
-.preview-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 0;
-  justify-content: space-evenly;
-
-  & .preview {
-    margin: 1rem;
-    width: 40rem;
   }
 }
