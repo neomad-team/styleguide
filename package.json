@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "stylelint content/styles/**/*.css --config postcss.linter.json",
     "dev": "postcss ./content/styles/styleguide.css -o ./content/dist/styleguide.css --env dev",
-    "watch": "postcss ./content/styles/styleguide.css -o ./content/dist/styleguide.css --env dev --watch --verbose",
+    "watch": "npm run dev -- --watch --verbose",
     "build": "postcss ./content/styles/main.css -o ./content/dist/main.css --env prod"
   },
   "repository": {
