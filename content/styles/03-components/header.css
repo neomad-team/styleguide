@@ -12,6 +12,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+
     /* overide leaflet and notification */
     z-index: 1001;
 
