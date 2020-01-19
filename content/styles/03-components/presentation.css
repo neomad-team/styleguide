@@ -67,7 +67,8 @@
     }
   }
 
-  .list-preview {
+  /* overide preview(s) style for home presentation */
+  .preview-list {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem 0;
