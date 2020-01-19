@@ -67,7 +67,6 @@
     }
   }
 
-  /* overide preview(s) style for home presentation */
   .preview-list {
     display: flex;
     flex-wrap: wrap;
