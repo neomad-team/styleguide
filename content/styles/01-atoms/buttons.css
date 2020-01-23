@@ -14,7 +14,7 @@ input[type=submit] {
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
   border-radius: .3rem;
-  transition: all .3s ease;
+  transition: background-color, color .3s ease;
   box-shadow: 0 2px 3px var(--color-shadow);
   text-transform: uppercase;
 

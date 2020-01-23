@@ -1,11 +1,13 @@
 .presentation {
   background: var(--color-background-primary);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
 
   &.with-image {
+    flex-direction: row;
     background-color: var(--color-white);
 
     .button-group {
@@ -30,6 +32,7 @@
 
   article {
     padding: 0 2rem 2rem;
+    width: 65rem;
 
     ul,
     ol {
@@ -55,12 +58,24 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 35rem;
+    height: 32rem;
     width: 37.5rem;
     overflow: hidden;
 
     img {
       width: 100%;
+    }
+  }
+
+  .preview-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    justify-content: space-evenly;
+
+    .preview {
+      margin: 1rem;
+      width: 40rem;
     }
   }
 }

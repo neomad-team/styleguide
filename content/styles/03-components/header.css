@@ -8,10 +8,13 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    padding: 1rem 9rem;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9;
+
+    /* overide leaflet and notification */
+    z-index: 1001;
 
     h1 {
       margin: 0;
@@ -63,11 +66,12 @@ header {
 
     .nav-account a {
       display: block;
+      padding: 1rem;
     }
   }
 
   &.profile {
-    padding: 3rem 1rem;
+    padding: 5rem 25rem;
 
     .profile-socials {
       margin: 3rem 0;
